@@ -10,14 +10,9 @@ class SinglePlayerTests {
     void Test44(){
         Player test = new Player("Test");
 
-        int prevScore = Player.getScore();
-
-        Player.roll();
-        Player.setSkulls(3);
-        Player.roll();
-        Player.updateScore();
-
-        assertEquals(prevScore, Player.getScore());
+        test.setSkulls(3); //Forcing skull count before the roll so the "roll" contains 3 skulls immediately
+        test.roll();
+        assertEquals(false,test.getAlive());
     }
 
 }
