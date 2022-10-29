@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Code for Test 45, added more functions/variables to player">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Test45 refactor to check score">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglePlayerTests">
+  <component name="RunManager" selected="JUnit.SinglePlayerTests.Test45">
     <configuration name="SinglePlayerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -106,9 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SinglePlayerTests" />
         <item itemvalue="JUnit.SinglePlayerTests.Test45" />
         <item itemvalue="JUnit.SinglePlayerTests.Test44" />
+        <item itemvalue="JUnit.SinglePlayerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667073651928</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="TEST: Test45 refactor to check score">
+      <created>1667073848821</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667073848822</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +199,7 @@
     <MESSAGE value="CODE: Code for test case 44. Added functions/variables needed for player" />
     <MESSAGE value="TEST: Test45" />
     <MESSAGE value="CODE: Code for Test 45, added more functions/variables to player" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Code for Test 45, added more functions/variables to player" />
+    <MESSAGE value="TEST: Test45 refactor to check score" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: Test45 refactor to check score" />
   </component>
 </project>

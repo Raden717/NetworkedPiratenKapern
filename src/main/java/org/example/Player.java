@@ -96,6 +96,10 @@ public class Player {
         this.skullCount = 3;
     }
 
+    public int getScore(){
+        return this.score;
+    }
+
     public boolean getAlive(){
         return this.isAlive;
     }
