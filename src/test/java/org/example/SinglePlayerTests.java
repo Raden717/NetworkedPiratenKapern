@@ -13,6 +13,7 @@ class SinglePlayerTests {
         test.setSkulls(3); //Forcing skull count before the roll so the "roll" contains 3 skulls immediately
         test.roll();
         assertEquals(false, test.getAlive());
+        assertEquals(0, test.getScore());
     }
 
     @Test
