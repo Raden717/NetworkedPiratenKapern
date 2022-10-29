@@ -28,6 +28,7 @@ class SinglePlayerTests {
         test.setForceDice(forcedReroll);
         test.forceUpdateAlive();
         assertEquals(false, test.getAlive());
+        assertEquals(0, test.getScore());
 
     }
 

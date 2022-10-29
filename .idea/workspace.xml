@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Test45">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Code for Test 45, added more functions/variables to player">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667072370199</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="CODE: Code for Test 45, added more functions/variables to player">
+      <created>1667073651928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667073651928</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +191,7 @@
     <MESSAGE value="REFACTOR: Refactoring test case 44 as it was written incorrectly" />
     <MESSAGE value="CODE: Code for test case 44. Added functions/variables needed for player" />
     <MESSAGE value="TEST: Test45" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Test45" />
+    <MESSAGE value="CODE: Code for Test 45, added more functions/variables to player" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Code for Test 45, added more functions/variables to player" />
   </component>
 </project>
