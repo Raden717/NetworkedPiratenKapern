@@ -51,6 +51,21 @@ class SinglePlayerTests {
 
     }
 
+    @Test
+    void Test47(){
+        //roll 1 skull, 4 parrots, 3 swords, reroll swords, get 1 skull 2 monkeys
+        Player test = new Player("Test");
+        test.roll();
+        String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        test.setForceDice(forcedRoll);
+        test.forceUpdateAlive();
+        test.reroll();
+        String[] forcedReroll = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Monkey","Monkey"};
+        test.setForceDice(forcedReroll);
+        test.updateScore();
+        assertEquals(200, test.getScore());
+    }
+
 
 
 }
