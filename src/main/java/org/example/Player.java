@@ -36,6 +36,7 @@ public class Player {
 
     private boolean turn;
 
+    private boolean isAlive;
 
     public Player(String n){
         this.rolls = 8;
@@ -44,6 +45,22 @@ public class Player {
         this.skullCount = 0;
         this.card = null;
         this.turn = false;
+        this.isAlive = true;
+    }
+
+    public void roll(){
+        if(skullCount == 3){
+            this.isAlive = false;
+        }
+        //create a list of dice rolls
+    }
+
+    public void setSkulls(int s){
+        this.skullCount = 3;
+    }
+
+    public boolean getAlive(){
+        return this.isAlive;
     }
 
 }

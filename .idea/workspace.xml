@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Case 44, checking if player dies on first roll by checking scores before and after.">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Refactoring test case 44 as it was written incorrectly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
@@ -58,6 +58,29 @@
       <recent name="org.example" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="SinglePlayerTests.Test44" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004-F22-A1-101104851" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SinglePlayerTests" />
+      <option name="METHOD_NAME" value="Test44" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SinglePlayerTests.Test44" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667068782864</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="REFACTOR: Refactoring test case 44 as it was written incorrectly">
+      <created>1667070642163</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667070642163</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +136,7 @@
     <MESSAGE value="CODE: Simple server implementation" />
     <MESSAGE value="CODE: Simple client implementation" />
     <MESSAGE value="TEST: Case 44, checking if player dies on first roll by checking scores before and after." />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Case 44, checking if player dies on first roll by checking scores before and after." />
+    <MESSAGE value="REFACTOR: Refactoring test case 44 as it was written incorrectly" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Refactoring test case 44 as it was written incorrectly" />
   </component>
 </project>
