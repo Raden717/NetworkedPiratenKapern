@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Test45 refactor to check score">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +179,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667073848822</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="CODE: Added getScore to player to check score for Test45.">
+      <created>1667073958585</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667073958585</updated>
+    </task>
+    <task id="LOCAL-00010" summary="TEST: Modified Test44 to check score and expected score.">
+      <created>1667074003847</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667074003847</updated>
+    </task>
+    <task id="LOCAL-00011" summary="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore.">
+      <created>1667074064880</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667074064881</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +223,9 @@
     <MESSAGE value="TEST: Test45" />
     <MESSAGE value="CODE: Code for Test 45, added more functions/variables to player" />
     <MESSAGE value="TEST: Test45 refactor to check score" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Test45 refactor to check score" />
+    <MESSAGE value="CODE: Added getScore to player to check score for Test45." />
+    <MESSAGE value="TEST: Modified Test44 to check score and expected score." />
+    <MESSAGE value="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore." />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore." />
   </component>
 </project>
