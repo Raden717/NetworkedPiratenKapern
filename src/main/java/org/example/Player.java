@@ -96,6 +96,15 @@ public class Player {
         this.skullCount = 3;
     }
 
+    //Score updates after the turn ends by being called after rerolls/rolls
+    public void updateScore(){
+        if(!this.isAlive){
+            //Don't update score
+        } else {
+            //Update score
+        }
+    }
+
     public int getScore(){
         //Returns score
         return this.score;

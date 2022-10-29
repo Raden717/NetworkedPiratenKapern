@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore.">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Test46">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglePlayerTests.Test45">
+  <component name="RunManager" selected="JUnit.SinglePlayerTests.Test46">
     <configuration name="SinglePlayerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -106,8 +105,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SinglePlayerTests.Test46" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004-F22-A1-101104851" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SinglePlayerTests" />
+      <option name="METHOD_NAME" value="Test46" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglePlayerTests.Test46" />
         <item itemvalue="JUnit.SinglePlayerTests.Test45" />
         <item itemvalue="JUnit.SinglePlayerTests.Test44" />
         <item itemvalue="JUnit.SinglePlayerTests" />
@@ -200,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667074064881</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="TEST: Test46">
+      <created>1667074871727</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667074871728</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +249,7 @@
     <MESSAGE value="CODE: Added getScore to player to check score for Test45." />
     <MESSAGE value="TEST: Modified Test44 to check score and expected score." />
     <MESSAGE value="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore." />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore." />
+    <MESSAGE value="TEST: Test46" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: Test46" />
   </component>
 </project>
