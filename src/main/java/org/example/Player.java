@@ -86,7 +86,7 @@ public class Player {
                 this.skullCount++;
             }
         }
-        System.out.println(this.skullCount);
+        //System.out.println(this.skullCount);
         if(this.skullCount == 3){
             this.isAlive = false;
         }
@@ -101,6 +101,45 @@ public class Player {
         if(!this.isAlive){
             //Don't update score
         } else {
+
+            Set<String> rolledDice = new HashSet<>();
+            for(int i = 0; i < 8; i++){
+                rolledDice.add(this.rolled[i]);
+            }
+
+            for(String check : rolledDice){
+                int count = 0;
+                if (!check.equals("Skull")) {
+                    for(int i = 0; i < 8; i++){
+                        if(check.equals(this.rolled[i])){
+                            count++;
+                        }
+                    }
+                }
+                //3 of a kind: 100 points; 4 of a kind: 200 points; 5 of a kind: 500
+                //points; 6 of a kind: 1,000 points; 7 of a kind: 2,000 points; 8 of a kind:
+                //4,000 points.
+                switch (count) {
+                    case 3:
+                        this.score += 100;
+                        break;
+                    case 4:
+                        this.score += 200;
+                        break;
+                    case 5:
+                        this.score += 500;
+                        break;
+                    case 6:
+                        this.score += 1000;
+                        break;
+                    case 7:
+                        this.score += 2000;
+                        break;
+                    case 8:
+                        this.score += 4000;
+                        break;
+                }
+            }
             //Update score
         }
     }
