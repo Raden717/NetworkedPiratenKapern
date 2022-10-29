@@ -15,4 +15,20 @@ class SinglePlayerTests {
         assertEquals(false, test.getAlive());
     }
 
+    @Test
+    void Test45(){
+        //roll 1 skull, 4 parrots, 3 swords, hold parrots, reroll 3 swords, get 2 skulls 1 sword  die
+        Player test = new Player("Test");
+        test.roll();
+        String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        test.setForceDice(forcedRoll);
+        test.forceUpdateAlive();
+        test.reroll();
+        String[] forcedReroll = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Skull","Sword"};
+        test.setForceDice(forcedReroll);
+        test.forceUpdateAlive();
+        assertEquals(false, test.getAlive());
+
+    }
+
 }
