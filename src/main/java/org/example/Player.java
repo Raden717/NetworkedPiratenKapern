@@ -97,6 +97,7 @@ public class Player {
     }
 
     public int getScore(){
+        //Returns score
         return this.score;
     }
 
