@@ -694,9 +694,10 @@ class Tests {
         test.save(saving);
         test.reroll();
         String[] forcedReroll = {"SKULL","SKULL","DIAMOND","DIAMOND","COIN","COIN","COIN","COIN"};
+        test.setForceDice(forcedReroll);
         int[] saving2 = {4,5,6,7};
         test.save(saving2);
-        test.setForceDice(forcedRoll);
+        test.reroll();
         String[] forcedReroll2 = {"SKULL","SKULL","SKULL","COIN","COIN","COIN","COIN","COIN"};
         test.setForceDice(forcedReroll2);
         test.updateScore();
