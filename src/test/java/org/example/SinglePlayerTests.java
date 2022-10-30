@@ -36,6 +36,7 @@ class Tests {
 
     }
 
+    @Test
     void UnitTestTreasureChest(){
         Player test = new Player("Test");
         test.setCard("TREASURE_CHEST");
