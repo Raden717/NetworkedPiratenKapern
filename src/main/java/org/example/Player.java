@@ -536,14 +536,14 @@ public class Player {
         this.skullCount = 0;
         this.skullCount += skullCard;
         for (int i = 0; i < 8; i++){
-            if(this.rolled[i].toUpperCase().equals("SKULL")){
+            if(this.rolled[i].equals("SKULL")){
                 this.skullCount++;
             }
         }
-        if(skullCount >= 3){
+        if(this.skullCount >= 3){
             this.isAlive = false;
         }
-        if(skullCount > 3){
+        if(this.skullCount > 3){
             this.islandOfSkulls = true;
         }
 
@@ -616,6 +616,10 @@ public class Player {
 
     public void setSwordsSea(int n){
         this.swordBattleReq = n;
+    }
+
+    public void setSkullFace(int n){
+        this.skullCard = n;
     }
 
 }
