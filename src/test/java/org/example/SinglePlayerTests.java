@@ -853,6 +853,33 @@ class Tests {
         assertEquals(0, test.getScore());
 
     }
+    @Test
+    void Test111(){
+        //roll 3 skulls and 5 swords with FC with two skulls:
+        // reroll 5 swords, get 5 coins, must stop  => -500 for other players
+        Player test = new Player("Test");
+        Player test2 = new Player("Test2");
+        Player test3 = new Player("Test3");
+        test.setCard("SKULL");
+        test.setSkullFace(2);
+        test.roll();
+        String[] forcedRoll = {"SKULL","SKULL","SKULL","SWORD","SWORD","SWORD","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateAlive();
+        test.reroll();
+        String[] forcedReroll = {"SKULL","SKULL","SKULL","COIN","COIN","COIN","COIN","COIN"};
+        test.setForceDice(forcedReroll);
+
+        test.updateAlive();
+        assertEquals(5,test.getSkullCount());
+        test2.deductScore(test.getSkullCount());
+        test3.deductScore(test.getSkullCount());
+        assertEquals(0, test2.getScore());
+        assertEquals(0, test3.getScore());
+        test.updateScore();
+        assertEquals(0, test.getScore());
+
+    }
 
 
 }
