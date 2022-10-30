@@ -189,7 +189,7 @@ class Tests {
     }
 
     @Test
-    void Test44(){
+    void Test45(){
         Player test = new Player("Test");
         String[] forcedRoll = {"SKULL","SKULL","SKULL","SWORD","SWORD","SWORD","SWORD","SWORD"};
         test.setForceDice(forcedRoll);
@@ -198,7 +198,7 @@ class Tests {
     }
 
     @Test
-    void Test45(){
+    void Test46(){
         //roll 1 skull, 4 parrots, 3 swords, hold parrots, reroll 3 swords, get 2 skulls 1 sword  die
         Player test = new Player("Test");
         test.roll();
@@ -215,7 +215,7 @@ class Tests {
     }
 
     @Test
-    void Test46(){
+    void Test47(){
         //roll 1 skull, 4 parrots, 3 swords, hold parrots, reroll 3 swords, get 2 skulls 1 sword  die
         Player test = new Player("Test");
         test.roll();
@@ -234,7 +234,7 @@ class Tests {
     }
 
     @Test
-    void Test47(){
+    void Test48(){
         //roll 1 skull, 4 parrots, 3 swords, reroll swords, get 1 skull 2 monkeys
         //      reroll 2 monkeys, get 1 skull 1 monkey and die
         Player test = new Player("Test");
@@ -253,7 +253,7 @@ class Tests {
     }
 
     @Test
-    void Test48(){
+    void Test49(){
         Player test = new Player("Test");
         test.roll();
         String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
