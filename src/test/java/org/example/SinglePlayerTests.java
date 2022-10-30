@@ -167,6 +167,17 @@ class Tests {
     }
 
     @Test
+    void unitTestSeaCard(){
+        Player test = new Player("Test");
+        test.rollCard();
+        if(test.getCard().equals("SEA_BATTLE")){
+            assertfalse(0 == test.getswordBattleReq());
+        } else {
+            assertEquals(0, test.getswordBattleReq());
+        }
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 
