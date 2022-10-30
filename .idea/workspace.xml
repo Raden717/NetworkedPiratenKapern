@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Test Treasure Chest (added @Test)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modifed updateScore to account for treasure chest card">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -338,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667137494339</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="CODE: Modifed updateScore to account for treasure chest card">
+      <created>1667137994949</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1667137994949</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +359,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Simple server implementation" />
     <MESSAGE value="CODE: Simple client implementation" />
     <MESSAGE value="TEST: Case 44, checking if player dies on first roll by checking scores before and after." />
     <MESSAGE value="REFACTOR: Refactoring test case 44 as it was written incorrectly" />
@@ -378,7 +383,8 @@
     <MESSAGE value="CODE: Code for reroll to pass unit test" />
     <MESSAGE value="TEST: Unit Test Treasure Chest" />
     <MESSAGE value="TEST: Unit Test Treasure Chest (added @Test)" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Test Treasure Chest (added @Test)" />
+    <MESSAGE value="CODE: Modifed updateScore to account for treasure chest card" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modifed updateScore to account for treasure chest card" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
