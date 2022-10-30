@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: U-Test for rerolling">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Refactored test U-Test for rerolling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.UnitTestFortuneCardPick">
+  <component name="RunManager" selected="JUnit.Tests.UnitTestReroll">
     <configuration name="SinglePlayerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -68,22 +70,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.SinglePlayerTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SinglePlayerTests.Test45" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004-F22-A1-101104851" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SinglePlayerTests" />
-      <option name="METHOD_NAME" value="Test45" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,13 +122,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests.UnitTestReroll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004-F22-A1-101104851" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
+      <option name="METHOD_NAME" value="UnitTestReroll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.UnitTestReroll" />
         <item itemvalue="JUnit.Tests.UnitTestFortuneCardPick" />
         <item itemvalue="JUnit.SinglePlayerTests" />
         <item itemvalue="JUnit.SinglePlayerTests.Test47" />
         <item itemvalue="JUnit.SinglePlayerTests.Test46" />
-        <item itemvalue="JUnit.SinglePlayerTests.Test45" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667135569272</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="TEST: Refactored test U-Test for rerolling">
+      <created>1667135722080</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667135722080</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,6 +331,7 @@
     <MESSAGE value="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47." />
     <MESSAGE value="TEST: U-Test for fortune card rolling" />
     <MESSAGE value="TEST: U-Test for rerolling" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: U-Test for rerolling" />
+    <MESSAGE value="TEST: Refactored test U-Test for rerolling" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: Refactored test U-Test for rerolling" />
   </component>
 </project>

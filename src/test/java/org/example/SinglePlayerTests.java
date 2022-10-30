@@ -17,6 +17,7 @@ class Tests {
         assertTrue(cards.contains(test.getCard()));
     }
 
+    @Test
     void UnitTestReroll(){
         Player test = new Player("Test");
         test.roll();
