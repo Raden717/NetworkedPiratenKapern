@@ -716,4 +716,18 @@ class Tests {
         test.updateScore();
         assertEquals(400, test.getScore());
     }
+    
+    @Test
+    void Test98(){
+        //3 monkeys, 3 swords, 2 coins FC: captain   => SC (100+100+200+500)*2 =  1800
+        Player test = new Player("Test");
+        test.setCard("CAPTAIN");
+        test.roll();
+        String[] forcedRoll = {"MONKEY","MONKEY","MONKEY","SWORD","SWORD","SWORD","COIN","COIN"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(1800, test.getScore());
+    }
+
+
 }
