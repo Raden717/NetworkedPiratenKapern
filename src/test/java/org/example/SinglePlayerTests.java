@@ -232,7 +232,7 @@ class Tests {
     }
 
     @Test
-    void Test48(){
+    void Test49(){
         //roll 1 skull, 4 parrots, 3 swords, reroll swords, get 1 skull 2 monkeys
         //            reroll 2 monkeys, get 1 skull 1 monkey and die
         Player test = new Player("Test");
@@ -253,7 +253,7 @@ class Tests {
     }
 
     @Test
-    void Test49(){
+    void Test50(){
         Player test = new Player("Test");
         test.roll();
         String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
