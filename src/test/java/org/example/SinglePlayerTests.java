@@ -479,5 +479,20 @@ class Tests {
         assertEquals(4600, test.getScore());
     }
 
+    @Test
+    void Test68(){
+        //roll 2 (monkeys/skulls/swords/parrots), reroll parrots, get 2 diamonds, score with FC is diamond (SC 400)
+        Player test = new Player("Test");
+        test.setCard("DIAMOND");
+        test.roll();
+        String[] forcedRoll = {"MONKEY","MONKEY","SKULL","SKULL","PARROT","PARROT","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.reroll();
+        String[] forcedReroll = {"MONKEY","MONKEY","SKULL","SKULL","DIAMOND","DIAMOND","SWORD","SWORD"};
+        test.setForceDice(forcedReroll);
+        test.updateScore();
+        assertEquals(400, test.getScore());
+    }
+
 
 }
