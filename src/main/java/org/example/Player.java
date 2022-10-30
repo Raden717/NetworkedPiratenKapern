@@ -393,17 +393,7 @@ public class Player {
         int fullChestCount = 0;
         int scoreToAdd = 0;
         int seaBattlePoints = 0;
-
-        Set<String> rolledDice = new HashSet<>();
-        for (int i = 0; i < 8; i++) {
-            if(!this.rolled[i].toUpperCase().equals("SKULL")) {
-                rolledDice.add(this.rolled[i]);
-            } else {
-                this.skullCount++;
-            }
-        }
-
-        if(this.skullCount == 3){
+        if(!this.isAlive){
             this.islandOfSkulls = false;
             this.saves = new ArrayList<String>();
             this.keeps = null;
@@ -414,6 +404,15 @@ public class Player {
             this.isAlive = true;
             return;
         }
+        Set<String> rolledDice = new HashSet<>();
+        for (int i = 0; i < 8; i++) {
+            if(!this.rolled[i].toUpperCase().equals("SKULL")) {
+                rolledDice.add(this.rolled[i]);
+            } else {
+                this.skullCount++;
+            }
+        }
+
 
         int monkeyParrots = 0;
         for (String check : rolledDice) {
