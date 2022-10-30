@@ -547,6 +547,10 @@ public class Player {
             this.islandOfSkulls = true;
         }
 
+        if(this.card.equals("CAPTAIN")){
+            this.skullCount += this.skullCount;
+        }
+
 
     }
     public void deductScore(int skulls){
