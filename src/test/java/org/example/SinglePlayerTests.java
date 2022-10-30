@@ -202,13 +202,13 @@ class Tests {
         //roll 1 skull, 4 parrots, 3 swords, hold parrots, reroll 3 swords, get 2 skulls 1 sword  die
         Player test = new Player("Test");
         test.roll();
-        String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        String[] forcedRoll = {"SKULL","PARROT","PARROT","PARROT","PARROT","SWORD","SWORD","SWORD"};
         test.setForceDice(forcedRoll);
-        test.forceUpdateAlive();
+        test.updateAlive();
         test.reroll();
-        String[] forcedReroll = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Skull","Sword"};
+        String[] forcedReroll = {"SKULL","PARROT","PARROT","PARROT","PARROT","SKULL","SKULL","SWORD"};
         test.setForceDice(forcedReroll);
-        test.forceUpdateAlive();
+        test.updateAlive();
         assertEquals(false, test.getAlive());
         assertEquals(0, test.getScore());
 
