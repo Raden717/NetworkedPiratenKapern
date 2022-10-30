@@ -592,5 +592,29 @@ class Tests {
         assertEquals(1000, test.getScore());
     }
 
+    @Test
+    void Test79(){
+        //roll 1 skull, 4 parrots, 3 monkeys, reroll 3 monkeys, get 1 skull, 2 parrots,
+        // reroll skull, get parrot, score (SC 2000)
+        Player test = new Player("Test");
+        test.setCard("SORCERESS");
+        test.roll();
+        String[] forcedRoll = {"SKULL","PARROT","PARROT","PARROT","PARROT","MONKEY","MONKEY","MONKEY"};
+        test.setForceDice(forcedRoll);
+        assertEquals(1,test.getSorceressUse()); // Sorceress use should be 1
+        int[] keepSkull = {0};
+        test.keep(keepSkull);
+        test.reroll(); //Reroll function accounts for the sorceress and gets used since there is a skull that can be rerolled
+        String[] forcedReroll = {"SKULL","PARROT","PARROT","PARROT","PARROT","SKULL","PARROT","PARROT"};
+        test.setForceDice(forcedReroll);
+        assertEquals(1,test.getSorceressUse()); // Sorceress use should be 1
+        test.reroll();
+        assertEquals(0,test.getSorceressUse()); // Sorceress use should be 0
+        String[] forcedReroll2 = {"PARROT","PARROT","PARROT","PARROT","PARROT","SKULL","PARROT","PARROT"};
+        test.setForceDice(forcedReroll2);
+        test.updateScore();
+        assertEquals(2000, test.getScore());
+    }
+
 
 }
