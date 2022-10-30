@@ -212,9 +212,16 @@ public class Player {
                 count++;
                 scoreToAdd += 100;
             }
+            if(check.equals("DIAMOND") && this.card.equals("DIAMOND")){
+                count++;
+                scoreToAdd += 100;
+            }
             for (int i = 0; i < 8; i++) {
                 if (check.equals(this.rolled[i])) {
                     if(this.rolled[i].equals("COIN")){
+                        scoreToAdd += 100;
+                    }
+                    if(this.rolled[i].equals("DIAMOND")){
                         scoreToAdd += 100;
                     }
                     count++;

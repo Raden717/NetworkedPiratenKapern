@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Updated updateScore to account for gold card">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Test for Diamond card">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667143628107</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="TEST: Unit Test for Diamond card">
+      <created>1667143882435</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1667143882435</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,7 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: Test46" />
     <MESSAGE value="CODE: Added updating scores to make sure the score is updated properly when checking with tests." />
     <MESSAGE value="Test: Test47" />
     <MESSAGE value="CODE: Updated updateScore() to properly handle score if the player doesn't die for Test47." />
@@ -457,6 +461,7 @@
     <MESSAGE value="REFACTOR: Fixed a syntax error that messed with test cases" />
     <MESSAGE value="TEST: Unit Test for Gold" />
     <MESSAGE value="CODE: Updated updateScore to account for gold card" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Updated updateScore to account for gold card" />
+    <MESSAGE value="TEST: Unit Test for Diamond card" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Test for Diamond card" />
   </component>
 </project>
