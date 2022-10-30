@@ -895,6 +895,20 @@ class Tests {
         assertEquals(0, test.getScore());
     }
 
-
+    @Test
+    void Test115(){
+        //FC 3 swords, have 2 swords, 2 skulls and 4 parrots, reroll 4 parrots, get 4 skulls=> die and lose 500 points
+        Player test = new Player("Test");
+        test.setCard("SEA_BATTLE");
+        test.setSwordsSea(3);
+        test.roll();
+        String[] forcedRoll = {"SWORD","SWORD","SKULL","SKULL","PARROT","PARROT","PARROT","PARROT"};
+        test.setForceDice(forcedRoll);
+        test.reroll();
+        String[] forcedReroll = {"SWORD","SWORD","SKULL","SKULL","SKULL","SKULL","SKULL","SKULL"};
+        test.setForceDice(forcedReroll);
+        test.updateScore();
+        assertEquals(0, test.getScore());
+    }
 
 }
