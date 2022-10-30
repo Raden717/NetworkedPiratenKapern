@@ -50,7 +50,10 @@ public class Player {
 
     private int sorceressUse;
 
+    private int swordBattleReq;
+
     public Player(String n){
+        this.swordBattleReq = 0;
         this.islandOfSkulls = false;
         this.sorceressUse = 1;
         this.saves = new ArrayList<String>();
@@ -69,6 +72,9 @@ public class Player {
         Random rand = new Random();
         int randomRoll = rand.nextInt(8);
         this.card = cards[randomRoll];
+        if(this.card.equals("SEA_BATTLE")){
+            this.swordBattleReq = rand.nextInt(3)+1;
+        }
     }
 
     public void roll(){
@@ -95,6 +101,9 @@ public class Player {
                         this.skullCount++;
                     }
                 }
+            }
+            if(this.card.equals("CAPTAIN")){
+                this.skullCount += this.skullCount;
             }
             return;
         }
@@ -201,7 +210,7 @@ public class Player {
 
         if(this.card.equals("SEA_BATTLE")){
             Random rand = new Random();
-            int swords = rand.nextInt(4)+1;
+            int swords = swordBattleReq;
             int swordCount = 0;
 
 
@@ -552,6 +561,10 @@ public class Player {
 
     public int getSorceressUse(){
         return this.sorceressUse;
+    }
+
+    public int getswordBattleReq(){
+        return this.swordBattleReq;
     }
 
 }
