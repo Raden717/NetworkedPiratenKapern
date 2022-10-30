@@ -2,9 +2,20 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class SinglePlayerTests {
+class Tests {
+
+    @Test
+    void UnitTestFortuneCardPick(){
+        Player test = new Player("Test");
+        List<String> cards = new ArrayList<String>(Arrays.asList("TREASURE_CHEST", "CAPTAIN", "SORCERESS", "SEA_BATTLE", "GOLD", "DIAMOND", "MONKEY_BUSINESS", "SKULL"));
+
+        test.rollCard();
+        assertTrue(cards.contains(test.getCard()));
+    }
 
     @Test
     void Test44(){

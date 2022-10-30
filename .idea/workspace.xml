@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Test47 modified as the test wasn't properly made, did not account for the second reroll">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +44,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
@@ -57,7 +57,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglePlayerTests.Test47">
+  <component name="RunManager" selected="JUnit.SinglePlayerTests">
     <configuration name="SinglePlayerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglePlayerTests" />
         <item itemvalue="JUnit.SinglePlayerTests.Test47" />
         <item itemvalue="JUnit.SinglePlayerTests.Test46" />
         <item itemvalue="JUnit.SinglePlayerTests.Test45" />
         <item itemvalue="JUnit.SinglePlayerTests.Test44" />
-        <item itemvalue="JUnit.SinglePlayerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667077167528</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47.">
+      <created>1667077571425</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667077571425</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,6 +306,7 @@
     <MESSAGE value="Test: Test47" />
     <MESSAGE value="CODE: Updated updateScore() to properly handle score if the player doesn't die for Test47." />
     <MESSAGE value="TEST: Test47 modified as the test wasn't properly made, did not account for the second reroll" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Test47 modified as the test wasn't properly made, did not account for the second reroll" />
+    <MESSAGE value="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47." />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47." />
   </component>
 </project>
