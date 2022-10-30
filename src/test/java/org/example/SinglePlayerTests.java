@@ -340,6 +340,18 @@ class Tests {
         assertEquals(700, test.getScore());
     }
 
+    @Test
+    void Test57(){
+        //roll 3 swords, 4 parrots, 1 skull and score (SC 100+200+100= 400)
+        Player test = new Player("Test");
+        test.setCard("GOLD");
+        test.roll();
+        String[] forcedRoll = {"SWORD","SWORD","SWORD","PARROT","PARROT","PARROT","PARROT","SKULL"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(400, test.getScore());
+    }
+
 
 
 
