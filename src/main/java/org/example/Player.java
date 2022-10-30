@@ -117,6 +117,8 @@ public class Player {
 
     //Score updates after the turn ends by being called after rerolls/rolls
     public void updateScore() {
+        int scoreToAdd = 0;
+
         if(this.card.equals("TREASURE_CHEST")){
             treasureChestUpdateScore();
         }
@@ -147,25 +149,29 @@ public class Player {
             //4,000 points.
             switch (count) {
                 case 3:
-                    this.score += 100;
+                    scoreToAdd += 100;
                     break;
                 case 4:
-                    this.score += 200;
+                    scoreToAdd += 200;
                     break;
                 case 5:
-                    this.score += 500;
+                    scoreToAdd += 500;
                     break;
                 case 6:
-                    this.score += 1000;
+                    scoreToAdd += 1000;
                     break;
                 case 7:
-                    this.score += 2000;
+                    scoreToAdd += 2000;
                     break;
                 case 8:
-                    this.score += 4000;
+                    scoreToAdd += 4000;
                     break;
             }
         }
+        if(this.card.equals("CAPTAIN")){
+            scoreToAdd += scoreToAdd;
+        }
+        this.score += scoreToAdd;
         //Update score
     }
 
