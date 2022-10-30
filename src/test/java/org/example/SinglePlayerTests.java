@@ -655,5 +655,30 @@ class Tests {
         assertEquals(0, test.getScore());
     }
 
+    @Test
+    void Test87(){
+        //roll 3 parrots, 2 swords, 2 diamonds, 1 coin     put 2 diamonds and 1 coin in chest
+        //  then reroll 2 swords and get 2 parrots put 5 parrots in chest and take out 2 diamonds & coin
+        //  then reroll the 3 dice and get 1 skull, 1 coin and a parrot
+        // 1100
+        Player test = new Player("Test");
+        test.setCard("TREASURE_CHEST");
+        test.roll();
+        String[] forcedRoll = {"PARROT","PARROT","PARROT","SWORD","SWORD","DIAMOND","DIAMOND","COIN"};
+        test.setForceDice(forcedRoll);
+        int[] saving = {5,6,7};
+        test.save(saving);
+        test.reroll();
+        String[] forcedReroll = {"PARROT","PARROT","PARROT","PARROT","PARROT","DIAMOND","DIAMOND","COIN"};
+        int[] saving2 = {0,1,2,3,4};
+        test.save(saving2);
+        test.setForceDice(forcedRoll);
+        String[] forcedReroll2 = {"PARROT","PARROT","PARROT","PARROT","PARROT","SKULL","COIN","PARROT"};
+        test.setForceDice(forcedReroll2);
+        test.updateScore();
+        assertEquals(1100, test.getScore());
+
+    }
+
 
 }
