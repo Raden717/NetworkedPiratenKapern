@@ -368,6 +368,21 @@ class Tests {
         assertEquals(800, test.getScore());
     }
 
+    @Test
+    void Test59(){
+        //same as previous row but with captain fortune card  (SC = (100 + 300 + 200)*2 = 1200)
+        Player test = new Player("Test");
+        test.setCard("CAPTAIN");
+        test.roll();
+        String[] forcedRoll = {"COIN","COIN","SWORD","PARROT","PARROT","SWORD","SWORD","SKULL"};
+        test.setForceDice(forcedRoll);
+        test.reroll();
+        String[] forcedReroll = {"COIN","COIN","SWORD","COIN","SWORD","SWORD","SWORD","SKULL"};
+        test.setForceDice(forcedReroll);
+        test.updateScore();
+        assertEquals(1200, test.getScore());
+    }
+
 
 
 
