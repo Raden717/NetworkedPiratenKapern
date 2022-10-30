@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modified treasureChest procedure to make test94 work.">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: A-Test110">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
@@ -58,8 +58,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.Test98">
-    <configuration name="Tests.Test84" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Tests.Test110">
+    <configuration name="Tests.Test103" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -69,13 +69,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test84" />
+      <option name="METHOD_NAME" value="Test103" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test87" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test106" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +85,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test87" />
+      <option name="METHOD_NAME" value="Test106" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test94" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test107" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +101,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test94" />
+      <option name="METHOD_NAME" value="Test107" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test97" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test109" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -117,13 +117,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test97" />
+      <option name="METHOD_NAME" value="Test109" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test98" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test110" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -133,7 +133,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test98" />
+      <option name="METHOD_NAME" value="Test110" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.Test98" />
-        <item itemvalue="JUnit.Tests.Test97" />
-        <item itemvalue="JUnit.Tests.Test94" />
-        <item itemvalue="JUnit.Tests.Test87" />
-        <item itemvalue="JUnit.Tests.Test84" />
+        <item itemvalue="JUnit.Tests.Test110" />
+        <item itemvalue="JUnit.Tests.Test109" />
+        <item itemvalue="JUnit.Tests.Test107" />
+        <item itemvalue="JUnit.Tests.Test106" />
+        <item itemvalue="JUnit.Tests.Test103" />
       </list>
     </recent_temporary>
   </component>
@@ -157,97 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00064" summary="TEST: Unit test modified for sea card as it had incorrect syntax">
-      <created>1667159637063</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1667159637065</updated>
-    </task>
-    <task id="LOCAL-00065" summary="CODE: Modified cardRoll to account for sea battle sword and its face count and changed update score to not create a random sword count">
-      <created>1667160034184</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1667160034185</updated>
-    </task>
-    <task id="LOCAL-00066" summary="TEST: unitTest for rolling skull card">
-      <created>1667160082898</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1667160082902</updated>
-    </task>
-    <task id="LOCAL-00067" summary="CODE: Code for rolling skull card and holding the face value">
-      <created>1667160445313</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1667160445314</updated>
-    </task>
-    <task id="LOCAL-00068" summary="REFACTOR: Code for rolling forcing card values skull and making sure the variables associated are updated.">
-      <created>1667160825579</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1667160825581</updated>
-    </task>
-    <task id="LOCAL-00069" summary="CODE: Networking code">
-      <created>1667160885473</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1667160885474</updated>
-    </task>
-    <task id="LOCAL-00070" summary="TEST: A-Test44 Update to align with version">
-      <created>1667161399196</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1667161399197</updated>
-    </task>
-    <task id="LOCAL-00071" summary="TEST: A-Test45 Update to align with version previous commit was wrong line on the Test name">
-      <created>1667161485714</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1667161485714</updated>
-    </task>
-    <task id="LOCAL-00072" summary="TEST: A-Test46">
-      <created>1667161597182</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1667161597184</updated>
-    </task>
-    <task id="LOCAL-00073" summary="TEST: A-Test47">
-      <created>1667161751760</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1667161751761</updated>
-    </task>
-    <task id="LOCAL-00074" summary="TEST: A-Test48">
-      <created>1667161903973</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1667161903975</updated>
-    </task>
-    <task id="LOCAL-00075" summary="TEST: A-Test49 is the proper Atest, not a-test48">
-      <created>1667161953924</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1667161953925</updated>
-    </task>
-    <task id="LOCAL-00076" summary="TEST: A-Test51">
-      <created>1667162199361</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1667162199362</updated>
     </task>
     <task id="LOCAL-00077" summary="TEST: A-Test52">
       <created>1667162326374</created>
@@ -501,7 +410,98 @@
       <option name="project" value="LOCAL" />
       <updated>1667169983268</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="TEST: A-Test97">
+      <created>1667170176821</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1667170176823</updated>
+    </task>
+    <task id="LOCAL-00114" summary="TEST: A-Test98">
+      <created>1667170287128</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1667170287130</updated>
+    </task>
+    <task id="LOCAL-00115" summary="TEST: A-Test99">
+      <created>1667170339580</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1667170339582</updated>
+    </task>
+    <task id="LOCAL-00116" summary="TEST: A-Test99">
+      <created>1667170361134</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1667170361137</updated>
+    </task>
+    <task id="LOCAL-00117" summary="TEST: A-Test102">
+      <created>1667170502773</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1667170502776</updated>
+    </task>
+    <task id="LOCAL-00118" summary="CODE: Modified updateScore to account for swords counting for chest if won the sea battle">
+      <created>1667170730780</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1667170730787</updated>
+    </task>
+    <task id="LOCAL-00119" summary="TEST: A-Test103">
+      <created>1667170826270</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1667170826272</updated>
+    </task>
+    <task id="LOCAL-00120" summary="TEST: A-Test106">
+      <created>1667170956842</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1667170956845</updated>
+    </task>
+    <task id="LOCAL-00121" summary="TEST: A-Test106 not written properly">
+      <created>1667171149321</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1667171149322</updated>
+    </task>
+    <task id="LOCAL-00122" summary="CODE: Modified and added setter to force the skull number on the fortune card">
+      <created>1667171202774</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1667171202778</updated>
+    </task>
+    <task id="LOCAL-00123" summary="TEST: A-Test107">
+      <created>1667171283419</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1667171283421</updated>
+    </task>
+    <task id="LOCAL-00124" summary="TEST: A-Test109">
+      <created>1667171767506</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1667171767507</updated>
+    </task>
+    <task id="LOCAL-00125" summary="CODE: Modified deducting Scores for Test109">
+      <created>1667171825990</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1667171825994</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -527,19 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test64 modified" />
-    <MESSAGE value="TEST: A-Test64 edit as incorrect assertion" />
-    <MESSAGE value="CODE: Modified updateScore to account for edge cases with full chests" />
-    <MESSAGE value="CODE: Modified updateScore to account for edge cases with full chests for TEST64" />
-    <MESSAGE value="TEST: A-Test65" />
-    <MESSAGE value="TEST: A-Test66" />
-    <MESSAGE value="TEST: A-Test67" />
-    <MESSAGE value="TEST: A-Test68" />
-    <MESSAGE value="TEST: A-Test69" />
-    <MESSAGE value="TEST: A-Test70" />
-    <MESSAGE value="TEST: A-Test71" />
-    <MESSAGE value="TEST: A-Test72" />
-    <MESSAGE value="TEST: A-Test77" />
     <MESSAGE value="TEST: A-Test78" />
     <MESSAGE value="TEST: A-Test79" />
     <MESSAGE value="CODE: Modified reroll to account for not wanting to reroll skull immediately" />
@@ -552,6 +539,19 @@
     <MESSAGE value="TEST: A-Test94" />
     <MESSAGE value="TEST: A-Test94 modified" />
     <MESSAGE value="CODE: Modified treasureChest procedure to make test94 work." />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modified treasureChest procedure to make test94 work." />
+    <MESSAGE value="TEST: A-Test97" />
+    <MESSAGE value="TEST: A-Test98" />
+    <MESSAGE value="TEST: A-Test99" />
+    <MESSAGE value="TEST: A-Test102" />
+    <MESSAGE value="CODE: Modified updateScore to account for swords counting for chest if won the sea battle" />
+    <MESSAGE value="TEST: A-Test103" />
+    <MESSAGE value="TEST: A-Test106" />
+    <MESSAGE value="TEST: A-Test106 not written properly" />
+    <MESSAGE value="CODE: Modified and added setter to force the skull number on the fortune card" />
+    <MESSAGE value="TEST: A-Test107" />
+    <MESSAGE value="TEST: A-Test109" />
+    <MESSAGE value="CODE: Modified deducting Scores for Test109" />
+    <MESSAGE value="TEST: A-Test110" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: A-Test110" />
   </component>
 </project>
