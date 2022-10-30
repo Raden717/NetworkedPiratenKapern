@@ -140,7 +140,7 @@ class Tests {
     @Test
     void unitTestSkullDeduction(){
         Player test = new Player("Test");
-        test.setCard("CAPTAIN");
+        test.setCard("SORCERESS");
         String[] forcedRoll = {"MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY"};
         test.setForceDice(forcedRoll);
         test.updateScore();
