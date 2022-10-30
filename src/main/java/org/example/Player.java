@@ -34,6 +34,8 @@ public class Player {
 
     private int skullCount;
 
+    private int skullCard;
+
     private int rolls;
 
     private int[] keeps;
@@ -73,7 +75,10 @@ public class Player {
         int randomRoll = rand.nextInt(8);
         this.card = cards[randomRoll];
         if(this.card.equals("SEA_BATTLE")){
-            this.swordBattleReq = rand.nextInt(3)+1;
+            this.swordBattleReq = rand.nextInt(3)+2;
+        } else if (this.card.equals("SKULL")){
+            this.skullCard = rand.nextInt(3)+1;
+            this.skullCount = this.skullCard;
         }
     }
 
@@ -491,11 +496,7 @@ public class Player {
 
     public void updateAlive(){
         this.skullCount = 0;
-        if(this.card.equals("SKULL")){
-            Random rand = new Random();
-            int ranSkull = rand.nextInt(3)+1;
-            this.skullCount += ranSkull;
-        }
+        this.skullCount += skullCard;
         for (int i = 0; i < 8; i++){
             if(this.rolled[i].toUpperCase().equals("SKULL")){
                 this.skullCount++;
