@@ -835,7 +835,6 @@ class Tests {
         Player test2 = new Player("Test2");
         Player test3 = new Player("Test3");
         test.setCard("CAPTAIN");
-        test.setSkullFace(2);
         test.roll();
         String[] forcedRoll = {"SKULL","SKULL","SKULL","SKULL","SKULL","MONKEY","MONKEY","MONKEY"};
         test.setForceDice(forcedRoll);
