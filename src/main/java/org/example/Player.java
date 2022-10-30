@@ -432,6 +432,12 @@ public class Player {
                     }
                 }
 
+                if(count < 3){
+                    if(check.equals("DIAMOND") || check.equals("COIN")){
+                        fullChestCount += count;
+                    }
+                }
+
                 switch (count) {
                     case 3:
                         fullChestCount += count;
