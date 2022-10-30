@@ -427,6 +427,20 @@ class Tests {
 
     }
 
+    @Test
+    void Test64(){
+        //score set of 8 coins on first roll (SC 5400)
+        // seq of 8 + 9 coins(FC is coin) +  full chest  (no extra points for 9 coins)
+        Player test = new Player("Test");
+        test.setCard("GOLD");
+        test.roll();
+        String[] forcedRoll = {"COIN","COIN","COIN","COIN","COIN","COIN","COIN","COIN"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(2100, test.getScore());
+    }
+
+
 
 
 }
