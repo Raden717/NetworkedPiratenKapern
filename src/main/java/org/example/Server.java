@@ -78,7 +78,7 @@ class ClientHandler implements Runnable
         this.send = send;
         this.name = name;
         this.s = s;
-        this.isDoneTurn=false;
+        this.isDoneTurn=true;
     }
 
     @Override
@@ -99,12 +99,12 @@ class ClientHandler implements Runnable
                 System.out.println(received);
                 String[] receivedArray = received.split(" ");
 
-
                 if(received.toUpperCase().equals("START") && (!Server.gameStart)){
                     Server.gameStart = true;
                     for(ClientHandler mc : Server.players){
 
                         if(mc.name.equals("Player 1")){
+                            mc.isDoneTurn = false;
                             String MessageToPlayer = "Type roll to begin your turn: " ;
                             mc.send.writeUTF(MessageToPlayer);
 
@@ -112,7 +112,18 @@ class ClientHandler implements Runnable
                             mc.send.writeUTF("Game has started, waiting for your turn: ");
                         }
                     }
-                } else if(received.equals("roll") || receivedArray[receivedArray.length-1].equals("reroll")){
+                }
+
+                for(ClientHandler mc : Server.players){
+                    if (this.name.equals(mc.name)){
+                        if(mc.isDoneTurn){
+                            mc.send.writeUTF("It is not your turn yet, wait until your turn.");
+                            received = "ERROR";
+                        }
+                    }
+                }
+
+                if(received.equals("roll") || receivedArray[receivedArray.length-1].equals("reroll")){
                     for(ClientHandler mc : Server.players){
                         if(mc.name.equals(this.name)){
                             for(Player p: Server.playerInfo){
@@ -122,7 +133,7 @@ class ClientHandler implements Runnable
                                         p.roll();
                                     } else {
                                         if(receivedArray.length > 1) {
-                                            int[] keeping = new int[receivedArray.length - 2];
+                                            int[] keeping = new int[receivedArray.length - 1];
                                             for(int i = 0; i < receivedArray.length-1; i++){
                                                 keeping[i] = Integer.valueOf(receivedArray[i]);
                                             }
@@ -142,6 +153,26 @@ class ClientHandler implements Runnable
                                                 "like to keep and then type reroll after ex. '1 2 3 4 reroll' or if you would like to end turn type 'Finish' " );
                                     } else {
                                         if(p.getislandofSkulls()){
+                                            mc.send.writeUTF("You are now on the island of skulls, we will rerolling until you do not roll a skull");
+                                            int skullCount = p.getSkullCount();
+                                            while(true){
+                                                p.reroll();
+                                                mc.send.writeUTF("Here is your dice");
+                                                for (int i = 0; i < 8; i++) {
+                                                    mc.send.writeUTF(String.valueOf(i) + "." + p.getRolled()[i]);
+                                                }
+                                                if(p.getSkullCount() == skullCount){
+                                                    break;
+                                                } else {
+                                                    skullCount = p.getSkullCount();
+                                                }
+                                            }
+                                            mc.send.writeUTF("Your turn has no ended and you are deducting point sfrom the other players, type Finish to end your turn");
+                                            for(Player newP : Server.playerInfo){
+                                                if(this.name != newP.getName()){
+                                                    newP.deductScore(skullCount);
+                                                }
+                                            }
 
                                         } else {
                                             mc.send.writeUTF("You have died, end turn by typing Finish");
@@ -177,8 +208,10 @@ class ClientHandler implements Runnable
                         System.out.println(nextPlayer);
                         System.out.println(mc.name);
                         if(mc.name.equals(nextPlayer)){
+                            mc.isDoneTurn = false;
                             mc.send.writeUTF("It is now your turn, type roll to start");
                         } else {
+                            mc.isDoneTurn = true;
                             mc.send.writeUTF("Waiting for your turn");
                         }
                     }
