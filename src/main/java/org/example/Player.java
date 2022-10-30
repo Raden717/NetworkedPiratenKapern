@@ -148,6 +148,7 @@ public class Player {
 
     //Score updates after the turn ends by being called after rerolls/rolls
     public void updateScore() {
+        int fullChestCount = 0;
         int scoreToAdd = 0;
         int seaBattlePoints = 0;
 
@@ -243,29 +244,43 @@ public class Player {
             //3 of a kind: 100 points; 4 of a kind: 200 points; 5 of a kind: 500
             //points; 6 of a kind: 1,000 points; 7 of a kind: 2,000 points; 8 of a kind:
             //4,000 points.
+            if(count < 3){
+                if(check.equals("DIAMOND") || check.equals("COIN")){
+                    fullChestCount += count;
+                }
+            }
             switch (count) {
                 case 3:
+                    fullChestCount += count;
                     scoreToAdd += 100;
                     break;
                 case 4:
+                    fullChestCount += count;
                     scoreToAdd += 200;
                     break;
                 case 5:
+                    fullChestCount += count;
                     scoreToAdd += 500;
                     break;
                 case 6:
+                    fullChestCount += count;
                     scoreToAdd += 1000;
                     break;
                 case 7:
+                    fullChestCount += count;
                     scoreToAdd += 2000;
                     break;
                 case 8:
+                    fullChestCount += count;
                     scoreToAdd += 4000;
                     break;
             }
         }
         if(this.card.equals("CAPTAIN")){
             scoreToAdd += scoreToAdd;
+        }
+        if(fullChestCount == 8){
+            this.score += 500;
         }
         this.score += scoreToAdd;
         //Update score
