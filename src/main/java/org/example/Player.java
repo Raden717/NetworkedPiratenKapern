@@ -217,6 +217,14 @@ public class Player {
             }
         }
         if(this.skullCount == 3){
+            this.islandOfSkulls = false;
+            this.saves = new ArrayList<String>();
+            this.keeps = null;
+            this.rolled = new String[8];
+            this.rolls = 8;
+            this.skullCount = 0;
+            this.card = "";
+            this.isAlive = true;
             //Does not add anything to the score and ends turn
             return;
         }
@@ -356,6 +364,14 @@ public class Player {
         }
 
         if(this.skullCount == 3){
+            this.islandOfSkulls = false;
+            this.saves = new ArrayList<String>();
+            this.keeps = null;
+            this.rolled = new String[8];
+            this.rolls = 8;
+            this.skullCount = 0;
+            this.card = "";
+            this.isAlive = true;
             return;
         }
 
