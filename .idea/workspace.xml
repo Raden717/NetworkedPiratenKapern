@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Test for obtaing sea card and updating swords player needs">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modified cardRoll to account for sea battle sword and its face count and changed update score to not create a random sword count">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,20 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00015" summary="CODE: Updated updateScore() to properly handle score if the player doesn't die for Test47.">
-      <created>1667076658631</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1667076658631</updated>
-    </task>
-    <task id="LOCAL-00016" summary="TEST: Test47 modified as the test wasn't properly made, did not account for the second reroll">
-      <created>1667077167527</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1667077167528</updated>
     </task>
     <task id="LOCAL-00017" summary="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47.">
       <created>1667077571425</created>
@@ -491,7 +477,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667159449220</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="TEST: Unit test modified for sea card as it had incorrect syntax">
+      <created>1667159637063</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1667159637065</updated>
+    </task>
+    <task id="LOCAL-00065" summary="CODE: Modified cardRoll to account for sea battle sword and its face count and changed update score to not create a random sword count">
+      <created>1667160034184</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1667160034185</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -517,8 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Updated updateScore to account for Diamond card" />
-    <MESSAGE value="TEST: Unit Test for monkey business" />
     <MESSAGE value="CODE: Updated updateScore to account for monkey business card" />
     <MESSAGE value="TEST: Unit test for skull card" />
     <MESSAGE value="CODE: Updated updateScore to account for the skull Card" />
@@ -542,6 +540,8 @@
     <MESSAGE value="REFACTOR: Refactoring for syntax errors + making network work" />
     <MESSAGE value="REFACTOR: Refactored again as earlier tests were failing due to other refactors." />
     <MESSAGE value="TEST: Unit Test for obtaing sea card and updating swords player needs" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Test for obtaing sea card and updating swords player needs" />
+    <MESSAGE value="TEST: Unit test modified for sea card as it had incorrect syntax" />
+    <MESSAGE value="CODE: Modified cardRoll to account for sea battle sword and its face count and changed update score to not create a random sword count" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modified cardRoll to account for sea battle sword and its face count and changed update score to not create a random sword count" />
   </component>
 </project>

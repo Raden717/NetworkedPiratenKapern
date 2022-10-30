@@ -178,6 +178,17 @@ class Tests {
     }
 
     @Test
+    void unitTestRollSkull(){
+        Player test = new Player("test");
+        test.rollCard();
+        if(test.getCard().equals("SKULL")){
+            assertTrue(0 != test.getSkullCount());
+        } else {
+            assertEquals(0, test.getSkullCount());
+        }
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 
