@@ -117,7 +117,7 @@ public class Player {
         if(this.keeps != null) {
             List<Integer> keepRoll = Arrays.stream(this.keeps).boxed().toList();
             for(int i = 0;i < 8; i++){
-                 if (this.rolled[i].toUpperCase().equals("SKULL")) {
+                 if (!keepRoll.contains(i) && this.rolled[i].toUpperCase().equals("SKULL")) {
                     if (this.card.equals("SORCERESS") && this.sorceressUse == 1) {
                         Random rand = new Random();
                         int randomRoll = rand.nextInt(6);
