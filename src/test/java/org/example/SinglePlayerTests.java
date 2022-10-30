@@ -759,5 +759,18 @@ class Tests {
         assertEquals(1200, test.getScore());
     }
 
+    @Test
+    void Test103(){
+        //FC: monkey business and roll 2 monkeys, 1 parrot, 2 coins, 3 diamonds   SC 1200
+        Player test = new Player("Test");
+        test.setCard("MONKEY_BUSINESS");
+        test.setSwordsSea(2);
+        test.roll();
+        String[] forcedRoll = {"MONKEY","MONKEY","PARROT","COIN","COIN","DIAMOND","DIAMOND","DIAMOND"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(1200,test.getScore());
+    }
+
 
 }
