@@ -75,6 +75,16 @@ class Tests {
     }
 
     @Test
+    void unitTestSeaBattle(){
+        Player test = new Player("Test");
+        test.setCard("SEA_BATTLE");
+        String[] forcedRoll = {"SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertTrue(4000 != test.getScore());
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 
