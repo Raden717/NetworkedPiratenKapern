@@ -551,6 +551,9 @@ public class Player {
     }
     public void deductScore(int skulls){
         this.score -= (skulls * 100);
+        if(this.score < 0){
+            this.score = 0;
+        }
     }
 
     public void keep(int[] k){
