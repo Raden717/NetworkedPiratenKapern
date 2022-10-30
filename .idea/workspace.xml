@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modifed updateScore to account for treasure chest card">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Treasure Chest Tests">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -344,7 +344,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667137994949</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="TEST: Unit Treasure Chest Tests">
+      <created>1667138251639</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1667138251639</updated>
+    </task>
+    <task id="LOCAL-00029" summary="TEST: Unit Treasure Chest Tests">
+      <created>1667138382206</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1667138382206</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -359,7 +373,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Simple client implementation" />
     <MESSAGE value="TEST: Case 44, checking if player dies on first roll by checking scores before and after." />
     <MESSAGE value="REFACTOR: Refactoring test case 44 as it was written incorrectly" />
     <MESSAGE value="CODE: Code for test case 44. Added functions/variables needed for player" />
@@ -384,21 +397,7 @@
     <MESSAGE value="TEST: Unit Test Treasure Chest" />
     <MESSAGE value="TEST: Unit Test Treasure Chest (added @Test)" />
     <MESSAGE value="CODE: Modifed updateScore to account for treasure chest card" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modifed updateScore to account for treasure chest card" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java</url>
-          <line>20</line>
-          <properties class="org.example.Tests" method="UnitTestReroll">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="TEST: Unit Treasure Chest Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Treasure Chest Tests" />
   </component>
 </project>
