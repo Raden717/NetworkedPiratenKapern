@@ -156,6 +156,17 @@ class Tests {
     }
 
     @Test
+    void unitTestCheckAlive(){
+        Player test = new Player("Test");
+        test.setCard("CAPTAIN");
+        String[] forcedRoll = {"SKULL","SKULL","SKULL","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY"};
+        test.setForceDice(forcedRoll);
+        test.updateAlive();
+        assertEquals(false, test.getAlive());
+
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 
