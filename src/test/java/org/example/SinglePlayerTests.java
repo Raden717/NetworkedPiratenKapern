@@ -440,7 +440,17 @@ class Tests {
         assertEquals(5400, test.getScore());
     }
 
-
+    @Test
+    void Test65(){
+        //score set of 8 coins on first roll and FC is diamond (SC 5400)
+        Player test = new Player("Test");
+        test.setCard("DIAMOND");
+        test.roll();
+        String[] forcedRoll = {"COIN","COIN","COIN","COIN","COIN","COIN","COIN","COIN"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(5400, test.getScore());
+    }
 
 
 }
