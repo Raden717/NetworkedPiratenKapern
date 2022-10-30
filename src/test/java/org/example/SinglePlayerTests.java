@@ -23,13 +23,13 @@ class Tests {
         List<String> rolls = new ArrayList<String>();
         int[] indexkeep = {1,2,3,4};
         test.keep(indexkeep);
-        rolls.add(test.getRolled[1]);
-        rolls.add(test.getRolled[2]);
-        rolls.add(test.getRolled[3]);
-        rolls.add(test.getRolled[4]);
+        rolls.add(test.getRolled()[1]);
+        rolls.add(test.getRolled()[2]);
+        rolls.add(test.getRolled()[3]);
+        rolls.add(test.getRolled()[4]);
         test.reroll();
         for(int i = 0; i< 4; i++){
-            assertTrue(rolls.get(i).equals(test.getRolled[indexkeep[i]]);
+            assertTrue(rolls.get(i).equals(test.getRolled()[indexkeep[i]]));
         }
 
 
