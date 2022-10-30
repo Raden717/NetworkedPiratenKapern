@@ -680,5 +680,27 @@ class Tests {
 
     }
 
+    @Test
+    void Test94(){
+        //roll 2 skulls, 3 parrots, 3 coins   put 3 coins in chest
+        //  then rerolls 3 parrots and get 2 diamonds 1 coin    put coin in chest (now 4)
+        //   then reroll 2 diamonds and get 1 skull 1 coin     score for chest only = 400 + 200 = 600 AND report death
+        Player test = new Player("Test");
+        test.setCard("TREASURE_CHEST");
+        test.roll();
+        String[] forcedRoll = {"SKULL","SKULL","PARROT","PARROT","PARROT","COIN","COIN","COIN"};
+        test.setForceDice(forcedRoll);
+        int[] saving = {5,6,7};
+        test.save(saving);
+        test.reroll();
+        String[] forcedReroll = {"SKULL","SKULL","DIAMOND","DIAMOND","COIN","COIN","COIN","COIN"};
+        int[] saving2 = {4,5,6,7};
+        test.save(saving2);
+        test.setForceDice(forcedRoll);
+        String[] forcedReroll2 = {"SKULL","SKULL","SKULL","COIN","COIN","COIN","COIN","COIN"};
+        test.setForceDice(forcedReroll2);
+        test.updateScore();
+        assertEquals(600, test.getScore());
+    }
 
 }
