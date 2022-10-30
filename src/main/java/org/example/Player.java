@@ -156,6 +156,12 @@ public class Player {
             return;
         }
 
+        if(this.card.equals("SKULL")){
+            Random rand = new Random();
+            int ranSkull = rand.nextInt(3)+1;
+            this.skullCount += ranSkull;
+        }
+
         if(this.card.equals("SEA_BATTLE")){
             Random rand = new Random();
             int swords = rand.nextInt(4)+1;
