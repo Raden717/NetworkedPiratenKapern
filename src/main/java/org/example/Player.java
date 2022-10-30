@@ -208,11 +208,19 @@ public class Player {
 
         for (String check : rolledDice) {
             int count = 0;
+            if(check.equals("COIN") && this.card.equals("GOLD")){
+                count++;
+                scoreToAdd += 100;
+            }
             for (int i = 0; i < 8; i++) {
                 if (check.equals(this.rolled[i])) {
+                    if(this.rolled[i].equals("COIN")){
+                        scoreToAdd += 100;
+                    }
                     count++;
                 }
             }
+
 
             //3 of a kind: 100 points; 4 of a kind: 200 points; 5 of a kind: 500
             //points; 6 of a kind: 1,000 points; 7 of a kind: 2,000 points; 8 of a kind:

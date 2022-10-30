@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Fixed a syntax error that messed with test cases">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Test for Gold">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -402,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667142752543</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="TEST: Unit Test for Gold">
+      <created>1667143294791</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1667143294791</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,7 +423,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: Modified Test44 to check score and expected score." />
     <MESSAGE value="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore." />
     <MESSAGE value="TEST: Test46" />
     <MESSAGE value="CODE: Added updating scores to make sure the score is updated properly when checking with tests." />
@@ -442,6 +447,7 @@
     <MESSAGE value="TEST: Unit Test for Sea Battle" />
     <MESSAGE value="CODE: Updated updateScore to account for sea battles" />
     <MESSAGE value="REFACTOR: Fixed a syntax error that messed with test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Fixed a syntax error that messed with test cases" />
+    <MESSAGE value="TEST: Unit Test for Gold" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Test for Gold" />
   </component>
 </project>
