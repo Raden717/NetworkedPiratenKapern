@@ -128,6 +128,16 @@ class Tests {
     }
 
     @Test
+    void unitTestFullChest(){
+        Player test = new Player("Test");
+        test.setCard("SORCERESS"); //Card that won't mess with the points
+        String[] forcedRoll = {"MONKEY","MONKEY","MONKEY","COIN","DIAMOND","SWORD","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(900, test.getScore());
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 

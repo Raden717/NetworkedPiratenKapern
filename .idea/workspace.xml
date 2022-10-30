@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit test for skull card">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Updated updateScore to account for the skull Card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.unitTestSkulls">
+  <component name="RunManager" selected="JUnit.Tests.unitTestFullChest">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -90,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.unitTestGold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.unitTestFullChest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -100,7 +100,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="unitTestGold" />
+      <option name="METHOD_NAME" value="unitTestFullChest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.unitTestFullChest" />
         <item itemvalue="JUnit.Tests.unitTestSkulls" />
         <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.unitTestMonkeyBusiness" />
         <item itemvalue="JUnit.Tests.unitTestDiamond" />
-        <item itemvalue="JUnit.Tests.unitTestGold" />
       </list>
     </recent_temporary>
   </component>
@@ -451,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667145625472</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="CODE: Updated updateScore to account for the skull Card">
+      <created>1667145822992</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1667145822993</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,7 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47." />
     <MESSAGE value="TEST: U-Test for fortune card rolling" />
     <MESSAGE value="TEST: U-Test for rerolling" />
     <MESSAGE value="TEST: Refactored test U-Test for rerolling" />
@@ -491,6 +497,7 @@
     <MESSAGE value="TEST: Unit Test for monkey business" />
     <MESSAGE value="CODE: Updated updateScore to account for monkey business card" />
     <MESSAGE value="TEST: Unit test for skull card" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit test for skull card" />
+    <MESSAGE value="CODE: Updated updateScore to account for the skull Card" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Updated updateScore to account for the skull Card" />
   </component>
 </project>
