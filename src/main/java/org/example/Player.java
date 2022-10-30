@@ -527,6 +527,13 @@ public class Player {
 
     public void setCard(String c){
         this.card = c;
+        Random rand = new Random();
+        if(this.card.equals("SEA_BATTLE")){
+            this.swordBattleReq = rand.nextInt(3)+2;
+        } else if (this.card.equals("SKULL")){
+            this.skullCard = rand.nextInt(3)+1;
+            this.skullCount = this.skullCard;
+        }
     }
 
     public String[] getRolled(){
