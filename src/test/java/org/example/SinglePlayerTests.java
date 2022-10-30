@@ -253,19 +253,25 @@ class Tests {
     }
 
     @Test
-    void Test50(){
+    void Test51(){
+        //roll 1 skull, 2 parrots, 3 swords, 2 coins, reroll parrots get 2 coins
+        //      reroll 3 swords, get 3 coins (SC 4000 for seq of 8 (with FC coin) + 8x100=800 = 4800)
         Player test = new Player("Test");
+        test.setCard("GOLD");
         test.roll();
-        String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        String[] forcedRoll = {"SKULL","PARROT","PARROT","SWORD","SWORD","SWORD","COIN","COIN"};
         test.setForceDice(forcedRoll);
+        test.updateAlive();
         test.reroll();
-        String[] forcedReroll = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Monkey","Monkey"};
+        String[] forcedReroll = {"SKULL","COIN","COIN","SWORD","SWORD","SWORD","COIN","COIN"};
         test.setForceDice(forcedReroll);
+        test.updateAlive();
         test.reroll();
-        String[] forcedReroll2 = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Skull","Monkey"};
+        String[] forcedReroll2 = {"SKULL","COIN","COIN","COIN","COIN","COIN","COIN","COIN"};
         test.setForceDice(forcedReroll2);
+        test.updateAlive();
         test.updateScore();
-        assertEquals(0, test.getScore());
+        assertEquals(4800, test.getScore());
     }
 
 
