@@ -925,4 +925,17 @@ class Tests {
         assertEquals(0, test.getScore());
     }
 
+    @Test
+    void Test117(){
+        //FC 2 swords, roll 3 monkeys 2 swords, 1 coin, 2 parrots  SC = 100 + 100 + 300 = 500
+        Player test = new Player("Test");
+        test.setCard("SEA_BATTLE");
+        test.setSwordsSea(2);
+        test.roll();
+        String[] forcedRoll = {"MONKEY","MONKEY","MONKEY","COIN","PARROT","PARROT","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateAlive();
+        test.updateScore();
+        assertEquals(500, test.getScore());
+    }
 }
