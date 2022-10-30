@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: More refactoring for updateAlive">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Refactoring for reroll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
@@ -112,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -128,7 +128,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server (4)" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Server (3)" />
         <item itemvalue="Application.Server (2)" />
         <item itemvalue="Application.Server (1)" />
@@ -143,13 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00011" summary="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore.">
-      <created>1667074064880</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1667074064881</updated>
     </task>
     <task id="LOCAL-00012" summary="TEST: Test46">
       <created>1667074871727</created>
@@ -487,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667156030910</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="REFACTOR: Refactoring for reroll">
+      <created>1667156289045</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1667156289047</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -513,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REFACTOR: Fixed a syntax error that messed with test cases" />
     <MESSAGE value="TEST: Unit Test for Gold" />
     <MESSAGE value="CODE: Updated updateScore to account for gold card" />
     <MESSAGE value="TEST: Unit Test for Diamond card" />
@@ -538,6 +537,7 @@
     <MESSAGE value="REFACTOR: Modified updateScore() to properly reinitialize values after turn ends/dies" />
     <MESSAGE value="REFACTOR: Added a getter for skulls for the server to obtain the data, and modified reroll/updateAlive to properly deal with island of skulls" />
     <MESSAGE value="REFACTOR: More refactoring for updateAlive" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: More refactoring for updateAlive" />
+    <MESSAGE value="REFACTOR: Refactoring for reroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Refactoring for reroll" />
   </component>
 </project>

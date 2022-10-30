@@ -172,6 +172,19 @@ public class Player {
             return;
         }
 
+        if (!this.isAlive) {
+                this.islandOfSkulls = false;
+                this.saves = new ArrayList<String>();
+                this.keeps = null;
+                this.rolled = new String[8];
+                this.rolls = 8;
+                this.skullCount = 0;
+                this.card = "";
+                this.isAlive = true;
+                //Does not add anything to the score and ends turn
+                return;
+        }
+
 
         if(this.card.equals("SEA_BATTLE")){
             Random rand = new Random();
@@ -223,27 +236,17 @@ public class Player {
                 this.skullCount++;
             }
         }
-        if(this.skullCount == 3){
-            this.islandOfSkulls = false;
-            this.saves = new ArrayList<String>();
-            this.keeps = null;
-            this.rolled = new String[8];
-            this.rolls = 8;
-            this.skullCount = 0;
-            this.card = "";
-            this.isAlive = true;
-            //Does not add anything to the score and ends turn
-            return;
-        }
 
         for (String check : rolledDice) {
             int count = 0;
             if(check.equals("COIN") && this.card.equals("GOLD")){
                 count++;
+                fullChestCount--;
                 scoreToAdd += 100;
             }
             if(check.equals("DIAMOND") && this.card.equals("DIAMOND")){
                 count++;
+                fullChestCount--;
                 scoreToAdd += 100;
             }
             for (int i = 0; i < 8; i++) {
@@ -294,6 +297,7 @@ public class Player {
                     break;
             }
         }
+        System.out.println(fullChestCount);
         if(fullChestCount == 8){
             scoreToAdd += 500;
         }
@@ -354,6 +358,7 @@ public class Player {
     }
 
     public void monkeyBusiness(){
+        int fullChestCount = 0;
         int scoreToAdd = 0;
         int seaBattlePoints = 0;
 
@@ -396,21 +401,27 @@ public class Player {
 
                 switch (count) {
                     case 3:
+                        fullChestCount += count;
                         scoreToAdd += 100;
                         break;
                     case 4:
+                        fullChestCount += count;
                         scoreToAdd += 200;
                         break;
                     case 5:
+                        fullChestCount += count;
                         scoreToAdd += 500;
                         break;
                     case 6:
+                        fullChestCount += count;
                         scoreToAdd += 1000;
                         break;
                     case 7:
+                        fullChestCount += count;
                         scoreToAdd += 2000;
                         break;
                     case 8:
+                        fullChestCount += count;
                         scoreToAdd += 4000;
                         break;
                 }
@@ -422,25 +433,34 @@ public class Player {
                 }
                 switch (monkeyParrots) {
                     case 3:
+                        fullChestCount += monkeyParrots;
                         scoreToAdd += 100;
                         break;
                     case 4:
+                        fullChestCount += monkeyParrots;
                         scoreToAdd += 200;
                         break;
                     case 5:
+                        fullChestCount += monkeyParrots;
                         scoreToAdd += 500;
                         break;
                     case 6:
+                        fullChestCount += monkeyParrots;
                         scoreToAdd += 1000;
                         break;
                     case 7:
+                        fullChestCount += monkeyParrots;
                         scoreToAdd += 2000;
                         break;
                     case 8:
+                        fullChestCount += monkeyParrots;
                         scoreToAdd += 4000;
                         break;
                 }
             }
+        }
+        if(fullChestCount == 8){
+            this.score += 500;
         }
         this.score += scoreToAdd;
         //Update score
@@ -518,7 +538,7 @@ public class Player {
     }
 
     public int getSkullCount(){
-        return this.getSkullCount();
+        return this.skullCount;
     }
 
     public String getName(){
