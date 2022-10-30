@@ -328,6 +328,18 @@ class Tests {
         assertEquals(500, test.getScore());
     }
 
+    @Test
+    void Test56(){
+        //roll 4 coins, 2 skulls, 2 swords and score (coins: 200 + 400 points) with FC is a diamond (SC 700)
+        Player test = new Player("Test");
+        test.setCard("DIAMOND");
+        test.roll();
+        String[] forcedRoll = {"COIN","COIN","COIN","COIN","SWORD","SKULL","SWORD","SKULL"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(700, test.getScore());
+    }
+
 
 
 
