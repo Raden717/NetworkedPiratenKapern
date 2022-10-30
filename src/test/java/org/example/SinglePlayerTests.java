@@ -437,7 +437,7 @@ class Tests {
         String[] forcedRoll = {"COIN","COIN","COIN","COIN","COIN","COIN","COIN","COIN"};
         test.setForceDice(forcedRoll);
         test.updateScore();
-        assertEquals(2100, test.getScore());
+        assertEquals(5400, test.getScore());
     }
 
 
