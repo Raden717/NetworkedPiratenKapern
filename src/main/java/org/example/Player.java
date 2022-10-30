@@ -54,7 +54,7 @@ public class Player {
         this.name = n;
         this.score = 0;
         this.skullCount = 0;
-        this.card = null;
+        this.card = "";
         this.turn = false;
         this.isAlive = true;
     }
@@ -81,16 +81,23 @@ public class Player {
         if(skullCount == 3){
             this.isAlive = false;
         }
-        List<Integer> keepRoll = Arrays.stream(this.keeps).boxed().toList();
 
-        for(int i = 0;i < 8; i++){
-            if(!keepRoll.contains(i) && this.rolled[i] != "SKULL"){
-                Random rand = new Random();
-                int randomRoll = rand.nextInt(6);
-                this.rolled[i] = Dice[randomRoll];
+
+        if(this.keeps != null) {
+            List<Integer> keepRoll = Arrays.stream(this.keeps).boxed().toList();
+            for(int i = 0;i < 8; i++){
+                if(!keepRoll.contains(i) && this.rolled[i] != "SKULL"){
+                    Random rand = new Random();
+                    int randomRoll = rand.nextInt(6);
+                    this.rolled[i] = Dice[randomRoll];
+                }
+
             }
-
+        } else  {
+            roll();
         }
+
+
     }
 
     public void setForceDice(String[] newRolled){

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Test Captain">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Updated updateScore to account for captain card">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +58,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.UnitTestCaptain">
-    <configuration name="SinglePlayerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Tests">
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -67,7 +68,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SinglePlayerTests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.UnitTestCaptain" />
         <item itemvalue="JUnit.Tests.UnitTestTreasureChest" />
         <item itemvalue="JUnit.Tests.UnitTestReroll" />
         <item itemvalue="JUnit.Tests.UnitTestFortuneCardPick" />
-        <item itemvalue="JUnit.SinglePlayerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667138938237</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="CODE: Updated updateScore to account for captain card">
+      <created>1667139133416</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1667139133416</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,7 +375,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: Case 44, checking if player dies on first roll by checking scores before and after." />
     <MESSAGE value="REFACTOR: Refactoring test case 44 as it was written incorrectly" />
     <MESSAGE value="CODE: Code for test case 44. Added functions/variables needed for player" />
     <MESSAGE value="TEST: Test45" />
@@ -392,19 +399,16 @@
     <MESSAGE value="TEST: Unit Test Treasure Chest (added @Test)" />
     <MESSAGE value="CODE: Modifed updateScore to account for treasure chest card" />
     <MESSAGE value="TEST: Unit Test Captain" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Test Captain" />
+    <MESSAGE value="CODE: Updated updateScore to account for captain card" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Updated updateScore to account for captain card" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java</url>
-          <line>20</line>
-          <properties class="org.example.Tests" method="UnitTestReroll">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
+          <line>21</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
