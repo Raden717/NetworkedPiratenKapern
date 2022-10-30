@@ -21,14 +21,15 @@ class Tests {
         Player test = new Player("Test");
         test.roll();
         List<String> rolls = new ArrayList<String>();
-        test.keep([1,2,3,4]);
+        int[] indexkeep = {1,2,3,4};
+        test.keep(indexkeep);
         rolls.add(test.getRolled[1]);
         rolls.add(test.getRolled[2]);
         rolls.add(test.getRolled[3]);
         rolls.add(test.getRolled[4]);
         test.reroll();
         for(int i = 0; i< 4; i++){
-            assertTrue(rolls.get(i).equals(test.getRolled[i]);
+            assertTrue(rolls.get(i).equals(test.getRolled[indexkeep[i]]);
         }
 
 
