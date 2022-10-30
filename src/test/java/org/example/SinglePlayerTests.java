@@ -63,6 +63,18 @@ class Tests {
     }
 
     @Test
+    void UnitTestSorceress(){
+        Player test = new Player("Test");
+        test.setCard("SORCERESS");
+        String[] forcedRoll = {"Skull","Skull","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        test.setForceDice(forcedRoll);
+        int[] keeps = {2,3,4,5,6,7};
+        test.keep(keeps);
+        test.reroll();
+        assertEquals(0,test.getSorceressUse());
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 

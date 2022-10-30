@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Updated updateScore to account for captain card">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Modified procedures to account for potential syntax errors.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667139133416</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="REFACTOR: Modified procedures to account for potential syntax errors.">
+      <created>1667139416849</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1667139416849</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,7 +382,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REFACTOR: Refactoring test case 44 as it was written incorrectly" />
     <MESSAGE value="CODE: Code for test case 44. Added functions/variables needed for player" />
     <MESSAGE value="TEST: Test45" />
     <MESSAGE value="CODE: Code for Test 45, added more functions/variables to player" />
@@ -400,7 +406,8 @@
     <MESSAGE value="CODE: Modifed updateScore to account for treasure chest card" />
     <MESSAGE value="TEST: Unit Test Captain" />
     <MESSAGE value="CODE: Updated updateScore to account for captain card" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Updated updateScore to account for captain card" />
+    <MESSAGE value="REFACTOR: Modified procedures to account for potential syntax errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Modified procedures to account for potential syntax errors." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
