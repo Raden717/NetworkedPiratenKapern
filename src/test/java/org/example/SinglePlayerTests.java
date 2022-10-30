@@ -881,5 +881,19 @@ class Tests {
 
     }
 
+    @Test
+    void Test114(){
+        //FC 2 swords, roll 4 monkeys, 3 skulls & 1 sword and die   => die and lose 300 points
+        Player test = new Player("Test");
+        test.setCard("SEA_BATTLE");
+        test.setSwordsSea(2);
+        test.roll();
+        String[] forcedRoll = {"MONKEY","MONKEY","MONKEY","MONKEY","SKULL","SKULL","SKULL","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateAlive();
+        test.updateScore();
+        assertEquals(0, test.getScore());
+    }
+
 
 }
