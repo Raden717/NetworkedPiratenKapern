@@ -191,10 +191,9 @@ class Tests {
     @Test
     void Test44(){
         Player test = new Player("Test");
-
-        test.setSkulls(3); //Forcing skull count before the roll so the "roll" contains 3 skulls immediately
-        test.roll();
-        assertEquals(false, test.getAlive());
+        String[] forcedRoll = {"SKULL","SKULL","SKULL","SWORD","SWORD","SWORD","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateAlive();
         assertEquals(0, test.getScore());
     }
 
@@ -252,6 +251,23 @@ class Tests {
         test.updateScore();
         assertEquals(0, test.getScore());
     }
+
+    @Test
+    void Test48(){
+        Player test = new Player("Test");
+        test.roll();
+        String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        test.setForceDice(forcedRoll);
+        test.reroll();
+        String[] forcedReroll = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Monkey","Monkey"};
+        test.setForceDice(forcedReroll);
+        test.reroll();
+        String[] forcedReroll2 = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Skull","Monkey"};
+        test.setForceDice(forcedReroll2);
+        test.updateScore();
+        assertEquals(0, test.getScore());
+    }
+
 
 
 
