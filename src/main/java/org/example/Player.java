@@ -181,6 +181,7 @@ public class Player {
         int fullChestCount = 0;
         int scoreToAdd = 0;
         int seaBattlePoints = 0;
+        boolean wonSea = false;
 
         updateAlive();
 
@@ -259,6 +260,7 @@ public class Player {
                 return;
             } else {
                 scoreToAdd += seaBattlePoints;
+                wonSea = true;
             }
 
         }
@@ -296,6 +298,9 @@ public class Player {
             //4,000 points.
             if(count < 3){
                 if(check.equals("DIAMOND") || check.equals("COIN")){
+                    fullChestCount += count;
+                }
+                else if(check.equals("SWORD") && wonSea){
                     fullChestCount += count;
                 }
             }
@@ -607,6 +612,10 @@ public class Player {
 
     public int getswordBattleReq(){
         return this.swordBattleReq;
+    }
+
+    public void setSwordsSea(int n){
+        this.swordBattleReq = n;
     }
 
 }
