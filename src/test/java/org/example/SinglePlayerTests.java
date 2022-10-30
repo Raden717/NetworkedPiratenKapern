@@ -779,7 +779,7 @@ class Tests {
         test.setCard("SKULL");
         test.setSkullFace(2);
         test.roll();
-        String[] forcedRoll = {"MONKEY","MONKEY","PARROT","COIN","COIN","DIAMOND","DIAMOND","DIAMOND"};
+        String[] forcedRoll = {"SKULL","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD"};
         test.setForceDice(forcedRoll);
         test.updateScore();
         assertEquals(0,test.getScore());
