@@ -46,9 +46,12 @@ public class Player {
 
     private boolean isAlive;
 
+    private boolean islandOfSkulls;
+
     private int sorceressUse;
 
     public Player(String n){
+        this.islandOfSkulls = false;
         this.sorceressUse = 1;
         this.saves = new ArrayList<String>();
         this.keeps = null;
@@ -213,8 +216,12 @@ public class Player {
                 this.skullCount++;
             }
         }
-        if(this.skullCount >= 3){
-            //Does not add anything to the score;
+        if(this.skullCount == 3){
+            //Does not add anything to the score and ends turn
+            return;
+        }
+        if(this.skullCount > 3){
+            this.islandOfSkulls = true; //If this is true, network checks this after score updates to then deduct point of other players
             return;
         }
 
@@ -411,6 +418,10 @@ public class Player {
 
     }
 
+    public void deductScore(int skulls){
+        this.score -= (skulls * 100);
+    }
+
     public void keep(int[] k){
         this.keeps = k;
     }
@@ -434,6 +445,10 @@ public class Player {
     public int getScore(){
         //Returns score
         return this.score;
+    }
+
+    public boolean getislandofSkulls(){
+        return this.islandOfSkulls;
     }
 
     public boolean getAlive(){
