@@ -177,6 +177,7 @@ public class Player {
 
     //Score updates after the turn ends by being called after rerolls/rolls
     public void updateScore() {
+        boolean fullChest = false;
         int fullChestCount = 0;
         int scoreToAdd = 0;
         int seaBattlePoints = 0;
@@ -196,6 +197,16 @@ public class Player {
         for (int i = 0; i < 8; i++) {
             if (!this.rolled[i].toUpperCase().equals("SKULL")) {
                 rolledDice.add(this.rolled[i]);
+            }
+        }
+
+        if(rolledDice.size() == 1){
+            fullChest = true;
+        }
+
+        for(int i = 0; i < 8; i++){
+            if(this.rolled[i].equals("SKULL")){
+                fullChest = false;
             }
         }
 
@@ -288,6 +299,7 @@ public class Player {
                     fullChestCount += count;
                 }
             }
+
             switch (count) {
                 case 3:
                     fullChestCount += count;
@@ -313,10 +325,12 @@ public class Player {
                     fullChestCount += count;
                     scoreToAdd += 4000;
                     break;
+                case 9:
+                    scoreToAdd+= 4000;
+                    break;
             }
         }
-        System.out.println(fullChestCount);
-        if(fullChestCount == 8){
+        if(fullChestCount == 8 || fullChest){
             scoreToAdd += 500;
         }
         if(this.card.equals("CAPTAIN")){
