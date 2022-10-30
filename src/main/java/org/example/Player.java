@@ -4,16 +4,16 @@ import java.util.*;
 
 public class Player {
 
-    enum Cards{
-        TREASURE_CHEST,
-        CAPTAIN,
-        SORCERESS,
-        SEA_BATTLE,
-        GOLD,
-        DIAMOND,
-        MONKEY_BUSINESS,
-        SKULL
-    }
+    private final String[] cards = {
+        "TREASURE_CHEST",
+        "CAPTAIN",
+        "SORCERESS",
+        "SEA_BATTLE",
+        "GOLD",
+        "DIAMOND",
+        "MONKEY_BUSINESS",
+        "SKULL"
+    };
 
     private final String[] Dice = {
         "SWORD",
@@ -34,7 +34,7 @@ public class Player {
 
     private int rolls;
 
-    private Cards card;
+    private String card;
 
     private boolean turn;
 
@@ -49,6 +49,12 @@ public class Player {
         this.card = null;
         this.turn = false;
         this.isAlive = true;
+    }
+
+    public void rollCard(){
+        Random rand = new Random();
+        int randomRoll = rand.nextInt(8);
+        this.card = cards[randomRoll];
     }
 
     public void roll(){
@@ -146,6 +152,9 @@ public class Player {
         //Update score
     }
 
+    public String getCard(){
+        return this.card;
+    }
     public int getScore(){
         //Returns score
         return this.score;
