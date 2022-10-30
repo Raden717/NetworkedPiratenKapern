@@ -785,5 +785,18 @@ class Tests {
         assertEquals(0,test.getScore());
     }
 
+    @Test
+    void Test107(){
+        //roll 2 skulls and 6 swords with FC with 1 skull  => die
+        Player test = new Player("Test");
+        test.setCard("SKULL");
+        test.setSkullFace(1);
+        test.roll();
+        String[] forcedRoll = {"SKULL","SKULL","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(0,test.getScore());
+    }
+
 
 }
