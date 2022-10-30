@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Updated reroll() to account for sorceress">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Test for Sea Battle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.unitTestSeaBattle">
+  <component name="RunManager" selected="JUnit.Tests">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -140,9 +140,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.unitTestSeaBattle" />
         <item itemvalue="JUnit.Tests.UnitTestSorceress" />
-        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.UnitTestCaptain" />
         <item itemvalue="JUnit.Tests.UnitTestTreasureChest" />
       </list>
@@ -381,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667141472649</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="TEST: Unit Test for Sea Battle">
+      <created>1667141905347</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1667141905347</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -396,7 +403,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Code for Test 45, added more functions/variables to player" />
     <MESSAGE value="TEST: Test45 refactor to check score" />
     <MESSAGE value="CODE: Added getScore to player to check score for Test45." />
     <MESSAGE value="TEST: Modified Test44 to check score and expected score." />
@@ -421,7 +427,8 @@
     <MESSAGE value="REFACTOR: Modified procedures to account for potential syntax errors." />
     <MESSAGE value="TEST: Unit Test Sorceress" />
     <MESSAGE value="CODE: Updated reroll() to account for sorceress" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Updated reroll() to account for sorceress" />
+    <MESSAGE value="TEST: Unit Test for Sea Battle" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Test for Sea Battle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

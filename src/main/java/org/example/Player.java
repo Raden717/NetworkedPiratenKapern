@@ -149,6 +149,45 @@ public class Player {
     //Score updates after the turn ends by being called after rerolls/rolls
     public void updateScore() {
         int scoreToAdd = 0;
+        int seaBattlePoints = 0;
+
+        if(this.card.equals("SEA_BATTLE")){
+            Random rand = new Random();
+            int swords = rand.nextInt(4)+1;
+            int swordCount = 0;
+
+            switch (swords) {
+                case 1:
+                    seaBattlePoints += 100;
+                    break;
+                case 2:
+                    seaBattlePoints += 300;
+                    break;
+                case 3:
+                    seaBattlePoints += 500;
+                    break;
+                case 4:
+                    seaBattlePoints += 1000;
+                    break;
+            }
+
+            for (int i = 0; i < 8; i++) {
+                if (this.rolled[i].equals("SWORD")) {
+                    swordCount++;
+                }
+            }
+
+            if(swordCount < swords){
+                this.score -= seaBattlePoints;
+                if(this.score < 0){
+                    this.score = 0;
+                }
+                return;
+            } else {
+                scoreToAdd += seaBattlePoints;
+            }
+
+        }
 
         if(this.card.equals("TREASURE_CHEST")){
             treasureChestUpdateScore();
