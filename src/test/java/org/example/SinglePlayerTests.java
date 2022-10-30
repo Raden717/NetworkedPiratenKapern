@@ -234,18 +234,20 @@ class Tests {
     @Test
     void Test48(){
         //roll 1 skull, 4 parrots, 3 swords, reroll swords, get 1 skull 2 monkeys
-        //      reroll 2 monkeys, get 1 skull 1 monkey and die
+        //            reroll 2 monkeys, get 1 skull 1 monkey and die
         Player test = new Player("Test");
         test.roll();
-        String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        String[] forcedRoll = {"SKULL","PARROT","PARROT","PARROT","PARROT","SWORD","SWORD","SWORD"};
         test.setForceDice(forcedRoll);
-        test.forceUpdateAlive();
+        test.updateAlive();
         test.reroll();
-        String[] forcedReroll = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Monkey","Monkey"};
+        String[] forcedReroll = {"SKULL","PARROT","PARROT","PARROT","PARROT","SKULL","MONKEY","MONKEY"};
         test.setForceDice(forcedReroll);
+        test.updateAlive();
         test.reroll();
-        String[] forcedReroll2 = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Skull","Monkey"};
+        String[] forcedReroll2 = {"SKULL","PARROT","PARROT","PARROT","PARROT","SKULL","SKULL","MONKEY"};
         test.setForceDice(forcedReroll2);
+        test.updateAlive();
         test.updateScore();
         assertEquals(0, test.getScore());
     }
