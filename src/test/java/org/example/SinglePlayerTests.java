@@ -643,5 +643,17 @@ class Tests {
         assertEquals(1700, test.getScore());
     }
 
+    @Test
+    void Test84(){
+        //roll 3 skulls, 3 monkeys, 2 parrots => die scoring 0
+        Player test = new Player("Test");
+        test.setCard("MONKEY_BUSINESS");
+        test.roll();
+        String[] forcedRoll = {"SKULL","SKULL","SKULL","PARROT","PARROT","MONKEY","MONKEY","MONKEY"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(0, test.getScore());
+    }
+
 
 }
