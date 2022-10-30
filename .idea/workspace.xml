@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Modified U-Test for rerolling (Added @Test)">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Code for reroll to pass unit test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +310,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667136514693</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="CODE: Code for reroll to pass unit test">
+      <created>1667136799295</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1667136799295</updated>
+    </task>
+    <task id="LOCAL-00024" summary="CODE: Code for reroll to pass unit test">
+      <created>1667136811506</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1667136811506</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,6 +361,22 @@
     <MESSAGE value="TEST: Refactored test U-Test for rerolling" />
     <MESSAGE value="TEST: Refactored test U-Test for rerolling (added semicolon)" />
     <MESSAGE value="TEST: Modified U-Test for rerolling (Added @Test)" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Modified U-Test for rerolling (Added @Test)" />
+    <MESSAGE value="CODE: Code for reroll to pass unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Code for reroll to pass unit test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java</url>
+          <line>20</line>
+          <properties class="org.example.Tests" method="UnitTestReroll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

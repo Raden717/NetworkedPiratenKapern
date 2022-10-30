@@ -36,6 +36,20 @@ class Tests {
 
     }
 
+    void UnitTestTreasureChest(){
+        Player test = new Player("Test");
+        test.setCard("TREASURE_CHEST");
+        String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        test.setForceDice(forcedRoll);
+        int[] indexsave = {1,2,3,4};
+        test.save(indexsave);
+        String[] forcedRoll2 = {"Skull","Parrot","Parrot","Parrot","Parrot","Skull","Skull","Sword"};
+        test.setForceDice(forcedRoll2);
+        test.updateScore();
+        assertEquals(200, test.getScore());
+
+    }
+
     @Test
     void Test44(){
         Player test = new Player("Test");
