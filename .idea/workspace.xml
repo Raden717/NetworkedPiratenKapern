@@ -1,11 +1,12 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modified cardRoll to account for sea battle sword and its face count and changed update score to not create a random sword count">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: MOdified monkeybusiness procedure to make test84 work">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,46 +59,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.unitTestSeaCard">
-    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Client" />
-      <module name="COMP4004-F22-A1-101104851" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
-      <module name="COMP4004-F22-A1-101104851" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
-      <module name="COMP4004-F22-A1-101104851" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Tests.Test87">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -113,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.unitTestSeaCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test82" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +85,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="unitTestSeaCard" />
+      <option name="METHOD_NAME" value="Test82" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.Test83" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004-F22-A1-101104851" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
+      <option name="METHOD_NAME" value="Test83" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.Test84" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004-F22-A1-101104851" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
+      <option name="METHOD_NAME" value="Test84" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.Test87" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004-F22-A1-101104851" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
+      <option name="METHOD_NAME" value="Test87" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.unitTestSeaCard" />
-        <item itemvalue="Application.Server (2)" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server (1)" />
+        <item itemvalue="JUnit.Tests.Test87" />
+        <item itemvalue="JUnit.Tests.Test84" />
+        <item itemvalue="JUnit.Tests.Test83" />
         <item itemvalue="JUnit.Tests" />
+        <item itemvalue="JUnit.Tests.Test82" />
       </list>
     </recent_temporary>
   </component>
@@ -147,314 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00017" summary="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47.">
-      <created>1667077571425</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1667077571425</updated>
-    </task>
-    <task id="LOCAL-00018" summary="TEST: U-Test for fortune card rolling">
-      <created>1667134434306</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1667134434307</updated>
-    </task>
-    <task id="LOCAL-00019" summary="TEST: U-Test for rerolling">
-      <created>1667135569272</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1667135569272</updated>
-    </task>
-    <task id="LOCAL-00020" summary="TEST: Refactored test U-Test for rerolling">
-      <created>1667135722080</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1667135722080</updated>
-    </task>
-    <task id="LOCAL-00021" summary="TEST: Refactored test U-Test for rerolling (added semicolon)">
-      <created>1667136406809</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1667136406809</updated>
-    </task>
-    <task id="LOCAL-00022" summary="TEST: Modified U-Test for rerolling (Added @Test)">
-      <created>1667136514693</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1667136514693</updated>
-    </task>
-    <task id="LOCAL-00023" summary="CODE: Code for reroll to pass unit test">
-      <created>1667136799295</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1667136799295</updated>
-    </task>
-    <task id="LOCAL-00024" summary="CODE: Code for reroll to pass unit test">
-      <created>1667136811506</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1667136811506</updated>
-    </task>
-    <task id="LOCAL-00025" summary="TEST: Unit Test Treasure Chest">
-      <created>1667137324550</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1667137324550</updated>
-    </task>
-    <task id="LOCAL-00026" summary="TEST: Unit Test Treasure Chest (added @Test)">
-      <created>1667137494339</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1667137494339</updated>
-    </task>
-    <task id="LOCAL-00027" summary="CODE: Modifed updateScore to account for treasure chest card">
-      <created>1667137994949</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1667137994949</updated>
-    </task>
-    <task id="LOCAL-00028" summary="TEST: Unit Test Captain">
-      <created>1667138938236</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1667138938237</updated>
-    </task>
-    <task id="LOCAL-00029" summary="CODE: Updated updateScore to account for captain card">
-      <created>1667139133416</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1667139133416</updated>
-    </task>
-    <task id="LOCAL-00030" summary="REFACTOR: Modified procedures to account for potential syntax errors.">
-      <created>1667139416849</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1667139416849</updated>
-    </task>
-    <task id="LOCAL-00031" summary="TEST: Unit Test Sorceress">
-      <created>1667139837821</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1667139837822</updated>
-    </task>
-    <task id="LOCAL-00032" summary="CODE: Updated reroll() to account for sorceress">
-      <created>1667141472648</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1667141472649</updated>
-    </task>
-    <task id="LOCAL-00033" summary="TEST: Unit Test for Sea Battle">
-      <created>1667141905347</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1667141905347</updated>
-    </task>
-    <task id="LOCAL-00034" summary="CODE: Updated updateScore to account for sea battles">
-      <created>1667142694775</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1667142694775</updated>
-    </task>
-    <task id="LOCAL-00035" summary="REFACTOR: Fixed a syntax error that messed with test cases">
-      <created>1667142752543</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1667142752543</updated>
-    </task>
-    <task id="LOCAL-00036" summary="TEST: Unit Test for Gold">
-      <created>1667143294791</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1667143294791</updated>
-    </task>
-    <task id="LOCAL-00037" summary="CODE: Updated updateScore to account for gold card">
-      <created>1667143628107</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1667143628107</updated>
-    </task>
-    <task id="LOCAL-00038" summary="TEST: Unit Test for Diamond card">
-      <created>1667143882435</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1667143882435</updated>
-    </task>
-    <task id="LOCAL-00039" summary="CODE: Updated updateScore to account for Diamond card">
-      <created>1667144194022</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1667144194022</updated>
-    </task>
-    <task id="LOCAL-00040" summary="TEST: Unit Test for monkey business">
-      <created>1667144717462</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1667144717463</updated>
-    </task>
-    <task id="LOCAL-00041" summary="CODE: Updated updateScore to account for monkey business card">
-      <created>1667145488018</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1667145488018</updated>
-    </task>
-    <task id="LOCAL-00042" summary="TEST: Unit test for skull card">
-      <created>1667145625471</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1667145625472</updated>
-    </task>
-    <task id="LOCAL-00043" summary="CODE: Updated updateScore to account for the skull Card">
-      <created>1667145822992</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1667145822993</updated>
-    </task>
-    <task id="LOCAL-00044" summary="TEST: Unit test for full chest">
-      <created>1667146275650</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1667146275651</updated>
-    </task>
-    <task id="LOCAL-00045" summary="CODE: Updated updateScore to account for a fullChest">
-      <created>1667146509731</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1667146509731</updated>
-    </task>
-    <task id="LOCAL-00046" summary="TEST: Unit Test for skull deductions through island of skulls">
-      <created>1667147241154</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1667147241154</updated>
-    </task>
-    <task id="LOCAL-00047" summary="TEST: Forgot to add @Test">
-      <created>1667147628495</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1667147628495</updated>
-    </task>
-    <task id="LOCAL-00048" summary="TEST: Didn't properly set assert and values for skull deduction unit test">
-      <created>1667147767244</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1667147767244</updated>
-    </task>
-    <task id="LOCAL-00049" summary="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn">
-      <created>1667147998940</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1667147998941</updated>
-    </task>
-    <task id="LOCAL-00050" summary="REFACTOR: Modified update score to account full chest for captain card more cleanly">
-      <created>1667148113842</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1667148113848</updated>
-    </task>
-    <task id="LOCAL-00051" summary="REFACTOR: Added a getname for server handling purposes">
-      <created>1667148911203</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1667148911204</updated>
-    </task>
-    <task id="LOCAL-00052" summary="TEST: Unit test for procedure that updates if the player is alive.">
-      <created>1667150404881</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1667150404884</updated>
-    </task>
-    <task id="LOCAL-00053" summary="CODE: Added updateAlive procedure to make sure life is updated properly for the unitTest to pass">
-      <created>1667150586191</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1667150586192</updated>
-    </task>
-    <task id="LOCAL-00054" summary="REFACTOR: Modifed updateAlive() to properly work as it had the wrong value check.">
-      <created>1667151865925</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1667151865926</updated>
-    </task>
-    <task id="LOCAL-00055" summary="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player">
-      <created>1667153821495</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1667153821496</updated>
-    </task>
-    <task id="LOCAL-00056" summary="CODE: Some networking code to kind of run the game and use the functions that have been created, not a fully runnable game yet but didn't want to commit hundreds of lines of code on networking all at once.">
-      <created>1667154516378</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1667154516379</updated>
-    </task>
-    <task id="LOCAL-00057" summary="REFACTOR: Modified updateScore() to properly reinitialize values after turn ends/dies">
-      <created>1667154707917</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1667154707917</updated>
-    </task>
-    <task id="LOCAL-00058" summary="REFACTOR: Added a getter for skulls for the server to obtain the data, and modified reroll/updateAlive to properly deal with island of skulls">
-      <created>1667155661523</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1667155661523</updated>
-    </task>
-    <task id="LOCAL-00059" summary="REFACTOR: More refactoring for updateAlive">
-      <created>1667156030909</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1667156030910</updated>
-    </task>
-    <task id="LOCAL-00060" summary="REFACTOR: Refactoring for reroll">
-      <created>1667156289045</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1667156289047</updated>
     </task>
     <task id="LOCAL-00061" summary="REFACTOR: Refactoring for syntax errors + making network work">
       <created>1667157647627</created>
@@ -491,7 +193,315 @@
       <option name="project" value="LOCAL" />
       <updated>1667160034185</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="TEST: unitTest for rolling skull card">
+      <created>1667160082898</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1667160082902</updated>
+    </task>
+    <task id="LOCAL-00067" summary="CODE: Code for rolling skull card and holding the face value">
+      <created>1667160445313</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1667160445314</updated>
+    </task>
+    <task id="LOCAL-00068" summary="REFACTOR: Code for rolling forcing card values skull and making sure the variables associated are updated.">
+      <created>1667160825579</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1667160825581</updated>
+    </task>
+    <task id="LOCAL-00069" summary="CODE: Networking code">
+      <created>1667160885473</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1667160885474</updated>
+    </task>
+    <task id="LOCAL-00070" summary="TEST: A-Test44 Update to align with version">
+      <created>1667161399196</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1667161399197</updated>
+    </task>
+    <task id="LOCAL-00071" summary="TEST: A-Test45 Update to align with version previous commit was wrong line on the Test name">
+      <created>1667161485714</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1667161485714</updated>
+    </task>
+    <task id="LOCAL-00072" summary="TEST: A-Test46">
+      <created>1667161597182</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1667161597184</updated>
+    </task>
+    <task id="LOCAL-00073" summary="TEST: A-Test47">
+      <created>1667161751760</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1667161751761</updated>
+    </task>
+    <task id="LOCAL-00074" summary="TEST: A-Test48">
+      <created>1667161903973</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1667161903975</updated>
+    </task>
+    <task id="LOCAL-00075" summary="TEST: A-Test49 is the proper Atest, not a-test48">
+      <created>1667161953924</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1667161953925</updated>
+    </task>
+    <task id="LOCAL-00076" summary="TEST: A-Test51">
+      <created>1667162199361</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1667162199362</updated>
+    </task>
+    <task id="LOCAL-00077" summary="TEST: A-Test52">
+      <created>1667162326374</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1667162326375</updated>
+    </task>
+    <task id="LOCAL-00078" summary="TEST: A-Test53">
+      <created>1667162463973</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1667162463975</updated>
+    </task>
+    <task id="LOCAL-00079" summary="TEST: A-Test54">
+      <created>1667162556259</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1667162556260</updated>
+    </task>
+    <task id="LOCAL-00080" summary="TEST: A-Test55">
+      <created>1667162642181</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1667162642183</updated>
+    </task>
+    <task id="LOCAL-00081" summary="TEST: A-Test56">
+      <created>1667162747144</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1667162747147</updated>
+    </task>
+    <task id="LOCAL-00082" summary="TEST: A-Test57">
+      <created>1667162811789</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1667162811791</updated>
+    </task>
+    <task id="LOCAL-00083" summary="TEST: A-Test58">
+      <created>1667162964177</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1667162964179</updated>
+    </task>
+    <task id="LOCAL-00084" summary="TEST: A-Test59">
+      <created>1667163030799</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1667163030800</updated>
+    </task>
+    <task id="LOCAL-00085" summary="TEST: A-Test61">
+      <created>1667163301102</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1667163301104</updated>
+    </task>
+    <task id="LOCAL-00086" summary="TEST: A-Test62">
+      <created>1667163571227</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1667163571228</updated>
+    </task>
+    <task id="LOCAL-00087" summary="TEST: A-Test62">
+      <created>1667163864245</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1667163864247</updated>
+    </task>
+    <task id="LOCAL-00088" summary="TEST: A-Test63">
+      <created>1667164038952</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1667164038954</updated>
+    </task>
+    <task id="LOCAL-00089" summary="TEST: A-Test64">
+      <created>1667164538031</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1667164538033</updated>
+    </task>
+    <task id="LOCAL-00090" summary="TEST: A-Test64 edit as incorrect assertion">
+      <created>1667164856702</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1667164856704</updated>
+    </task>
+    <task id="LOCAL-00091" summary="CODE: Modified updateScore to account for edge cases with full chests for TEST64">
+      <created>1667164911027</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1667164911029</updated>
+    </task>
+    <task id="LOCAL-00092" summary="TEST: A-Test65">
+      <created>1667164992566</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1667164992567</updated>
+    </task>
+    <task id="LOCAL-00093" summary="TEST: A-Test66">
+      <created>1667165069759</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1667165069762</updated>
+    </task>
+    <task id="LOCAL-00094" summary="TEST: A-Test67">
+      <created>1667165175667</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1667165175670</updated>
+    </task>
+    <task id="LOCAL-00095" summary="TEST: A-Test68">
+      <created>1667165260757</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1667165260759</updated>
+    </task>
+    <task id="LOCAL-00096" summary="TEST: A-Test69">
+      <created>1667165420093</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1667165420095</updated>
+    </task>
+    <task id="LOCAL-00097" summary="TEST: A-Test70">
+      <created>1667165520575</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1667165520576</updated>
+    </task>
+    <task id="LOCAL-00098" summary="TEST: A-Test71">
+      <created>1667165572169</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1667165572171</updated>
+    </task>
+    <task id="LOCAL-00099" summary="TEST: A-Test72">
+      <created>1667165693862</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1667165693864</updated>
+    </task>
+    <task id="LOCAL-00100" summary="TEST: A-Test77">
+      <created>1667166024343</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1667166024345</updated>
+    </task>
+    <task id="LOCAL-00101" summary="TEST: A-Test78">
+      <created>1667166190308</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1667166190310</updated>
+    </task>
+    <task id="LOCAL-00102" summary="TEST: A-Test79">
+      <created>1667166496793</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1667166496794</updated>
+    </task>
+    <task id="LOCAL-00103" summary="CODE: Modified reroll to account for not wanting to reroll skull immediately">
+      <created>1667166548257</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1667166548259</updated>
+    </task>
+    <task id="LOCAL-00104" summary="TEST: A-Test82">
+      <created>1667166696978</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1667166696981</updated>
+    </task>
+    <task id="LOCAL-00105" summary="CODE: Monkeybusiness procedure modified to pass test 82">
+      <created>1667167560246</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1667167560248</updated>
+    </task>
+    <task id="LOCAL-00106" summary="TEST: A-Test83">
+      <created>1667167718798</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1667167718799</updated>
+    </task>
+    <task id="LOCAL-00107" summary="CODE: Modified monkey business to pass test83">
+      <created>1667167772554</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1667167772556</updated>
+    </task>
+    <task id="LOCAL-00108" summary="TEST: A-Test84">
+      <created>1667167846124</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1667167846127</updated>
+    </task>
+    <task id="LOCAL-00109" summary="CODE: MOdified monkeybusiness procedure to make test84 work">
+      <created>1667168139914</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1667168139916</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -517,31 +527,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Updated updateScore to account for monkey business card" />
-    <MESSAGE value="TEST: Unit test for skull card" />
-    <MESSAGE value="CODE: Updated updateScore to account for the skull Card" />
-    <MESSAGE value="TEST: Unit test for full chest" />
-    <MESSAGE value="CODE: Updated updateScore to account for a fullChest" />
-    <MESSAGE value="TEST: Unit Test for skull deductions through island of skulls" />
-    <MESSAGE value="TEST: Forgot to add @Test" />
-    <MESSAGE value="TEST: Didn't properly set assert and values for skull deduction unit test" />
-    <MESSAGE value="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn" />
-    <MESSAGE value="REFACTOR: Modified update score to account full chest for captain card more cleanly" />
-    <MESSAGE value="REFACTOR: Added a getname for server handling purposes" />
-    <MESSAGE value="TEST: Unit test for procedure that updates if the player is alive." />
-    <MESSAGE value="CODE: Added updateAlive procedure to make sure life is updated properly for the unitTest to pass" />
-    <MESSAGE value="REFACTOR: Modifed updateAlive() to properly work as it had the wrong value check." />
-    <MESSAGE value="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player" />
-    <MESSAGE value="CODE: Some networking code to kind of run the game and use the functions that have been created, not a fully runnable game yet but didn't want to commit hundreds of lines of code on networking all at once." />
-    <MESSAGE value="REFACTOR: Modified updateScore() to properly reinitialize values after turn ends/dies" />
-    <MESSAGE value="REFACTOR: Added a getter for skulls for the server to obtain the data, and modified reroll/updateAlive to properly deal with island of skulls" />
-    <MESSAGE value="REFACTOR: More refactoring for updateAlive" />
-    <MESSAGE value="REFACTOR: Refactoring for reroll" />
-    <MESSAGE value="REFACTOR: Refactoring for syntax errors + making network work" />
-    <MESSAGE value="REFACTOR: Refactored again as earlier tests were failing due to other refactors." />
-    <MESSAGE value="TEST: Unit Test for obtaing sea card and updating swords player needs" />
-    <MESSAGE value="TEST: Unit test modified for sea card as it had incorrect syntax" />
-    <MESSAGE value="CODE: Modified cardRoll to account for sea battle sword and its face count and changed update score to not create a random sword count" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modified cardRoll to account for sea battle sword and its face count and changed update score to not create a random sword count" />
+    <MESSAGE value="TEST: A-Test62" />
+    <MESSAGE value="TEST: A-Test63" />
+    <MESSAGE value="TEST: A-Test64" />
+    <MESSAGE value="TEST: A-Test64 modified" />
+    <MESSAGE value="TEST: A-Test64 edit as incorrect assertion" />
+    <MESSAGE value="CODE: Modified updateScore to account for edge cases with full chests" />
+    <MESSAGE value="CODE: Modified updateScore to account for edge cases with full chests for TEST64" />
+    <MESSAGE value="TEST: A-Test65" />
+    <MESSAGE value="TEST: A-Test66" />
+    <MESSAGE value="TEST: A-Test67" />
+    <MESSAGE value="TEST: A-Test68" />
+    <MESSAGE value="TEST: A-Test69" />
+    <MESSAGE value="TEST: A-Test70" />
+    <MESSAGE value="TEST: A-Test71" />
+    <MESSAGE value="TEST: A-Test72" />
+    <MESSAGE value="TEST: A-Test77" />
+    <MESSAGE value="TEST: A-Test78" />
+    <MESSAGE value="TEST: A-Test79" />
+    <MESSAGE value="CODE: Modified reroll to account for not wanting to reroll skull immediately" />
+    <MESSAGE value="TEST: A-Test82" />
+    <MESSAGE value="CODE: Monkeybusiness procedure modified to pass test 82" />
+    <MESSAGE value="TEST: A-Test83" />
+    <MESSAGE value="CODE: Modified monkey business to pass test83" />
+    <MESSAGE value="TEST: A-Test84" />
+    <MESSAGE value="CODE: MOdified monkeybusiness procedure to make test84 work" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: MOdified monkeybusiness procedure to make test84 work" />
   </component>
 </project>

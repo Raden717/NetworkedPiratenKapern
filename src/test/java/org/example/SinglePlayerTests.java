@@ -656,7 +656,7 @@ class Tests {
     }
 
     @Test
-    void Test87(){
+    void Test90(){
         //roll 3 parrots, 2 swords, 2 diamonds, 1 coin     put 2 diamonds and 1 coin in chest
         //  then reroll 2 swords and get 2 parrots put 5 parrots in chest and take out 2 diamonds & coin
         //  then reroll the 3 dice and get 1 skull, 1 coin and a parrot
