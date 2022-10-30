@@ -283,12 +283,13 @@ public class Player {
                     break;
             }
         }
+        if(fullChestCount == 8){
+            scoreToAdd += 500;
+        }
         if(this.card.equals("CAPTAIN")){
             scoreToAdd += scoreToAdd;
         }
-        if(fullChestCount == 8){
-            this.score += 500;
-        }
+
         this.score += scoreToAdd;
         //Update score
     }

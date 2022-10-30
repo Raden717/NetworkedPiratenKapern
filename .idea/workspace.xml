@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Forgot to add @Test">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.unitTestSkullDeduction">
+  <component name="RunManager" selected="JUnit.Tests">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -141,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.unitTestSkullDeduction" />
         <item itemvalue="JUnit.Tests.unitTestFullChest" />
         <item itemvalue="JUnit.Tests.unitTestSkulls" />
-        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.unitTestMonkeyBusiness" />
       </list>
     </recent_temporary>
@@ -487,8 +486,33 @@
       <option name="project" value="LOCAL" />
       <updated>1667147628495</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="TEST: Didn't properly set assert and values for skull deduction unit test">
+      <created>1667147767244</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1667147767244</updated>
+    </task>
+    <task id="LOCAL-00049" summary="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn">
+      <created>1667147998940</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1667147998941</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -502,8 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: Modified U-Test for rerolling (Added @Test)" />
-    <MESSAGE value="CODE: Code for reroll to pass unit test" />
     <MESSAGE value="TEST: Unit Test Treasure Chest" />
     <MESSAGE value="TEST: Unit Test Treasure Chest (added @Test)" />
     <MESSAGE value="CODE: Modifed updateScore to account for treasure chest card" />
@@ -527,6 +549,8 @@
     <MESSAGE value="CODE: Updated updateScore to account for a fullChest" />
     <MESSAGE value="TEST: Unit Test for skull deductions through island of skulls" />
     <MESSAGE value="TEST: Forgot to add @Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Forgot to add @Test" />
+    <MESSAGE value="TEST: Didn't properly set assert and values for skull deduction unit test" />
+    <MESSAGE value="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn" />
   </component>
 </project>
