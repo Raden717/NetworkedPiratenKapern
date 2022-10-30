@@ -419,6 +419,16 @@ public class Player {
 
     }
 
+    public void updateAlive(){
+        for (int i = 0; i < 8; i++){
+            if(this.rolled[i].toUpperCase().equals("SKULL")){
+                this.skullCount++;
+            }
+        }
+        if(skullCount >= 2){
+            this.isAlive = false;
+        }
+    }
     public void deductScore(int skulls){
         this.score -= (skulls * 100);
     }
