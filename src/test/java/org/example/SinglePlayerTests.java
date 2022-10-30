@@ -96,6 +96,17 @@ class Tests {
     }
 
     @Test
+    void unitTestDiamond(){
+        Player test = new Player("Test");
+        test.setCard("DIAMOND");
+        String[] forcedRoll = {"DIAMOND","DIAMOND","DIAMOND","COIN","MONKEY","PARROT","SKULL","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(700, test.getScore());
+
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 
