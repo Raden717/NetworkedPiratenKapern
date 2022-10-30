@@ -171,7 +171,7 @@ class Tests {
         Player test = new Player("Test");
         test.rollCard();
         if(test.getCard().equals("SEA_BATTLE")){
-            assertfalse(0 == test.getswordBattleReq());
+            assertTrue(0 != test.getswordBattleReq());
         } else {
             assertEquals(0, test.getswordBattleReq());
         }
