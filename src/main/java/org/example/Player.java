@@ -417,6 +417,7 @@ public class Player {
 
         int monkeyParrots = 0;
         for (String check : rolledDice) {
+
             if(!check.equals("PARROT") && !check.equals("MONKEY")) {
                 int count = 0;
                 for (int i = 0; i < 8; i++) {
@@ -463,34 +464,39 @@ public class Player {
                         monkeyParrots++;
                     }
                 }
-                switch (monkeyParrots) {
-                    case 3:
-                        fullChestCount += monkeyParrots;
-                        scoreToAdd += 100;
-                        break;
-                    case 4:
-                        fullChestCount += monkeyParrots;
-                        scoreToAdd += 200;
-                        break;
-                    case 5:
-                        fullChestCount += monkeyParrots;
-                        scoreToAdd += 500;
-                        break;
-                    case 6:
-                        fullChestCount += monkeyParrots;
-                        scoreToAdd += 1000;
-                        break;
-                    case 7:
-                        fullChestCount += monkeyParrots;
-                        scoreToAdd += 2000;
-                        break;
-                    case 8:
-                        fullChestCount += monkeyParrots;
-                        scoreToAdd += 4000;
-                        break;
-                }
+
             }
+
         }
+
+        switch (monkeyParrots) {
+            case 3:
+                fullChestCount += monkeyParrots;
+                System.out.println("HERE?");
+                scoreToAdd += 100;
+                break;
+            case 4:
+                fullChestCount += monkeyParrots;
+                scoreToAdd += 200;
+                break;
+            case 5:
+                fullChestCount += monkeyParrots;
+                scoreToAdd += 500;
+                break;
+            case 6:
+                fullChestCount += monkeyParrots;
+                scoreToAdd += 1000;
+                break;
+            case 7:
+                fullChestCount += monkeyParrots;
+                scoreToAdd += 2000;
+                break;
+            case 8:
+                fullChestCount += monkeyParrots;
+                scoreToAdd += 4000;
+                break;
+        }
+
         if(fullChestCount == 8){
             this.score += 500;
         }
