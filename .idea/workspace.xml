@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: A-Test110">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: A-Test115">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
@@ -58,8 +58,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.Test110">
-    <configuration name="Tests.Test103" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Tests.Test119">
+    <configuration name="Tests.Test114" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -69,13 +69,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test103" />
+      <option name="METHOD_NAME" value="Test114" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test106" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test115" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +85,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test106" />
+      <option name="METHOD_NAME" value="Test115" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test107" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test116" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +101,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test107" />
+      <option name="METHOD_NAME" value="Test116" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test109" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test117" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -117,13 +117,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test109" />
+      <option name="METHOD_NAME" value="Test117" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test110" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.Test119" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -133,7 +133,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test110" />
+      <option name="METHOD_NAME" value="Test119" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.Test110" />
-        <item itemvalue="JUnit.Tests.Test109" />
-        <item itemvalue="JUnit.Tests.Test107" />
-        <item itemvalue="JUnit.Tests.Test106" />
-        <item itemvalue="JUnit.Tests.Test103" />
+        <item itemvalue="JUnit.Tests.Test119" />
+        <item itemvalue="JUnit.Tests.Test117" />
+        <item itemvalue="JUnit.Tests.Test116" />
+        <item itemvalue="JUnit.Tests.Test115" />
+        <item itemvalue="JUnit.Tests.Test114" />
       </list>
     </recent_temporary>
   </component>
@@ -157,55 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00077" summary="TEST: A-Test52">
-      <created>1667162326374</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1667162326375</updated>
-    </task>
-    <task id="LOCAL-00078" summary="TEST: A-Test53">
-      <created>1667162463973</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1667162463975</updated>
-    </task>
-    <task id="LOCAL-00079" summary="TEST: A-Test54">
-      <created>1667162556259</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1667162556260</updated>
-    </task>
-    <task id="LOCAL-00080" summary="TEST: A-Test55">
-      <created>1667162642181</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1667162642183</updated>
-    </task>
-    <task id="LOCAL-00081" summary="TEST: A-Test56">
-      <created>1667162747144</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1667162747147</updated>
-    </task>
-    <task id="LOCAL-00082" summary="TEST: A-Test57">
-      <created>1667162811789</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1667162811791</updated>
-    </task>
-    <task id="LOCAL-00083" summary="TEST: A-Test58">
-      <created>1667162964177</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1667162964179</updated>
     </task>
     <task id="LOCAL-00084" summary="TEST: A-Test59">
       <created>1667163030799</created>
@@ -501,7 +452,56 @@
       <option name="project" value="LOCAL" />
       <updated>1667171825994</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="TEST: A-Test110">
+      <created>1667172144679</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1667172144682</updated>
+    </task>
+    <task id="LOCAL-00127" summary="TEST: A-Test110 removed a skull face value that is unneeded">
+      <created>1667172271616</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1667172271619</updated>
+    </task>
+    <task id="LOCAL-00128" summary="CODE: Modified updateAlive to make sure the correct number of skulls is on the player before deduction  points from others">
+      <created>1667172324556</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1667172324556</updated>
+    </task>
+    <task id="LOCAL-00129" summary="TEST: A-Test111">
+      <created>1667172447247</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1667172447248</updated>
+    </task>
+    <task id="LOCAL-00130" summary="TEST: A-Test114">
+      <created>1667172710435</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1667172710437</updated>
+    </task>
+    <task id="LOCAL-00131" summary="TEST: A-Test114">
+      <created>1667172733401</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1667172733404</updated>
+    </task>
+    <task id="LOCAL-00132" summary="TEST: A-Test115">
+      <created>1667172866191</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1667172866192</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -527,11 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test78" />
-    <MESSAGE value="TEST: A-Test79" />
-    <MESSAGE value="CODE: Modified reroll to account for not wanting to reroll skull immediately" />
-    <MESSAGE value="TEST: A-Test82" />
-    <MESSAGE value="CODE: Monkeybusiness procedure modified to pass test 82" />
     <MESSAGE value="TEST: A-Test83" />
     <MESSAGE value="CODE: Modified monkey business to pass test83" />
     <MESSAGE value="TEST: A-Test84" />
@@ -552,6 +547,11 @@
     <MESSAGE value="TEST: A-Test109" />
     <MESSAGE value="CODE: Modified deducting Scores for Test109" />
     <MESSAGE value="TEST: A-Test110" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: A-Test110" />
+    <MESSAGE value="TEST: A-Test110 removed a skull face value that is unneeded" />
+    <MESSAGE value="CODE: Modified updateAlive to make sure the correct number of skulls is on the player before deduction  points from others" />
+    <MESSAGE value="TEST: A-Test111" />
+    <MESSAGE value="TEST: A-Test114" />
+    <MESSAGE value="TEST: A-Test115" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: A-Test115" />
   </component>
 </project>
