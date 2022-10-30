@@ -62,5 +62,7 @@ public class Client
         sendMessage.start();
         readMessage.start();
 
+        System.out.println("Waiting for to start game... \n");
+
     }
 }

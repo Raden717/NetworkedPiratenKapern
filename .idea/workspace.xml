@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +59,9 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests">
-    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Client" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -67,14 +69,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.unitTestFullChest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -82,15 +82,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="unitTestFullChest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.unitTestMonkeyBusiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -98,15 +95,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="unitTestMonkeyBusiness" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.unitTestSkullDeduction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -114,15 +108,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="unitTestSkullDeduction" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.unitTestSkulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -130,21 +121,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="unitTestSkulls" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests" />
-        <item itemvalue="JUnit.Tests.unitTestSkullDeduction" />
-        <item itemvalue="JUnit.Tests.unitTestFullChest" />
-        <item itemvalue="JUnit.Tests.unitTestSkulls" />
-        <item itemvalue="JUnit.Tests.unitTestMonkeyBusiness" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server (2)" />
+        <item itemvalue="Application.Server (1)" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Server (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -156,48 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00001" summary="CODE: Simple server implementation">
-      <created>1667062540599</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1667062540600</updated>
-    </task>
-    <task id="LOCAL-00002" summary="CODE: Simple client implementation">
-      <created>1667064639891</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1667064639892</updated>
-    </task>
-    <task id="LOCAL-00003" summary="TEST: Case 44, checking if player dies on first roll by checking scores before and after.">
-      <created>1667068782864</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1667068782864</updated>
-    </task>
-    <task id="LOCAL-00004" summary="REFACTOR: Refactoring test case 44 as it was written incorrectly">
-      <created>1667070642163</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1667070642163</updated>
-    </task>
-    <task id="LOCAL-00005" summary="CODE: Code for test case 44. Added functions/variables needed for player">
-      <created>1667070911806</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1667070911806</updated>
-    </task>
-    <task id="LOCAL-00006" summary="TEST: Test45">
-      <created>1667072370198</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1667072370199</updated>
     </task>
     <task id="LOCAL-00007" summary="CODE: Code for Test 45, added more functions/variables to player">
       <created>1667073651928</created>
@@ -500,7 +445,49 @@
       <option name="project" value="LOCAL" />
       <updated>1667147998941</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="REFACTOR: Modified update score to account full chest for captain card more cleanly">
+      <created>1667148113842</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1667148113848</updated>
+    </task>
+    <task id="LOCAL-00051" summary="REFACTOR: Added a getname for server handling purposes">
+      <created>1667148911203</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1667148911204</updated>
+    </task>
+    <task id="LOCAL-00052" summary="TEST: Unit test for procedure that updates if the player is alive.">
+      <created>1667150404881</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1667150404884</updated>
+    </task>
+    <task id="LOCAL-00053" summary="CODE: Added updateAlive procedure to make sure life is updated properly for the unitTest to pass">
+      <created>1667150586191</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1667150586192</updated>
+    </task>
+    <task id="LOCAL-00054" summary="REFACTOR: Modifed updateAlive() to properly work as it had the wrong value check.">
+      <created>1667151865925</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1667151865926</updated>
+    </task>
+    <task id="LOCAL-00055" summary="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player">
+      <created>1667153821495</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1667153821496</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -526,12 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: Unit Test Treasure Chest" />
-    <MESSAGE value="TEST: Unit Test Treasure Chest (added @Test)" />
-    <MESSAGE value="CODE: Modifed updateScore to account for treasure chest card" />
-    <MESSAGE value="TEST: Unit Test Captain" />
-    <MESSAGE value="CODE: Updated updateScore to account for captain card" />
-    <MESSAGE value="REFACTOR: Modified procedures to account for potential syntax errors." />
     <MESSAGE value="TEST: Unit Test Sorceress" />
     <MESSAGE value="CODE: Updated reroll() to account for sorceress" />
     <MESSAGE value="TEST: Unit Test for Sea Battle" />
@@ -551,6 +532,12 @@
     <MESSAGE value="TEST: Forgot to add @Test" />
     <MESSAGE value="TEST: Didn't properly set assert and values for skull deduction unit test" />
     <MESSAGE value="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added a deduction procedure to deal with the island of skulls unit test to be used when a player loses points because of another players turn" />
+    <MESSAGE value="REFACTOR: Modified update score to account full chest for captain card more cleanly" />
+    <MESSAGE value="REFACTOR: Added a getname for server handling purposes" />
+    <MESSAGE value="TEST: Unit test for procedure that updates if the player is alive." />
+    <MESSAGE value="CODE: Added updateAlive procedure to make sure life is updated properly for the unitTest to pass" />
+    <MESSAGE value="REFACTOR: Modifed updateAlive() to properly work as it had the wrong value check." />
+    <MESSAGE value="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player" />
   </component>
 </project>
