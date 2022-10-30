@@ -425,7 +425,7 @@ public class Player {
                 this.skullCount++;
             }
         }
-        if(skullCount >= 2){
+        if(skullCount >= 3){
             this.isAlive = false;
         }
     }
