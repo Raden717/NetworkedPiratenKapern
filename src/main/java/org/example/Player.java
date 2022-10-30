@@ -291,6 +291,15 @@ public class Player {
         }
 
         this.score += scoreToAdd;
+        this.islandOfSkulls = false;
+        this.saves = new ArrayList<String>();
+        this.keeps = null;
+        this.rolled = new String[8];
+        this.rolls = 8;
+        this.skullCount = 0;
+        this.card = "";
+        this.isAlive = true;
+
         //Update score
     }
 
@@ -416,6 +425,15 @@ public class Player {
         }
         this.score += scoreToAdd;
         //Update score
+        this.islandOfSkulls = false;
+        this.saves = new ArrayList<String>();
+        this.keeps = null;
+        this.rolled = new String[8];
+        this.rolls = 8;
+        this.skullCount = 0;
+        this.card = "";
+        this.isAlive = true;
+
 
     }
 
