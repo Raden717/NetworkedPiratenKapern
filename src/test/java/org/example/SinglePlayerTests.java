@@ -424,9 +424,8 @@ class Tests {
         test.setForceDice(forcedRoll);
         test.updateScore();
         assertEquals(2100, test.getScore());
+
     }
-
-
 
 
 
