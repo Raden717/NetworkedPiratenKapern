@@ -274,6 +274,19 @@ class Tests {
         assertEquals(4800, test.getScore());
     }
 
+    @Test
+    void Test52(){
+        //score first roll with 2 (monkeys/parrot/diamonds/coins) and FC is captain (SC 800)
+        Player test = new Player("Test");
+        test.setCard("CAPTAIN");
+        test.roll();
+        String[] forcedRoll = {"MONKEY","MONKEY","PARROT","PARROT","DIAMOND","DIAMOND","COIN","COIN"};
+        test.setForceDice(forcedRoll);
+        test.updateAlive();
+        test.updateScore();
+        assertEquals(800, test.getScore());
+    }
+
 
 
 
