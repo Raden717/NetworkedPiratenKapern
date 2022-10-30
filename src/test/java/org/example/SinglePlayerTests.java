@@ -53,6 +53,16 @@ class Tests {
     }
 
     @Test
+    void UnitTestCaptain(){
+        Player test = new Player("Test");
+        test.setCard("CAPTAIN");
+        String[] forcedRoll = {"Skull","Parrot","Parrot","Parrot","Parrot","Sword","Sword","Sword"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(600, test.getScore());
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 
