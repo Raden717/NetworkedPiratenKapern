@@ -494,5 +494,20 @@ class Tests {
         assertEquals(400, test.getScore());
     }
 
+    @Test
+    void Test69(){
+        //roll 2 (monkeys, skulls, swords), 1 diamond, 1 parrot, reroll 2 monkeys, get 2 diamonds, score 500
+        Player test = new Player("Test");
+        test.setCard("GOLD");
+        test.roll();
+        String[] forcedRoll = {"MONKEY","MONKEY","SKULL","SKULL","DIAMOND","PARROT","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.reroll();
+        String[] forcedReroll = {"DIAMOND","DIAMOND","SKULL","SKULL","DIAMOND","PARROT","SWORD","SWORD"};
+        test.setForceDice(forcedReroll);
+        test.updateScore();
+        assertEquals(500, test.getScore());
+    }
+
 
 }
