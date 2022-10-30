@@ -157,7 +157,7 @@ public class Player {
     }
 
     public void setSkulls(int s){
-        this.skullCount = 3;
+        this.skullCount = s;
     }
 
     //Score updates after the turn ends by being called after rerolls/rolls
@@ -171,11 +171,6 @@ public class Player {
             return;
         }
 
-        if(this.card.equals("SKULL")){
-            Random rand = new Random();
-            int ranSkull = rand.nextInt(3)+1;
-            this.skullCount += ranSkull;
-        }
 
         if(this.card.equals("SEA_BATTLE")){
             Random rand = new Random();
@@ -461,6 +456,11 @@ public class Player {
     }
 
     public void updateAlive(){
+        if(this.card.equals("SKULL")){
+            Random rand = new Random();
+            int ranSkull = rand.nextInt(3)+1;
+            this.skullCount += ranSkull;
+        }
         for (int i = 0; i < 8; i++){
             if(this.rolled[i].toUpperCase().equals("SKULL")){
                 this.skullCount++;
@@ -472,6 +472,8 @@ public class Player {
         if(skullCount > 3){
             this.islandOfSkulls = true;
         }
+
+
     }
     public void deductScore(int skulls){
         this.score -= (skulls * 100);
