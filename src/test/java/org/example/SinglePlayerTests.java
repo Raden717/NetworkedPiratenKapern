@@ -402,6 +402,18 @@ class Tests {
         assertEquals(600, test.getScore());
     }
 
+    @Test
+    void Test62(){
+        //score set of 6 monkeys and 2 skulls on first roll (SC 1100)
+        Player test = new Player("Test");
+        test.setCard("GOLD");
+        test.roll();
+        String[] forcedRoll = {"SKULL","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","SKULL"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(1100, test.getScore());
+    }
+
 
 
 
