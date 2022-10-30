@@ -361,8 +361,16 @@ public class Player {
 
         for (String check : savedDice){
             int count = 0;
+
+
             for(int i = 0; i < this.saves.size(); i++){
                 if(check.equals(this.saves.get(i))){
+                    if(this.saves.get(i).equals("COIN")){
+                        this.score += 100;
+                    }
+                    if(this.saves.get(i).equals("DIAMOND")){
+                        this.score += 100;
+                    }
                     count++;
                 }
             }
@@ -545,6 +553,7 @@ public class Player {
     }
 
     public void save(int[] s){
+        this.saves.clear();
         for(int i = 0; i< s.length ;i++){
             this.saves.add(this.rolled[s[i]]);
         }
