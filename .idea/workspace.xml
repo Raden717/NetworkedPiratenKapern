@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Test for Diamond card">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Updated updateScore to account for Diamond card">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.unitTestDiamond">
+  <component name="RunManager" selected="JUnit.Tests.unitTestMonkeyBusiness">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -69,22 +69,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.UnitTestSorceress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004-F22-A1-101104851" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="UnitTestSorceress" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +105,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests.unitTestMonkeyBusiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004-F22-A1-101104851" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
+      <option name="METHOD_NAME" value="unitTestMonkeyBusiness" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tests.unitTestSeaBattle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.unitTestMonkeyBusiness" />
         <item itemvalue="JUnit.Tests.unitTestDiamond" />
         <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.unitTestGold" />
         <item itemvalue="JUnit.Tests.unitTestSeaBattle" />
-        <item itemvalue="JUnit.Tests.UnitTestSorceress" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667143882435</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="CODE: Updated updateScore to account for Diamond card">
+      <created>1667144194022</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1667144194022</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +444,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Added updating scores to make sure the score is updated properly when checking with tests." />
     <MESSAGE value="Test: Test47" />
     <MESSAGE value="CODE: Updated updateScore() to properly handle score if the player doesn't die for Test47." />
     <MESSAGE value="TEST: Test47 modified as the test wasn't properly made, did not account for the second reroll" />
@@ -462,6 +468,7 @@
     <MESSAGE value="TEST: Unit Test for Gold" />
     <MESSAGE value="CODE: Updated updateScore to account for gold card" />
     <MESSAGE value="TEST: Unit Test for Diamond card" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Test for Diamond card" />
+    <MESSAGE value="CODE: Updated updateScore to account for Diamond card" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Updated updateScore to account for Diamond card" />
   </component>
 </project>

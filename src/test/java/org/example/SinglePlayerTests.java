@@ -107,6 +107,16 @@ class Tests {
     }
 
     @Test
+    void unitTestMonkeyBusiness(){
+        Player test = new Player("Test");
+        test.setCard("MONKEY_BUSINESS");
+        String[] forcedRoll = {"PARROT","PARROT","MONKEY","PARROT","MONKEY","PARROT","SKULL","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(1000, test.getScore());
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 
