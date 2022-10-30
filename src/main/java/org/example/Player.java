@@ -460,6 +460,10 @@ public class Player {
         return this.rolls;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     public int getSorceressUse(){
         return this.sorceressUse;
     }
