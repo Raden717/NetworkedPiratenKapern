@@ -616,5 +616,17 @@ class Tests {
         assertEquals(2000, test.getScore());
     }
 
+    @Test
+    void Test82(){
+        //roll 3 monkeys 3 parrots  1 skull 1 coin  SC = 1100  (i.e., sequence of of 6 + coin)
+        Player test = new Player("Test");
+        test.setCard("MONKEY_BUSINESS");
+        test.roll();
+        String[] forcedRoll = {"SKULL","PARROT","PARROT","PARROT","COIN","MONKEY","MONKEY","MONKEY"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(1100, test.getScore());
+    }
+
 
 }
