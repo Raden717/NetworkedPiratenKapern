@@ -167,12 +167,25 @@ public class Player {
         int scoreToAdd = 0;
         int seaBattlePoints = 0;
 
+        updateAlive();
+
         if(this.card.equals("MONKEY_BUSINESS")){
             monkeyBusiness();
             return;
         }
 
-        if (!this.isAlive) {
+        if(this.card.equals("TREASURE_CHEST")){
+            treasureChestUpdateScore();
+        }
+
+        Set<String> rolledDice = new HashSet<>();
+        for (int i = 0; i < 8; i++) {
+            if (!this.rolled[i].toUpperCase().equals("SKULL")) {
+                rolledDice.add(this.rolled[i]);
+            }
+        }
+
+        if (!this.isAlive || this.skullCount >= 3) {
                 this.islandOfSkulls = false;
                 this.saves = new ArrayList<String>();
                 this.keeps = null;
@@ -190,6 +203,7 @@ public class Player {
             Random rand = new Random();
             int swords = rand.nextInt(4)+1;
             int swordCount = 0;
+
 
             switch (swords) {
                 case 1:
@@ -224,17 +238,9 @@ public class Player {
 
         }
 
-        if(this.card.equals("TREASURE_CHEST")){
-            treasureChestUpdateScore();
-        }
 
-        Set<String> rolledDice = new HashSet<>();
-        for (int i = 0; i < 8; i++) {
-            if(!this.rolled[i].toUpperCase().equals("SKULL")) {
-                rolledDice.add(this.rolled[i]);
-            } else {
-                this.skullCount++;
-            }
+        if(this.card.equals("GOLD") || this.card.equals("DIAMOND")){
+            scoreToAdd += 100;
         }
 
         for (String check : rolledDice) {
@@ -242,12 +248,10 @@ public class Player {
             if(check.equals("COIN") && this.card.equals("GOLD")){
                 count++;
                 fullChestCount--;
-                scoreToAdd += 100;
             }
             if(check.equals("DIAMOND") && this.card.equals("DIAMOND")){
                 count++;
                 fullChestCount--;
-                scoreToAdd += 100;
             }
             for (int i = 0; i < 8; i++) {
                 if (check.equals(this.rolled[i])) {
@@ -477,6 +481,7 @@ public class Player {
     }
 
     public void updateAlive(){
+        this.skullCount = 0;
         if(this.card.equals("SKULL")){
             Random rand = new Random();
             int ranSkull = rand.nextInt(3)+1;
