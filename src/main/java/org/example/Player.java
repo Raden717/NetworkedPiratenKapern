@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Player {
 
@@ -24,6 +25,7 @@ public class Player {
         "DIAMOND"
     };
 
+
     private String name;
 
     private String[] rolled;
@@ -34,6 +36,8 @@ public class Player {
 
     private int rolls;
 
+    private int[] keeps;
+
     private String card;
 
     private boolean turn;
@@ -41,6 +45,7 @@ public class Player {
     private boolean isAlive;
 
     public Player(String n){
+        this.keeps = null;
         this.rolled = new String[8];
         this.rolls = 8;
         this.name = n;
@@ -73,10 +78,15 @@ public class Player {
         if(skullCount == 3){
             this.isAlive = false;
         }
+        List<Integer> keepRoll = Arrays.stream(this.keeps).boxed().toList();
+
         for(int i = 0;i < 8; i++){
-            Random rand = new Random();
-            int randomRoll = rand.nextInt(6);
-            this.rolled[i] = Dice[randomRoll];
+            if(!keepRoll.contains(i) && this.rolled[i] != "SKULL"){
+                Random rand = new Random();
+                int randomRoll = rand.nextInt(6);
+                this.rolled[i] = Dice[randomRoll];
+            }
+
         }
     }
 
@@ -152,6 +162,13 @@ public class Player {
         //Update score
     }
 
+    public void keep(int[] k){
+        this.keeps = k;
+    }
+
+    public String[] getRolled(){
+        return this.rolled;
+    }
     public String getCard(){
         return this.card;
     }
