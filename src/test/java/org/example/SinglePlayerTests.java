@@ -137,6 +137,23 @@ class Tests {
         assertEquals(900, test.getScore());
     }
 
+    void unitTestSkullDeduction(){
+        Player test = new Player("Test");
+        test.setCard("CAPTAIN");
+        String[] forcedRoll = {"MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+
+        Player test2 = new Player("Test 2");
+        test.setCard("MONKEY_BUSINESS");
+        String[] forcedRoll2 = {"SKULL","SKULL","SKULL","SKULL","MONKEY","MONKEY","PARROT","PARROT"};
+        test2.setForceDice(forcedRoll2);
+        test2.updateScore();
+        test.deductScore(4); //Assuming networking can send the info of 4 skulls to the other player
+
+        assertEquals(4100, test.getScore());
+    }
+
     @Test
     void Test44(){
         Player test = new Player("Test");
