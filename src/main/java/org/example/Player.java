@@ -151,6 +151,11 @@ public class Player {
         int scoreToAdd = 0;
         int seaBattlePoints = 0;
 
+        if(this.card.equals("MONKEY_BUSINESS")){
+            monkeyBusiness();
+            return;
+        }
+
         if(this.card.equals("SEA_BATTLE")){
             Random rand = new Random();
             int swords = rand.nextInt(4)+1;
@@ -195,7 +200,7 @@ public class Player {
 
         Set<String> rolledDice = new HashSet<>();
         for (int i = 0; i < 8; i++) {
-            if(!this.rolled[i].equals("Skull")) {
+            if(!this.rolled[i].toUpperCase().equals("SKULL")) {
                 rolledDice.add(this.rolled[i]);
             } else {
                 this.skullCount++;
@@ -297,6 +302,92 @@ public class Player {
                     break;
             }
         }
+    }
+
+    public void monkeyBusiness(){
+        int scoreToAdd = 0;
+        int seaBattlePoints = 0;
+
+        Set<String> rolledDice = new HashSet<>();
+        for (int i = 0; i < 8; i++) {
+            if(!this.rolled[i].toUpperCase().equals("SKULL")) {
+                rolledDice.add(this.rolled[i]);
+            } else {
+                this.skullCount++;
+            }
+        }
+
+        if(this.skullCount == 3){
+            return;
+        }
+
+        int monkeyParrots = 0;
+        for (String check : rolledDice) {
+            if(!check.equals("PARROT") && !check.equals("MONKEY")) {
+                int count = 0;
+                for (int i = 0; i < 8; i++) {
+                    if (check.equals(this.rolled[i])) {
+                        if (this.rolled[i].equals("COIN")) {
+                            scoreToAdd += 100;
+                        }
+                        if (this.rolled[i].equals("DIAMOND")) {
+                            scoreToAdd += 100;
+                        }
+                        count++;
+                    }
+                }
+
+                switch (count) {
+                    case 3:
+                        scoreToAdd += 100;
+                        break;
+                    case 4:
+                        scoreToAdd += 200;
+                        break;
+                    case 5:
+                        scoreToAdd += 500;
+                        break;
+                    case 6:
+                        scoreToAdd += 1000;
+                        break;
+                    case 7:
+                        scoreToAdd += 2000;
+                        break;
+                    case 8:
+                        scoreToAdd += 4000;
+                        break;
+                }
+            } else {
+                for (int i = 0; i < 8; i++) {
+                    if (check.equals(this.rolled[i])) {
+                        monkeyParrots++;
+                    }
+                }
+                switch (monkeyParrots) {
+                    case 3:
+                        scoreToAdd += 100;
+                        break;
+                    case 4:
+                        scoreToAdd += 200;
+                        break;
+                    case 5:
+                        scoreToAdd += 500;
+                        break;
+                    case 6:
+                        scoreToAdd += 1000;
+                        break;
+                    case 7:
+                        scoreToAdd += 2000;
+                        break;
+                    case 8:
+                        scoreToAdd += 4000;
+                        break;
+                }
+            }
+        }
+        this.score += scoreToAdd;
+        //Update score
+
     }
 
     public void keep(int[] k){
