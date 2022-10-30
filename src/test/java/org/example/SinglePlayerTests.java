@@ -137,6 +137,7 @@ class Tests {
         assertEquals(900, test.getScore());
     }
 
+    @Test
     void unitTestSkullDeduction(){
         Player test = new Player("Test");
         test.setCard("CAPTAIN");
