@@ -452,5 +452,17 @@ class Tests {
         assertEquals(5400, test.getScore());
     }
 
+    @Test
+    void Test66(){
+        //score set of 8 swords on first roll and FC is captain (SC 4500x2 = 9000) since full chest
+        Player test = new Player("Test");
+        test.setCard("CAPTAIN");
+        test.roll();
+        String[] forcedRoll = {"SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(9000, test.getScore());
+    }
+
 
 }
