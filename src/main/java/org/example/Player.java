@@ -84,9 +84,20 @@ public class Player {
 
     }
     public void reroll(){
-        if(skullCount == 3){
-            this.isAlive = false;
+
+        if(islandOfSkulls) {
+            for (int i = 0; i < 8; i++) {
+                if (!this.rolled[i].toUpperCase().equals("SKULL")) {
+                    Random rand = new Random();
+                    int randomRoll = rand.nextInt(6);
+                    this.rolled[i] = Dice[randomRoll];
+                    if(this.rolled[i].equals("SKULL")){
+                        this.skullCount++;
+                    }
+                }
+            }
         }
+
 
         if(this.keeps != null) {
             List<Integer> keepRoll = Arrays.stream(this.keeps).boxed().toList();
@@ -226,10 +237,6 @@ public class Player {
             this.card = "";
             this.isAlive = true;
             //Does not add anything to the score and ends turn
-            return;
-        }
-        if(this.skullCount > 3){
-            this.islandOfSkulls = true; //If this is true, network checks this after score updates to then deduct point of other players
             return;
         }
 
@@ -462,6 +469,9 @@ public class Player {
         if(skullCount >= 3){
             this.isAlive = false;
         }
+        if(skullCount > 3){
+            this.islandOfSkulls = true;
+        }
     }
     public void deductScore(int skulls){
         this.score -= (skulls * 100);
@@ -502,6 +512,10 @@ public class Player {
 
     public int getRolls() {
         return this.rolls;
+    }
+
+    public int getSkullCount(){
+        return this.getSkullCount();
     }
 
     public String getName(){

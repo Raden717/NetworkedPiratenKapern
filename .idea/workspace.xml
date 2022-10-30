@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Modified updateScore() to properly reinitialize values after turn ends/dies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,20 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00007" summary="CODE: Code for Test 45, added more functions/variables to player">
-      <created>1667073651928</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1667073651928</updated>
-    </task>
-    <task id="LOCAL-00008" summary="TEST: Test45 refactor to check score">
-      <created>1667073848821</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1667073848822</updated>
     </task>
     <task id="LOCAL-00009" summary="CODE: Added getScore to player to check score for Test45.">
       <created>1667073958585</created>
@@ -487,7 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667153821496</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="CODE: Some networking code to kind of run the game and use the functions that have been created, not a fully runnable game yet but didn't want to commit hundreds of lines of code on networking all at once.">
+      <created>1667154516378</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1667154516379</updated>
+    </task>
+    <task id="LOCAL-00057" summary="REFACTOR: Modified updateScore() to properly reinitialize values after turn ends/dies">
+      <created>1667154707917</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1667154707917</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -513,8 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: Unit Test Sorceress" />
-    <MESSAGE value="CODE: Updated reroll() to account for sorceress" />
     <MESSAGE value="TEST: Unit Test for Sea Battle" />
     <MESSAGE value="CODE: Updated updateScore to account for sea battles" />
     <MESSAGE value="REFACTOR: Fixed a syntax error that messed with test cases" />
@@ -538,6 +536,8 @@
     <MESSAGE value="CODE: Added updateAlive procedure to make sure life is updated properly for the unitTest to pass" />
     <MESSAGE value="REFACTOR: Modifed updateAlive() to properly work as it had the wrong value check." />
     <MESSAGE value="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Modified, updateScore to properly reset values as turn ends here for the player" />
+    <MESSAGE value="CODE: Some networking code to kind of run the game and use the functions that have been created, not a fully runnable game yet but didn't want to commit hundreds of lines of code on networking all at once." />
+    <MESSAGE value="REFACTOR: Modified updateScore() to properly reinitialize values after turn ends/dies" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Modified updateScore() to properly reinitialize values after turn ends/dies" />
   </component>
 </project>
