@@ -46,7 +46,10 @@ public class Player {
 
     private boolean isAlive;
 
+    private int sorceressUse;
+
     public Player(String n){
+        this.sorceressUse = 1;
         this.saves = new ArrayList<String>();
         this.keeps = null;
         this.rolled = new String[8];
@@ -82,19 +85,40 @@ public class Player {
             this.isAlive = false;
         }
 
-
-        if(this.keeps != null) {
+        if(this.keeps.length != 0) {
             List<Integer> keepRoll = Arrays.stream(this.keeps).boxed().toList();
             for(int i = 0;i < 8; i++){
-                if(!keepRoll.contains(i) && this.rolled[i] != "SKULL"){
+                 if (this.rolled[i].toUpperCase().equals("SKULL")) {
+                    if (this.card.equals("SORCERESS") && this.sorceressUse == 1) {
+                        Random rand = new Random();
+                        int randomRoll = rand.nextInt(6);
+                        this.rolled[i] = Dice[randomRoll];
+                        this.sorceressUse = 0;
+                    }
+                }
+                if(!keepRoll.contains(i) && !this.rolled[i].toUpperCase().equals("SKULL")) {
                     Random rand = new Random();
                     int randomRoll = rand.nextInt(6);
                     this.rolled[i] = Dice[randomRoll];
                 }
 
             }
-        } else  {
-            roll();
+        } else {
+            for (int i = 0; i < 8; i++) {
+                if (!this.rolled[i].toUpperCase().equals("SKULL")) {
+                    Random rand = new Random();
+                    int randomRoll = rand.nextInt(6);
+                    this.rolled[i] = Dice[randomRoll];
+                } else {
+                    if(this.card.equals("SORCERESS") && this.sorceressUse == 1){
+                        Random rand = new Random();
+                        int randomRoll = rand.nextInt(6);
+                        this.rolled[i] = Dice[randomRoll];
+                        this.sorceressUse = 0;
+                    }
+                }
+
+            }
         }
 
 
@@ -248,6 +272,14 @@ public class Player {
 
     public boolean getAlive(){
         return this.isAlive;
+    }
+
+    public int getRolls() {
+        return this.rolls;
+    }
+
+    public int getSorceressUse(){
+        return this.sorceressUse;
     }
 
 }
