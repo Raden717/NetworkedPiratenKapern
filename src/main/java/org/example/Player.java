@@ -85,7 +85,7 @@ public class Player {
             this.isAlive = false;
         }
 
-        if(this.keeps.length != 0) {
+        if(this.keeps != null) {
             List<Integer> keepRoll = Arrays.stream(this.keeps).boxed().toList();
             for(int i = 0;i < 8; i++){
                  if (this.rolled[i].toUpperCase().equals("SKULL")) {
