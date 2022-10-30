@@ -85,6 +85,17 @@ class Tests {
     }
 
     @Test
+    void unitTestGold(){
+        Player test = new Player("Test");
+        test.setCard("GOLD");
+        String[] forcedRoll = {"COIN","COIN","COIN","COIN","MONKEY","PARROT","SKULL","SWORD"};
+        test.setForceDice(forcedRoll);
+        test.updateScore();
+        assertEquals(1000, test.getScore());
+
+    }
+
+    @Test
     void Test44(){
         Player test = new Player("Test");
 

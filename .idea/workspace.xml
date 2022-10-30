@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Updated updateScore to account for sea battles">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Fixed a syntax error that messed with test cases">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests">
+  <component name="RunManager" selected="JUnit.Tests.unitTestGold">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -105,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.UnitTestTreasureChest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.unitTestGold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +116,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="UnitTestTreasureChest" />
+      <option name="METHOD_NAME" value="unitTestGold" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.unitTestGold" />
         <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.unitTestSeaBattle" />
         <item itemvalue="JUnit.Tests.UnitTestSorceress" />
         <item itemvalue="JUnit.Tests.UnitTestCaptain" />
-        <item itemvalue="JUnit.Tests.UnitTestTreasureChest" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667142694775</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="REFACTOR: Fixed a syntax error that messed with test cases">
+      <created>1667142752543</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1667142752543</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -409,7 +417,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Added getScore to player to check score for Test45." />
     <MESSAGE value="TEST: Modified Test44 to check score and expected score." />
     <MESSAGE value="CODE: No real code needed to be added for test44 as the change for the test case was to utilize getScore." />
     <MESSAGE value="TEST: Test46" />
@@ -434,17 +441,7 @@
     <MESSAGE value="CODE: Updated reroll() to account for sorceress" />
     <MESSAGE value="TEST: Unit Test for Sea Battle" />
     <MESSAGE value="CODE: Updated updateScore to account for sea battles" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Updated updateScore to account for sea battles" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="REFACTOR: Fixed a syntax error that messed with test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Fixed a syntax error that messed with test cases" />
   </component>
 </project>
