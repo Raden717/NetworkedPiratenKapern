@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: Unit Test for monkey business">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Updated updateScore to account for monkey business card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SinglePlayerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.unitTestMonkeyBusiness">
+  <component name="RunManager" selected="JUnit.Tests.unitTestSkulls">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
@@ -122,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.unitTestSeaBattle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.unitTestSkulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +132,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="unitTestSeaBattle" />
+      <option name="METHOD_NAME" value="unitTestSkulls" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.unitTestSkulls" />
+        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.unitTestMonkeyBusiness" />
         <item itemvalue="JUnit.Tests.unitTestDiamond" />
-        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.unitTestGold" />
-        <item itemvalue="JUnit.Tests.unitTestSeaBattle" />
       </list>
     </recent_temporary>
   </component>
@@ -437,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667144717463</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="CODE: Updated updateScore to account for monkey business card">
+      <created>1667145488018</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1667145488018</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Updated updateScore() to properly handle score if the player doesn't die for Test47." />
     <MESSAGE value="TEST: Test47 modified as the test wasn't properly made, did not account for the second reroll" />
     <MESSAGE value="CODE: Modified updateScore() to make sure it checks skulls after however many rerolls for Test47." />
     <MESSAGE value="TEST: U-Test for fortune card rolling" />
@@ -477,6 +483,7 @@
     <MESSAGE value="TEST: Unit Test for Diamond card" />
     <MESSAGE value="CODE: Updated updateScore to account for Diamond card" />
     <MESSAGE value="TEST: Unit Test for monkey business" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: Unit Test for monkey business" />
+    <MESSAGE value="CODE: Updated updateScore to account for monkey business card" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Updated updateScore to account for monkey business card" />
   </component>
 </project>
