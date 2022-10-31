@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modified player to make test cases fully work">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Modified rollCard to reinitialize values">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +59,22 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests">
-    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Client" />
+  <component name="RunManager" selected="Application.Server (1)">
+    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
+      <module name="COMP4004-F22-A1-101104851" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -83,22 +97,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.Test102" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004-F22-A1-101104851" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test102" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Server (1)" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.UnitTestTreasureChest" />
         <item itemvalue="JUnit.Tests.UnitTestFortuneCardPick" />
-        <item itemvalue="JUnit.Tests.Test102" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -153,13 +151,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00096" summary="TEST: A-Test69">
-      <created>1667165420093</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1667165420095</updated>
     </task>
     <task id="LOCAL-00097" summary="TEST: A-Test70">
       <created>1667165520575</created>
@@ -497,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667178248233</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="REFACTOR: Modified rollCard to reinitialize values">
+      <created>1667179001417</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1667179001420</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -523,7 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test103" />
     <MESSAGE value="TEST: A-Test106" />
     <MESSAGE value="TEST: A-Test106 not written properly" />
     <MESSAGE value="CODE: Modified and added setter to force the skull number on the fortune card" />
@@ -548,6 +545,7 @@
     <MESSAGE value="CODE: Networking code" />
     <MESSAGE value="REFACTOR: Removed main file as no need" />
     <MESSAGE value="CODE: Modified player to make test cases fully work" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modified player to make test cases fully work" />
+    <MESSAGE value="REFACTOR: Modified rollCard to reinitialize values" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Modified rollCard to reinitialize values" />
   </component>
 </project>
