@@ -15,6 +15,11 @@ public class Server
     //Player count (should max to 3)
     static int playerCounts = 0;
 
+    static Player winner;
+
+    static boolean gameEnd;
+
+    static int pointThreshold = 3000;
     static boolean gameStart = false;
 
 
@@ -122,6 +127,26 @@ class ClientHandler implements Runnable
                         }
                     }
                 }
+                if(receivedArray[receivedArray.length-1].equals("save")){
+                    int[] saving = new int[receivedArray.length-1];
+                    for(int i = 0; i < receivedArray.length-1; i++){
+                        saving[i] = Integer.valueOf(receivedArray[i]);
+                    }
+                    for(ClientHandler mc : Server.players) {
+                        if (mc.name.equals(this.name)) {
+                            for (Player p : Server.playerInfo) {
+                                if (p.getName().equals(this.name)) {
+                                    if(p.getCard().equals("TREASURE_CHEST")){
+                                        p.save(saving);
+                                        mc.send.writeUTF("You have saved your cards");
+                                        mc.send.writeUTF("If you would like to reroll, state the cards you would " +
+                                                "like to keep and then type reroll after ex. '1 2 3 4 reroll' or just 'reroll', if you would like to end turn type 'Finish' " );
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 
                 if(received.equals("roll") || receivedArray[receivedArray.length-1].equals("reroll")){
                     for(ClientHandler mc : Server.players){
@@ -142,15 +167,29 @@ class ClientHandler implements Runnable
 
                                         p.reroll();
                                     }
-                                    p.updateAlive();
                                     mc.send.writeUTF("Here is your dice");
                                     for (int i = 0; i < 8; i++) {
                                         mc.send.writeUTF(String.valueOf(i) + "." + p.getRolled()[i]);
                                     }
-                                    mc.send.writeUTF("Here is your card: " + p.getCard());
+                                    if(p.getCard().equals("SEA_BATTLE")){
+                                        mc.send.writeUTF("Here is your card: " + p.getCard() +" "+ p.getswordBattleReq());
+                                    } else if (p.getCard().equals("SKULL")) {
+                                        mc.send.writeUTF("Here is your card: " + p.getCard() + " " + p.getSkullFace());
+                                    } else if (p.getCard().equals("SORCERESS")){
+                                        mc.send.writeUTF("Here is your card: " + p.getCard() + " Uses left: " + p.getSorceressUse());
+                                    } else {
+                                        mc.send.writeUTF("Here is your card: " + p.getCard());
+                                    }
+                                    p.updateAlive();
+
                                     if(p.getAlive()){
-                                        mc.send.writeUTF("If you would like to reroll, state the cards you would" +
-                                                "like to keep and then type reroll after ex. '1 2 3 4 reroll' or if you would like to end turn type 'Finish' " );
+                                        if(p.getCard().equals("TREASURE_CHEST")){
+                                            mc.send.writeUTF("You have a treasure chest, if you'd like to save type what you'd like" +
+                                                    "to save with this format '1 2 3 4 save' '");
+
+                                        }
+                                        mc.send.writeUTF("If you would like to reroll, state the cards you would " +
+                                                "like to keep and then type reroll after ex. '1 2 3 4 reroll' or just 'reroll', if you would like to end turn type 'Finish' " );
                                     } else {
                                         if(p.getislandofSkulls()){
                                             mc.send.writeUTF("You are now on the island of skulls, we will rerolling until you do not roll a skull");
@@ -173,8 +212,14 @@ class ClientHandler implements Runnable
                                                     newP.deductScore(skullCount);
                                                 }
                                             }
+                                            for(ClientHandler c : Server.players){
+                                                if(this.name != c.name){
+                                                    c.send.writeUTF("You have lost due to island of skulls" + String.valueOf(skullCount*100));
+                                                }
+                                            }
 
                                         } else {
+
                                             mc.send.writeUTF("You have died, end turn by typing Finish");
                                         }
                                     }
@@ -193,13 +238,19 @@ class ClientHandler implements Runnable
                     nextPlayer = "Player " + Integer.toString(nextPlayerInt);
                     for(Player p: Server.playerInfo){
                         if(this.name.equals(p.getName())){
-                            if(p.getAlive()){
-                                p.updateScore();
-                            }
+                            p.updateScore();
                         }
                     }
                     String scoreboard = "Current Scores\n";
                     for(Player p: Server.playerInfo){
+                        if(p.getScore() >= Server.pointThreshold){
+                            Player prevWinner = Server.winner;
+                            Server.winner = p;
+                            Server.pointThreshold = p.getScore();
+                            if(prevWinner == Server.winner){
+                                Server.gameEnd = true;
+                            }
+                        }
                         scoreboard = scoreboard + p.getName() + ": " + String.valueOf(p.getScore()) + "\n";
                     }
                     for (ClientHandler mc : Server.players)
@@ -207,13 +258,23 @@ class ClientHandler implements Runnable
                         mc.send.writeUTF(scoreboard);
                         System.out.println(nextPlayer);
                         System.out.println(mc.name);
-                        if(mc.name.equals(nextPlayer)){
-                            mc.isDoneTurn = false;
-                            mc.send.writeUTF("It is now your turn, type roll to start");
+                        if(!Server.gameEnd){
+                            if(mc.name.equals(nextPlayer)){
+                                mc.isDoneTurn = false;
+                                mc.send.writeUTF("It is now your turn, type roll to start");
+                            } else {
+                                mc.isDoneTurn = true;
+                                mc.send.writeUTF("Waiting for your turn");
+                            }
                         } else {
-                            mc.isDoneTurn = true;
-                            mc.send.writeUTF("Waiting for your turn");
+                            if(mc.name.equals(Server.winner.getName())){
+                                mc.send.writeUTF("You've won!");
+                            } else {
+                                mc.send.writeUTF("You've lost!");
+
+                            }
                         }
+
                     }
                 }
 
