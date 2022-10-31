@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="TEST: A-Test126">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Networking code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +57,9 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.Test126">
-    <configuration name="Tests.Test119" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Client" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -68,15 +67,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test119" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test120" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -84,15 +80,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test120" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test122" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -100,15 +93,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test122" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test123" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -116,15 +106,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test123" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.Test126" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="COMP4004-F22-A1-101104851" />
       <extension name="coverage">
         <pattern>
@@ -132,21 +119,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
-      <option name="METHOD_NAME" value="Test126" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.Test126" />
-        <item itemvalue="JUnit.Tests.Test123" />
-        <item itemvalue="JUnit.Tests.Test122" />
-        <item itemvalue="JUnit.Tests.Test120" />
-        <item itemvalue="JUnit.Tests.Test119" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Server (4)" />
+        <item itemvalue="Application.Server (3)" />
+        <item itemvalue="Application.Server (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -158,27 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00091" summary="CODE: Modified updateScore to account for edge cases with full chests for TEST64">
-      <created>1667164911027</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1667164911029</updated>
-    </task>
-    <task id="LOCAL-00092" summary="TEST: A-Test65">
-      <created>1667164992566</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1667164992567</updated>
-    </task>
-    <task id="LOCAL-00093" summary="TEST: A-Test66">
-      <created>1667165069759</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1667165069762</updated>
     </task>
     <task id="LOCAL-00094" summary="TEST: A-Test67">
       <created>1667165175667</created>
@@ -502,7 +464,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667173702272</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="CODE: Added variables for networking and UI purposes">
+      <created>1667174485470</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1667174485476</updated>
+    </task>
+    <task id="LOCAL-00141" summary="REFACTOR: Refactored some functions to make them work better with networking">
+      <created>1667176552849</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1667176552852</updated>
+    </task>
+    <task id="LOCAL-00142" summary="CODE: Networking code">
+      <created>1667176590278</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1667176590280</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -528,9 +511,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test97" />
-    <MESSAGE value="TEST: A-Test98" />
-    <MESSAGE value="TEST: A-Test99" />
     <MESSAGE value="TEST: A-Test102" />
     <MESSAGE value="CODE: Modified updateScore to account for swords counting for chest if won the sea battle" />
     <MESSAGE value="TEST: A-Test103" />
@@ -553,6 +533,9 @@
     <MESSAGE value="TEST: A-Test122" />
     <MESSAGE value="TEST: A-Test123" />
     <MESSAGE value="TEST: A-Test126" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST: A-Test126" />
+    <MESSAGE value="CODE: Added variables for networking and UI purposes" />
+    <MESSAGE value="REFACTOR: Refactored some functions to make them work better with networking" />
+    <MESSAGE value="CODE: Networking code" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Networking code" />
   </component>
 </project>
