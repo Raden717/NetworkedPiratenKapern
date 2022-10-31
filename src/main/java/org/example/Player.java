@@ -92,7 +92,6 @@ public class Player {
         this.islandOfSkulls = false;
         this.saves = new ArrayList<String>();
         this.keeps = null;
-        this.score = 0;
         this.skullCount = 0;
         this.isAlive = true;
 
