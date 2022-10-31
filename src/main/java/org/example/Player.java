@@ -54,7 +54,10 @@ public class Player {
 
     private int swordBattleReq;
 
+    private int seaBattleDeduction;
+
     public Player(String n){
+        this.seaBattleDeduction = 0;
         this.swordBattleReq = 0;
         this.islandOfSkulls = false;
         this.sorceressUse = 1;
@@ -83,6 +86,7 @@ public class Player {
     }
 
     public void roll(){
+        seaBattleDeduction = 0;
         if(skullCount == 3){
             this.isAlive = false;
         }
@@ -254,6 +258,7 @@ public class Player {
 
             if(swordCount < swords){
                 this.score -= seaBattlePoints;
+                seaBattleDeduction = seaBattlePoints;
                 if(this.score < 0){
                     this.score = 0;
                 }
@@ -627,6 +632,10 @@ public class Player {
 
     public void setSkullFace(int n){
         this.skullCard = n;
+    }
+
+    public int getSkullFace(){
+        return this.skullCard;
     }
 
 }
