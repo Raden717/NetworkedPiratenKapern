@@ -74,6 +74,7 @@ public class Player {
     }
 
     public void rollCard(){
+        this.skullCard = 0;
         this.swordBattleReq = 0;
         Random rand = new Random();
         int randomRoll = rand.nextInt(8);

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Removed main file as no need">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modified player to make test cases fully work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
     </list>
@@ -153,13 +153,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00095" summary="TEST: A-Test68">
-      <created>1667165260757</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1667165260759</updated>
     </task>
     <task id="LOCAL-00096" summary="TEST: A-Test69">
       <created>1667165420093</created>
@@ -497,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667177893718</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="CODE: Modified player to make test cases fully work">
+      <created>1667178248230</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1667178248233</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -523,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Modified updateScore to account for swords counting for chest if won the sea battle" />
     <MESSAGE value="TEST: A-Test103" />
     <MESSAGE value="TEST: A-Test106" />
     <MESSAGE value="TEST: A-Test106 not written properly" />
@@ -548,6 +547,7 @@
     <MESSAGE value="REFACTOR: Refactored some functions to make them work better with networking" />
     <MESSAGE value="CODE: Networking code" />
     <MESSAGE value="REFACTOR: Removed main file as no need" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Removed main file as no need" />
+    <MESSAGE value="CODE: Modified player to make test cases fully work" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modified player to make test cases fully work" />
   </component>
 </project>
