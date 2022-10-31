@@ -238,6 +238,14 @@ class ClientHandler implements Runnable
                     nextPlayer = "Player " + Integer.toString(nextPlayerInt);
                     for(Player p: Server.playerInfo){
                         if(this.name.equals(p.getName())){
+                            if(p.getCard().equals("SEA_BATTLE")){
+                                for (ClientHandler mc : Server.players){
+                                    if(p.getName().equals(mc.name)){
+                                        mc.send.writeUTF("You got " + String.valueOf(p.getSeaBattleDeduction()) +" from sea battle");
+                                    }
+                                }
+
+                            }
                             p.updateScore();
                         }
                     }
