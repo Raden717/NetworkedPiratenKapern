@@ -86,10 +86,14 @@ public class Player {
     }
 
     public void roll(){
-        seaBattleDeduction = 0;
-        if(skullCount == 3){
-            this.isAlive = false;
-        }
+        this.seaBattleDeduction = 0;
+        this.swordBattleReq = 0;
+        this.islandOfSkulls = false;
+        this.saves = new ArrayList<String>();
+        this.keeps = null;
+        this.score = 0;
+        this.skullCount = 0;
+        this.isAlive = true;
 
         for(int i = 0;i < 8; i++){
             Random rand = new Random();
