@@ -74,6 +74,7 @@ public class Player {
     }
 
     public void rollCard(){
+        this.swordBattleReq = 0;
         Random rand = new Random();
         int randomRoll = rand.nextInt(8);
         this.card = cards[randomRoll];
@@ -87,7 +88,6 @@ public class Player {
 
     public void roll(){
         this.seaBattleDeduction = 0;
-        this.swordBattleReq = 0;
         this.islandOfSkulls = false;
         this.saves = new ArrayList<String>();
         this.keeps = null;
@@ -198,7 +198,7 @@ public class Player {
             return;
         }
 
-        if(this.card.equals("TREASURE_CHEST")){
+        if(this.card.equals("TREASURE_CHEST") && !this.isAlive){
             treasureChestUpdateScore();
         }
 
