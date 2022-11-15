@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-// Server class
+// Server class for the program
 public class Server
 {
 
