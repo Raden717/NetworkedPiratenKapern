@@ -18,6 +18,9 @@ Feature: SinglePlayer Tests
       | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | "DIAMOND" | 0 | 5400 |
       | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "CAPTAIN" | 0 | 9000 |
       | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "COIN" | "COIN" | "SKULL" | "SKULL" | "GOLD" | 0 | 600 |
+      | "MONKEY" | "MONKEY" | "MONKEY" | "PARROT" | "PARROT" | "PARROT" | "SKULL" | "COIN" | "MONKEY_BUSINESS" | 0 | 1100 |
+      | "MONKEY" | "MONKEY" | "MONKEY" | "PARROT" | "PARROT" | "SKULL" | "SKULL" | "SKULL" | "MONKEY_BUSINESS" | 0 | 0 |
+
 
   Scenario Outline: Roll and Reroll Once Scores
     Given PlayerOne rolls <s1>,<s2>,<s3>,<s4>,<s5>,<s6>,<s7>,<s8> dice and Card <CARD> with face value <faceNum>
@@ -36,6 +39,7 @@ Feature: SinglePlayer Tests
       | "MONKEY" | "MONKEY" | "SKULL" | "SKULL" | "DIAMOND" | "PARROT" | "SWORD" | "SWORD" | "GOLD" | 0 | "DIAMOND" | "DIAMOND" | "SKULL" | "SKULL" | "DIAMOND" | "PARROT" | "SWORD" | "SWORD" | 500 |
       | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "COIN" | "MONKEY" | "PARROT" | 600 |
       | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "DIAMOND" | 0 | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "COIN" | "MONKEY" | "PARROT" | 500 |
+      | "MONKEY" | "MONKEY" | "PARROT" | "PARROT" | "COIN" | "COIN" | "SWORD" | "SWORD" | "MONKEY_BUSINESS" | 0 | "MONKEY" | "MONKEY" | "PARROT" | "PARROT" | "COIN" | "COIN" | "MONKEY" | "PARROT" | 1700 |
 
   Scenario Outline: Roll and Rerolls Twice
     Given PlayerOne rolls <s1>,<s2>,<s3>,<s4>,<s5>,<s6>,<s7>,<s8> dice and Card <CARD> with face value <faceNum>
@@ -48,4 +52,6 @@ Feature: SinglePlayer Tests
       | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SKULL" | "MONKEY" | "MONKEY" | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SKULL" | "SKULL" | "MONKEY" | 0 |
       | "SKULL" | "PARROT" | "PARROT" | "COIN" | "COIN" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "COIN" | "COIN" | "COIN" | "COIN" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | 4800 |
       | "SKULL" | "PARROT" | "PARROT" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "PARROT" | "PARROT" | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | "SWORD" | "MONKEY" | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | 600 |
+
+
 
