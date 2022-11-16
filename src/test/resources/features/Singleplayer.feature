@@ -27,5 +27,13 @@ Feature: SinglePlayer Tests
     Examples:
       | s1 | s2 | s3 | s4 | s5 | s6 | s7 | s8 | CARD | faceNum | d1 | d2 | d3 | d4 | d5 | d6 | d7 | d8 | numScore |
       | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SKULL" | "SKULL" | "SWORD" | 0 |
-
+      | "SKULL" | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SKULL" | "SWORD" | 0 |
+      | "MONKEY" | "MONKEY" | "SKULL" | "SKULL" | "PARROT" | "PARROT" | "SWORD" | "SWORD" | "GOLD" | 0 | "MONKEY" | "MONKEY" | "SKULL" | "SKULL" | "SWORD" | "MONKEY" | "SWORD" | "SWORD" | 300 |
+      | "SKULL" | "COIN" | "COIN" | "PARROT" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "COIN" | "COIN" | "COIN" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | 800 |
+      | "SKULL" | "COIN" | "COIN" | "PARROT" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "CAPTAIN" | 0 | "SKULL" | "COIN" | "COIN" | "COIN" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | 1200 |
+      | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "GOLD" | 0 | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | 4600 |
+      | "MONKEY" | "MONKEY" | "SKULL" | "SKULL" | "PARROT" | "PARROT" | "SWORD" | "SWORD" | "DIAMOND" | 0 | "MONKEY" | "MONKEY" | "SKULL" | "SKULL" | "DIAMOND" | "DIAMOND" | "SWORD" | "SWORD" | 400 |
+      | "MONKEY" | "MONKEY" | "SKULL" | "SKULL" | "DIAMOND" | "PARROT" | "SWORD" | "SWORD" | "GOLD" | 0 | "DIAMOND" | "DIAMOND" | "SKULL" | "SKULL" | "DIAMOND" | "PARROT" | "SWORD" | "SWORD" | 500 |
+      | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "COIN" | "MONKEY" | "PARROT" | 600 |
+      | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "DIAMOND" | 0 | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "COIN" | "MONKEY" | "PARROT" | 500 |
 
