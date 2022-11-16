@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added more step definitions">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added more scenarios for multiplayer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" afterDir="false" />
     </list>
@@ -166,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00108" summary="TEST: A-Test84">
-      <created>1667167846124</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1667167846127</updated>
     </task>
     <task id="LOCAL-00109" summary="CODE: MOdified monkeybusiness procedure to make test84 work">
       <created>1667168139914</created>
@@ -510,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668625936197</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="CODE: Added more scenarios for multiplayer">
+      <created>1668626255141</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1668626255142</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -536,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test115" />
     <MESSAGE value="TEST: A-Test116" />
     <MESSAGE value="TEST: A-Test117" />
     <MESSAGE value="TEST: A-Test119" />
@@ -561,6 +560,7 @@
     <MESSAGE value="CODE: pom.xml updated, and first multiplayer feature scenario" />
     <MESSAGE value="REFACTOR: Player and server updated for rule checks and UI purposes" />
     <MESSAGE value="CODE: Added more step definitions" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added more step definitions" />
+    <MESSAGE value="CODE: Added more scenarios for multiplayer" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added more scenarios for multiplayer" />
   </component>
 </project>
