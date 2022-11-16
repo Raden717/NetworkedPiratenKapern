@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added monkey business acceptance testing to scenario outlines where they fit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added step defintions for dying and saving dice with treasure chest">
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/StepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" afterDir="false" />
     </list>
@@ -206,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00120" summary="TEST: A-Test106">
-      <created>1667170956842</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1667170956845</updated>
     </task>
     <task id="LOCAL-00121" summary="TEST: A-Test106 not written properly">
       <created>1667171149321</created>
@@ -550,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668636637633</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="CODE: Added step defintions for dying and saving dice with treasure chest">
+      <created>1668638018735</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1668638018737</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -576,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Modified player to make test cases fully work" />
     <MESSAGE value="REFACTOR: Modified rollCard to reinitialize values" />
     <MESSAGE value="CODE: Added getters for UI purposes" />
     <MESSAGE value="CODE: Networking code" />
@@ -601,6 +599,7 @@
     <MESSAGE value="CODE: Added scenario outline of roll and rerolls twice and init example" />
     <MESSAGE value="CODE: Added the rest of the simple single player scoring where a player rolls and rerolls twice" />
     <MESSAGE value="CODE: Added monkey business acceptance testing to scenario outlines where they fit" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added monkey business acceptance testing to scenario outlines where they fit" />
+    <MESSAGE value="CODE: Added step defintions for dying and saving dice with treasure chest" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added step defintions for dying and saving dice with treasure chest" />
   </component>
 </project>

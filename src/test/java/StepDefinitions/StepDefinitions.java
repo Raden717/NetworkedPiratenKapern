@@ -91,6 +91,12 @@ public class StepDefinitions {
         test.save(saving);
     }
 
+    @And("Player clears chest and saves 4 dice in treasure chest, positions {int}, {int}, {int}, {int}")
+    public void save5Dice(int n1, int n2, int n3, int n4){
+        int[] saving = {n1,n2,n3,n4};
+        test.save(saving);
+    }
+
     @And("Player clears chest and saves 5 dice in treasure chest, positions {int}, {int}, {int}, {int}, {int}")
     public void save5Dice(int n1, int n2, int n3, int n4, int n5){
         int[] saving = {n1,n2,n3,n4,n5};
