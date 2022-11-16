@@ -37,3 +37,13 @@ Feature: SinglePlayer Tests
       | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "COIN" | "MONKEY" | "PARROT" | 600 |
       | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "DIAMOND" | 0 | "SKULL" | "COIN" | "COIN" | "MONKEY" | "PARROT" | "COIN" | "MONKEY" | "PARROT" | 500 |
 
+  Scenario Outline: Roll and Rerolls Twice
+    Given PlayerOne rolls <s1>,<s2>,<s3>,<s4>,<s5>,<s6>,<s7>,<s8> dice and Card <CARD> with face value <faceNum>
+    And PlayerOne rolls again <d1>,<d2>,<d3>,<d4>,<d5>,<d6>,<d7>,<d8> dice
+    And PlayerOne rolls again <e1>,<e2>,<e3>,<e4>,<e5>,<e6>,<e7>,<e8> dice
+    And PlayerOne decides to end turn
+    Then PlayerOne should have score <numScore>
+    Examples:
+      | s1 | s2 | s3 | s4 | s5 | s6 | s7 | s8 | CARD | faceNum | d1 | d2 | d3 | d4 | d5 | d6 | d7 | d8 | e1 | e2 | e3 | e4 | e5 | e6 | e7 | e8 | numScore |
+      | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SKULL" | "MONKEY" | "MONKEY" | "SKULL" | "PARROT" | "PARROT" | "PARROT" | "PARROT" | "SKULL" | "SKULL" | "MONKEY" | 0 |
+

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added a step definition and initial Scenario out line for scores where the player rolls and rerolls once">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="Refactor: Refactored a step definition to make sure it's using a reroll function instead of the intial roll function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" afterDir="false" />
     </list>
@@ -68,7 +68,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Roll and Reroll Once Scores">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Roll and Rerolls Twice">
     <configuration name="Feature: Multiplayer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" />
@@ -77,25 +77,6 @@
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Feature: Multiplayer" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: Singleplayer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="COMP4004-F22-A1-101104851" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin  --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Feature: Singleplayer" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -136,6 +117,26 @@
       <option name="NAME_FILTER" value="^Roll and Reroll Scores$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Roll and Reroll Scores$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Roll and Reroll Scores" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Roll and Rerolls Twice" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="COMP4004-F22-A1-101104851" />
+      <option name="NAME_FILTER" value="^Roll and Rerolls Twice$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Roll and Rerolls Twice$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Roll and Rerolls Twice" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -189,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Roll and Rerolls Twice" />
+        <item itemvalue="Cucumber Java.Scenario: SingleRoll Scores" />
         <item itemvalue="Cucumber Java.Scenario: Roll and Reroll Once Scores" />
         <item itemvalue="Cucumber Java.Scenario: Roll and Reroll Scores" />
-        <item itemvalue="Cucumber Java.Scenario: SingleRoll Scores" />
         <item itemvalue="Cucumber Java.Scenario: Single Roll" />
-        <item itemvalue="Cucumber Java.Feature: Singleplayer" />
       </list>
     </recent_temporary>
   </component>
@@ -205,20 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00114" summary="TEST: A-Test98">
-      <created>1667170287128</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1667170287130</updated>
-    </task>
-    <task id="LOCAL-00115" summary="TEST: A-Test99">
-      <created>1667170339580</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1667170339582</updated>
     </task>
     <task id="LOCAL-00116" summary="TEST: A-Test99">
       <created>1667170361134</created>
@@ -549,7 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668634136543</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="CODE: Added the simple examples for roll and reroll once scores">
+      <created>1668635155684</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1668635155686</updated>
+    </task>
+    <task id="LOCAL-00164" summary="Refactor: Refactored a step definition to make sure it's using a reroll function instead of the intial roll function">
+      <created>1668635464678</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1668635464680</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -575,8 +576,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test123" />
-    <MESSAGE value="TEST: A-Test126" />
     <MESSAGE value="CODE: Added variables for networking and UI purposes" />
     <MESSAGE value="REFACTOR: Refactored some functions to make them work better with networking" />
     <MESSAGE value="REFACTOR: Removed main file as no need" />
@@ -600,6 +599,8 @@
     <MESSAGE value="CODE: Modified scenarios and added initial scenario outline" />
     <MESSAGE value="CODE: Added examples to the singleroll score scenario outline" />
     <MESSAGE value="CODE: Added a step definition and initial Scenario out line for scores where the player rolls and rerolls once" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added a step definition and initial Scenario out line for scores where the player rolls and rerolls once" />
+    <MESSAGE value="CODE: Added the simple examples for roll and reroll once scores" />
+    <MESSAGE value="Refactor: Refactored a step definition to make sure it's using a reroll function instead of the intial roll function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor: Refactored a step definition to make sure it's using a reroll function instead of the intial roll function" />
   </component>
 </project>
