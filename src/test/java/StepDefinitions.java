@@ -20,6 +20,46 @@ public class StepDefinitions {
         test.setCard(card);
     }
 
+    @Given("Player1 rolls {String[]} dice and Card {String} with face value {int} ")
+    public void forcedRollP1(String[] rolls, String card, int faceValue) {
+        pointThreshold = 3000;
+        test = new Player("Test");
+        test.roll();
+        test.setForceDice(rolls);
+        test.setCard(card);
+        if(card.equals("SEA_BATTLE")){
+            test.setSwordsSea(faceValue);
+        } else if (card.equals("SKULL")){
+            test.setSkullFace(faceValue);
+        }
+    }
+
+    @Given("Player2 rolls {String[]} dice and Card {String} with face value {int} ")
+    public void forcedRollP2(String[] rolls, String card, int faceValue) {
+        test2 = new Player("Test");
+        test2.roll();
+        test2.setForceDice(rolls);
+        test2.setCard(card);
+        if(card.equals("SEA_BATTLE")){
+            test2.setSwordsSea(faceValue);
+        } else if (card.equals("SKULL")){
+            test2.setSkullFace(faceValue);
+        }
+    }
+
+    @Given("Player3 rolls {String[]} dice and Card {String} with face value {int} ")
+    public void forcedRollP3(String[] rolls, String card, int faceValue) {
+        test3 = new Player("Test");
+        test3.roll();
+        test3.setForceDice(rolls);
+        test3.setCard(card);
+        if(card.equals("SEA_BATTLE")){
+            test3.setSwordsSea(faceValue);
+        } else if (card.equals("SKULL")){
+            test3.setSkullFace(faceValue);
+        }
+    }
+
     @And("Player1 decides to end turn")
     public void endTurnP1(){
         test.updateAlive();

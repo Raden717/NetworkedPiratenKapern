@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Step definitions to account for all players">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Step definitions modified to use game procedures to  account for scores and winner properly">
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,13 +145,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00103" summary="CODE: Modified reroll to account for not wanting to reroll skull immediately">
-      <created>1667166548257</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1667166548259</updated>
     </task>
     <task id="LOCAL-00104" summary="TEST: A-Test82">
       <created>1667166696978</created>
@@ -490,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668610097781</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="REFACTOR: Step definitions modified to use game procedures to  account for scores and winner properly">
+      <created>1668610922343</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1668610922344</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -516,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test110" />
     <MESSAGE value="TEST: A-Test110 removed a skull face value that is unneeded" />
     <MESSAGE value="CODE: Modified updateAlive to make sure the correct number of skulls is on the player before deduction  points from others" />
     <MESSAGE value="TEST: A-Test111" />
@@ -541,6 +539,7 @@
     <MESSAGE value="CODE: Step definitions" />
     <MESSAGE value="CODE: Added a winning check within the player" />
     <MESSAGE value="CODE: Step definitions to account for all players" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Step definitions to account for all players" />
+    <MESSAGE value="REFACTOR: Step definitions modified to use game procedures to  account for scores and winner properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Step definitions modified to use game procedures to  account for scores and winner properly" />
   </component>
 </project>
