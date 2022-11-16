@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: pom.xml updated, and first multiplayer feature scenario">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added more step definitions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/StepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +68,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Row140">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Client" />
       <module name="COMP4004-F22-A1-101104851" />
@@ -131,15 +128,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Row142" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Row140" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="COMP4004-F22-A1-101104851" />
-      <option name="NAME_FILTER" value="^Row142$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Row142$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Row142" />
+      <option name="NAME_FILTER" value="^Row140$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Row140$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Row140" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -153,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Row140" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server (1)" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Cucumber Java.Feature: Multiplayer" />
-        <item itemvalue="Cucumber Java.Scenario: Row142" />
       </list>
     </recent_temporary>
   </component>
@@ -169,20 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00106" summary="TEST: A-Test83">
-      <created>1667167718798</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1667167718799</updated>
-    </task>
-    <task id="LOCAL-00107" summary="CODE: Modified monkey business to pass test83">
-      <created>1667167772554</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1667167772556</updated>
     </task>
     <task id="LOCAL-00108" summary="TEST: A-Test84">
       <created>1667167846124</created>
@@ -513,7 +496,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668621569377</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="REFACTOR: Player and server updated for rule checks and UI purposes">
+      <created>1668625492364</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1668625492366</updated>
+    </task>
+    <task id="LOCAL-00156" summary="CODE: Added more step definitions">
+      <created>1668625936197</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1668625936197</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -539,8 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test111" />
-    <MESSAGE value="TEST: A-Test114" />
     <MESSAGE value="TEST: A-Test115" />
     <MESSAGE value="TEST: A-Test116" />
     <MESSAGE value="TEST: A-Test117" />
@@ -564,6 +559,8 @@
     <MESSAGE value="REFACTOR: Step definitions modified to use game procedures to  account for scores and winner properly" />
     <MESSAGE value="CODE: More step definitions for specific rolling" />
     <MESSAGE value="CODE: pom.xml updated, and first multiplayer feature scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: pom.xml updated, and first multiplayer feature scenario" />
+    <MESSAGE value="REFACTOR: Player and server updated for rule checks and UI purposes" />
+    <MESSAGE value="CODE: Added more step definitions" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added more step definitions" />
   </component>
 </project>
