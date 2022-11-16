@@ -50,6 +50,9 @@ public class Player {
 
     private boolean islandOfSkulls;
 
+    private boolean potentialWinner;
+    private boolean isWinner;
+
     private int sorceressUse;
 
     private int swordBattleReq;
@@ -70,6 +73,8 @@ public class Player {
         this.skullCount = 0;
         this.card = "";
         this.turn = false;
+        this.isWinner = false;
+        this.potentialWinner = false;
         this.isAlive = true;
     }
 
@@ -580,6 +585,23 @@ public class Player {
         for(int i = 0; i< s.length ;i++){
             this.saves.add(this.rolled[s[i]]);
         }
+    }
+
+    public void checkIfWon(int scoreToBeat){
+        if(this.score >= scoreToBeat){
+            if(this.potentialWinner){
+                this.isWinner = true;
+                return;
+            }
+            this.potentialWinner = true;
+        } else {
+            this.potentialWinner = false;
+        }
+
+    }
+
+    public boolean getWinner(){
+        return this.isWinner;
     }
 
     public void setCard(String c){
