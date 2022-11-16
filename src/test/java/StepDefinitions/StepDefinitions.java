@@ -14,8 +14,8 @@ public class StepDefinitions {
 
     int pointThreshold = 3000;
 
-    @Given("PlayerOne rolls {string},{string},{string},{string},{string},{string},{string},{string} dice and Card {string}")
-    public void forcedRollP1(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8, String card) {
+    @Given("PlayerOne rolls {string},{string},{string},{string},{string},{string},{string},{string} dice and Card {string} with face value {int}")
+    public void forcedRollSingle(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8, String card, int numFace) {
         String[] rolls = {s1,s2,s3,s4,s5,s6,s7,s8};
         pointThreshold = 3000;
         test = new Player("Test");
@@ -24,11 +24,18 @@ public class StepDefinitions {
         test.roll();
         test.setForceDice(rolls);
         test.setCard(card);
+        if(card.equals("SEA_BATTLE")){
+            test2.setSwordsSea(numFace);
+        } else if (card.equals("SKULL")){
+            test2.setSkullFace(numFace);
+        }
     }
 
     @And("PlayerTwo rolls {string},{string},{string},{string},{string},{string},{string},{string} dice and Card {string} with face value {int}")
     public void forcedRollP2(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8, String card, int faceValue) {
         String[] rolls = {s1,s2,s3,s4,s5,s6,s7,s8};
+
+        test2 = new Player("Test2");
 
         test2.roll();
         test2.setForceDice(rolls);
@@ -44,6 +51,8 @@ public class StepDefinitions {
     public void forcedRollP3(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8, String card, int faceValue) {
         String[] rolls = {s1,s2,s3,s4,s5,s6,s7,s8};
 
+        test3 = new Player("Test3");
+
         test3.roll();
         test3.setForceDice(rolls);
         test3.setCard(card);
@@ -54,7 +63,7 @@ public class StepDefinitions {
         }
     }
 
-    @And("PlayerOne rolls {string},{string},{string},{string},{string},{string},{string},{string} dice and Card {string} with a face value {int}")
+    @And("PlayerOne rolls again {string},{string},{string},{string},{string},{string},{string},{string} dice and Card {string} with a face value {int}")
     public void forcedRollP1(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8, String card, int faceValue) {
         String[] rolls = {s1,s2,s3,s4,s5,s6,s7,s8};
 
@@ -125,6 +134,17 @@ public class StepDefinitions {
 
     }
 
+    @Then("PlayerOne should have score {int}")
+    public void singleEndScore(int score1){
+        assertEquals(score1, test.getScore());
+    }
+
+    @Then("PlayerOne should have score <numScore>")
+    public void singleEnd(int numScore){
+        assertEquals(numScore, test.getScore());
+    }
+
+
 
     @When("The set of turns end")
     public void theSetOfTurnsEnd() {
@@ -167,5 +187,10 @@ public class StepDefinitions {
 
     }
 
+
+    @Then("PlayerOne should have score {int} left")
+    public void playeroneShouldHaveScoreNumScoreLeft(int score) {
+        assertEquals(score, test.getScore());
+    }
 
 }
