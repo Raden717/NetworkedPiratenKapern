@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added step defintions for dying and saving dice with treasure chest">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added examples to single roll scores with full chest testing and refactored multiplayer features to be more accurate scenarios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/StepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +69,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Row94">
+  <component name="RunManager" selected="Cucumber Java.Feature: Multiplayer">
     <configuration name="Feature: Multiplayer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" />
@@ -190,10 +190,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: SingleRoll Scores" />
         <item itemvalue="Cucumber Java.Scenario: Row94" />
         <item itemvalue="Cucumber Java.Scenario: Treasure Chest Saving and Rolling" />
         <item itemvalue="Cucumber Java.Feature: Singleplayer" />
-        <item itemvalue="Cucumber Java.Scenario: SingleRoll Scores" />
         <item itemvalue="Cucumber Java.Scenario: Roll and Rerolls Twice" />
       </list>
     </recent_temporary>
@@ -206,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00122" summary="CODE: Modified and added setter to force the skull number on the fortune card">
-      <created>1667171202774</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1667171202778</updated>
     </task>
     <task id="LOCAL-00123" summary="TEST: A-Test107">
       <created>1667171283419</created>
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668638118547</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="CODE: Added step defintions for newly added scenarios row94 and row90">
+      <created>1668638573677</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1668638573679</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -576,8 +576,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REFACTOR: Modified rollCard to reinitialize values" />
-    <MESSAGE value="CODE: Added getters for UI purposes" />
     <MESSAGE value="CODE: Networking code" />
     <MESSAGE value="CODE: Test" />
     <MESSAGE value="REFACTOR: First commit on new branch" />
@@ -601,6 +599,8 @@
     <MESSAGE value="CODE: Added the rest of the simple single player scoring where a player rolls and rerolls twice" />
     <MESSAGE value="CODE: Added monkey business acceptance testing to scenario outlines where they fit" />
     <MESSAGE value="CODE: Added step defintions for dying and saving dice with treasure chest" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added step defintions for dying and saving dice with treasure chest" />
+    <MESSAGE value="CODE: Added step defintions for newly added scenarios row94 and row90" />
+    <MESSAGE value="CODE: Added examples to single roll scores with full chest testing and refactored multiplayer features to be more accurate scenarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added examples to single roll scores with full chest testing and refactored multiplayer features to be more accurate scenarios" />
   </component>
 </project>

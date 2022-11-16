@@ -6,17 +6,17 @@ Feature: Multiplayer Tests
     And PlayerTwo rolls "SKULL","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD" dice and Card "SKULL" with face value 1
     And PlayerTwo decides to end turn
     And PlayerThree rolls "SKULL","SKULL","SKULL","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY" dice and Card "GOLD"
-    And PlayerThree decides to end turn
+    And PlayerThree dies
     When The set of turns end
     Then PlayerOne should have score 4000, PlayerTwo should have score 2000, PlayerThree should have score 0 and PlayerOne should have won true
 
   Scenario: Row142
     Given PlayerOne rolls "SKULL","SKULL","SKULL","SWORD","SWORD","SWORD","SWORD","SWORD" dice and Card "CAPTAIN" with face value 0
-    And PlayerOne decides to end turn
+    And PlayerOne dies
     And PlayerTwo rolls "SKULL","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD" dice and Card "CAPTAIN" with face value 0
     And PlayerTwo decides to end turn
     And PlayerThree rolls "SKULL","SKULL","SKULL","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY" dice and Card "SKULL" with a face value 2
-    And PlayerThree decides to end turn
+    And PlayerThree dies
     And PlayerOne rolls again "SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD" dice and Card "CAPTAIN" with a face value 0
     And PlayerOne decides to end turn
     When The set of turns end
@@ -26,16 +26,16 @@ Feature: Multiplayer Tests
     Given PlayerOne rolls "SKULL","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD","SWORD" dice and Card "CAPTAIN" with face value 0
     And PlayerOne decides to end turn
     And PlayerTwo rolls "SKULL","SKULL","SKULL","SWORD","SWORD","SWORD","SWORD","SWORD" dice and Card "GOLD" with face value 0
-    And PlayerTwo decides to end turn
+    And PlayerTwo dies
     And PlayerThree rolls "SKULL","SKULL","SKULL","SKULL","SKULL","SKULL","MONKEY","MONKEY" dice and Card "CAPTAIN" with a face value 0
     And Scores are deducted by 12 due to island of skulls by player "Three"
     And PlayerThree decides to end turn
     And PlayerOne rolls again "MONKEY","MONKEY","MONKEY","MONKEY","PARROT","PARROT","PARROT","PARROT" dice and Card "GOLD" with a face value 0
     And PlayerOne decides to end turn
     And PlayerTwo rolls "SKULL","SKULL","SKULL","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY" dice and Card "GOLD" with face value 0
-    And PlayerTwo decides to end turn
+    And PlayerTwo dies
     And PlayerThree rolls "SKULL","SKULL","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY","MONKEY" dice and Card "SKULL" with a face value 1
-    And PlayerThree decides to end turn
+    And PlayerThree dies
     When The set of turns end
     Then PlayerOne should have score 3800, PlayerTwo should have score 0, PlayerThree should have score 0 and PlayerOne should have won true
 

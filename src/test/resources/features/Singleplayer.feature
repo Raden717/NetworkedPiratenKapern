@@ -20,6 +20,12 @@ Feature: SinglePlayer Tests
       | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "COIN" | "COIN" | "SKULL" | "SKULL" | "GOLD" | 0 | 600 |
       | "MONKEY" | "MONKEY" | "MONKEY" | "PARROT" | "PARROT" | "PARROT" | "SKULL" | "COIN" | "MONKEY_BUSINESS" | 0 | 1100 |
       | "MONKEY" | "MONKEY" | "MONKEY" | "PARROT" | "PARROT" | "SKULL" | "SKULL" | "SKULL" | "MONKEY_BUSINESS" | 0 | 0 |
+      | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "DIAMOND" | "PARROT" | "GOLD" | 0 | 400 |
+      | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "COIN" | "COIN" | "CAPTAIN" | 0 | 1800 |
+      | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "DIAMOND" | "GOLD" | 0 | 1000 |
+      | "MONKEY" | "MONKEY" | "PARROT" | "COIN" | "COIN" | "DIAMOND" | "DIAMOND" | "DIAMOND" | "MONKEY_BUSINESS" | 0 | 1200 |
+
+#  FC: monkey business and roll 2 monkeys, 1 parrot, 2 coins, 3 diamonds   SC 1200
 
 
   Scenario Outline: Roll and Reroll Once Scores
