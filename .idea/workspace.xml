@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Step definitions">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added a winning check within the player">
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/initRoll.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,13 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00101" summary="TEST: A-Test78">
-      <created>1667166190308</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1667166190310</updated>
     </task>
     <task id="LOCAL-00102" summary="TEST: A-Test79">
       <created>1667166496793</created>
@@ -490,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668609396507</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="CODE: Added a winning check within the player">
+      <created>1668609858864</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1668609858865</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -516,7 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test109" />
     <MESSAGE value="CODE: Modified deducting Scores for Test109" />
     <MESSAGE value="TEST: A-Test110" />
     <MESSAGE value="TEST: A-Test110 removed a skull face value that is unneeded" />
@@ -541,6 +540,7 @@
     <MESSAGE value="CODE: Test" />
     <MESSAGE value="REFACTOR: First commit on new branch" />
     <MESSAGE value="CODE: Step definitions" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Step definitions" />
+    <MESSAGE value="CODE: Added a winning check within the player" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added a winning check within the player" />
   </component>
 </project>
