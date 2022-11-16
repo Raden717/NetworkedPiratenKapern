@@ -81,7 +81,7 @@ public class StepDefinitions {
     public void forcedRollAgain(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8) {
         String[] rolls = {s1,s2,s3,s4,s5,s6,s7,s8};
 
-        test.roll();
+        test.reroll();
         test.setForceDice(rolls);
     }
 
