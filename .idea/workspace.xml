@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="Refactor: Refactored a step definition to make sure it's using a reroll function instead of the intial roll function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added scenario outline of roll and rerolls twice and init example">
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00116" summary="TEST: A-Test99">
-      <created>1667170361134</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1667170361137</updated>
     </task>
     <task id="LOCAL-00117" summary="TEST: A-Test102">
       <created>1667170502773</created>
@@ -550,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668635464680</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="CODE: Added scenario outline of roll and rerolls twice and init example">
+      <created>1668635788636</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1668635788637</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -576,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE: Added variables for networking and UI purposes" />
     <MESSAGE value="REFACTOR: Refactored some functions to make them work better with networking" />
     <MESSAGE value="REFACTOR: Removed main file as no need" />
     <MESSAGE value="CODE: Modified player to make test cases fully work" />
@@ -601,6 +599,7 @@
     <MESSAGE value="CODE: Added a step definition and initial Scenario out line for scores where the player rolls and rerolls once" />
     <MESSAGE value="CODE: Added the simple examples for roll and reroll once scores" />
     <MESSAGE value="Refactor: Refactored a step definition to make sure it's using a reroll function instead of the intial roll function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor: Refactored a step definition to make sure it's using a reroll function instead of the intial roll function" />
+    <MESSAGE value="CODE: Added scenario outline of roll and rerolls twice and init example" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added scenario outline of roll and rerolls twice and init example" />
   </component>
 </project>
