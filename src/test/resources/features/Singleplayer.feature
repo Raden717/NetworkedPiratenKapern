@@ -49,6 +49,3 @@ Feature: SinglePlayer Tests
       | "SKULL" | "PARROT" | "PARROT" | "COIN" | "COIN" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "COIN" | "COIN" | "COIN" | "COIN" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | "COIN" | 4800 |
       | "SKULL" | "PARROT" | "PARROT" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "PARROT" | "PARROT" | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | "SWORD" | "MONKEY" | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | 600 |
 
-
-#  roll 1 skull, 2 (monkeys/parrots) 3 swords, reroll 2 monkeys, get 1 skull 1 sword,
-#  then reroll parrots get 1 sword 1 monkey (SC 600)
