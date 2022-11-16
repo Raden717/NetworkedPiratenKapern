@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="REFACTOR: Modified step definitions">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" afterDir="false" />
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Modified scenarios and added initial scenario outline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Multiplayer">
+  <component name="RunManager" selected="Cucumber Java.Scenario: SingleRoll Scores">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Client" />
       <module name="COMP4004-F22-A1-101104851" />
@@ -199,13 +198,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00111" summary="TEST: A-Test94 modified">
-      <created>1667169907260</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1667169907263</updated>
     </task>
     <task id="LOCAL-00112" summary="CODE: Modified treasureChest procedure to make test94 work.">
       <created>1667169983268</created>
@@ -543,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668632145454</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="CODE: Modified scenarios and added initial scenario outline">
+      <created>1668632435397</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1668632435398</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -569,7 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TEST: A-Test119" />
     <MESSAGE value="TEST: A-Test120" />
     <MESSAGE value="TEST: A-Test122" />
     <MESSAGE value="TEST: A-Test123" />
@@ -594,6 +592,7 @@
     <MESSAGE value="CODE: Added more scenarios for multiplayer" />
     <MESSAGE value="CODE: Row142 Scenario added" />
     <MESSAGE value="REFACTOR: Modified step definitions" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR: Modified step definitions" />
+    <MESSAGE value="CODE: Modified scenarios and added initial scenario outline" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Modified scenarios and added initial scenario outline" />
   </component>
 </project>
