@@ -85,6 +85,19 @@ public class StepDefinitions {
         test.setForceDice(rolls);
     }
 
+    @And("Player saves 3 dice in treasure chest at position {int}, {int}, {int}")
+    public void save3Dice(int n1, int n2, int n3){
+        int[] saving = {n1,n2,n3};
+        test.save(saving);
+    }
+
+    @And("Player clears chest and saves 5 dice in treasure chest, positions {int}, {int}, {int}, {int}, {int}")
+    public void save5Dice(int n1, int n2, int n3, int n4, int n5){
+        int[] saving = {n1,n2,n3,n4,n5};
+        test.save(saving);
+    }
+
+
     @And("PlayerThree rolls {string},{string},{string},{string},{string},{string},{string},{string} dice and Card {string}")
     public void forcedRollP3(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8, String card) {
         String[] rolls = {s1,s2,s3,s4,s5,s6,s7,s8};
@@ -118,6 +131,38 @@ public class StepDefinitions {
 
     @And("PlayerThree decides to end turn")
     public void endTurnP3(){
+        test3.updateAlive();
+        test3.updateScore();
+        test3.checkIfWon(pointThreshold);
+        if(test3.getScore() > pointThreshold){
+            pointThreshold = test3.getScore();
+        }
+    }
+
+    @And("PlayerOne dies")
+    public void diesP1(){
+        test.updateAlive();
+        test.updateScore();
+        test.checkIfWon(pointThreshold);
+        if(test.getScore() > pointThreshold){
+            pointThreshold = test.getScore();
+        }
+    }
+
+
+    @And("PlayerTwo dies")
+    public void diesP2(){
+        test2.updateAlive();
+        test2.updateScore();
+        test.checkIfWon(pointThreshold);
+        if(test2.getScore() > pointThreshold){
+            pointThreshold = test2.getScore();
+        }
+    }
+
+
+    @And("PlayerThree dies")
+    public void diesP3(){
         test3.updateAlive();
         test3.updateScore();
         test3.checkIfWon(pointThreshold);
