@@ -248,7 +248,7 @@ public class Player {
             Random rand = new Random();
             int swords = swordBattleReq;
             int swordCount = 0;
-
+            System.out.println("Check if sea battle has been won or lost");
 
             switch (swords) {
                 case 1:
@@ -277,12 +277,19 @@ public class Player {
                 if(this.score < 0){
                     this.score = 0;
                 }
+                this.isAlive = false;
+                System.out.println("Did not win sea battle and has died");
                 return;
             } else {
                 scoreToAdd += seaBattlePoints;
                 seaBattleTotal = seaBattlePoints;
 
                 wonSea = true;
+                if(wonSea){
+                    System.out.println("Won sea battle");
+                } else {
+                    System.out.println("Did not win sea battle");
+                }
             }
 
         }

@@ -100,3 +100,15 @@ Feature: SinglePlayer Tests
     And PlayerOne decides to end turn
     And Scores are deducted by 9 due to island of skulls by player "One"
     Then PlayerOne should have score 0, PlayerTwo should have score 0, PlayerThree should have score 0
+
+
+  Scenario: Row102
+    Given PlayerOne rolls "SWORD","COIN","PARROT","PARROT","MONKEY","MONKEY","MONKEY","MONKEY" dice and Card "SEA_BATTLE" with face value 2
+    And PlayerOne rolls again "SWORD","COIN","COIN","SWORD","MONKEY","MONKEY","MONKEY","MONKEY" dice
+    And PlayerOne decides to end turn
+    Then PlayerOne should have score 1200
+
+
+#  FC: 2 sword sea battle, first  roll:  4 monkeys, 1 sword, 2 parrots and a coin
+#  then reroll 2 parrots and get 2nd coin and 2nd sword
+#  score is: 200 (coins) + 200 (monkeys) + 300 (swords of battle) + 500 (full chest) = 1200
