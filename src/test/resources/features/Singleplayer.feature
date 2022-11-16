@@ -54,4 +54,21 @@ Feature: SinglePlayer Tests
       | "SKULL" | "PARROT" | "PARROT" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "GOLD" | 0 | "SKULL" | "PARROT" | "PARROT" | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | "SWORD" | "MONKEY" | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | 600 |
 
 
+  Scenario: Row90
+    Given PlayerOne rolls "PARROT","PARROT","PARROT","SWORD","SWORD","DIAMOND","DIAMOND","COIN" dice and Card "TREASURE_CHEST" with face value 0
+    And Player saves 3 dice in treasure chest at position 5, 6, 7
+    And PlayerOne rolls again "PARROT","PARROT","PARROT","PARROT","PARROT","DIAMOND","DIAMOND","COIN" dice
+    And Player clears chest and saves 5 dice in treasure chest, positions 0, 1, 2, 3, 4
+    And PlayerOne rolls again "PARROT","PARROT","PARROT","PARROT","PARROT","SKULL","COIN","PARROT" dice
+    And PlayerOne decides to end turn
+    Then PlayerOne should have score 1100
+
+  Scenario: Row94
+    Given PlayerOne rolls "SKULL","SKULL","PARROT","PARROT","PARROT","COIN","COIN","COIN" dice and Card "TREASURE_CHEST" with face value 0
+    And Player saves 3 dice in treasure chest at position 5, 6, 7
+    And PlayerOne rolls again "SKULL","SKULL","DIAMOND","DIAMOND","COIN","COIN","COIN","COIN" dice
+    And Player clears chest and saves 4 dice in treasure chest, positions 4, 5, 6, 7
+    And PlayerOne rolls again "SKULL","SKULL","SKULL","COIN","COIN","COIN","COIN","COIN" dice
+    And PlayerOne dies
+    Then PlayerOne should have an updated score of 600 and should be dead
 

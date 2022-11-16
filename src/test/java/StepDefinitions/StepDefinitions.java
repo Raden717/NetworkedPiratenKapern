@@ -198,11 +198,11 @@ public class StepDefinitions {
         assertEquals(score1, test.getScore());
     }
 
-    @Then("PlayerOne should have score <numScore>")
-    public void singleEnd(int numScore){
-        assertEquals(numScore, test.getScore());
+    @Then("PlayerOne should have an updated score of {int} and should be dead")
+    public void singleEndScoreDeath(int score1){
+        assertEquals(true, test.getAlive());
+        assertEquals(score1, test.getScore());
     }
-
 
 
     @When("The set of turns end")
