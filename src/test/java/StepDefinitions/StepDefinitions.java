@@ -1,6 +1,7 @@
-package org.example;
+package StepDefinitions;
 
 import io.cucumber.java.en.*;
+import org.example.Player;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -39,18 +40,13 @@ public class StepDefinitions {
     }
 
     @And("PlayerThree rolls {string},{string},{string},{string},{string},{string},{string},{string} dice and Card {string}")
-    public void forcedRollP3(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8, String card, int faceValue) {
+    public void forcedRollP3(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8, String card) {
         String[] rolls = {s1,s2,s3,s4,s5,s6,s7,s8};
 
         test3 = new Player("Test");
         test3.roll();
         test3.setForceDice(rolls);
         test3.setCard(card);
-        if(card.equals("SEA_BATTLE")){
-            test3.setSwordsSea(faceValue);
-        } else if (card.equals("SKULL")){
-            test3.setSkullFace(faceValue);
-        }
     }
 
     @And("PlayerOne decides to end turn")
@@ -69,8 +65,8 @@ public class StepDefinitions {
         test2.updateAlive();
         test2.updateScore();
         test.checkIfWon(pointThreshold);
-        if(test3.getScore() > pointThreshold){
-            pointThreshold = test3.getScore();
+        if(test2.getScore() > pointThreshold){
+            pointThreshold = test2.getScore();
         }
     }
 
@@ -92,6 +88,12 @@ public class StepDefinitions {
         assertEquals(score2, test2.getScore());
         assertEquals(score3, test3.getScore());
         assertEquals(true, test.getWinner());
+        assertEquals(false, test2.getWinner());
+        assertEquals(false, test3.getWinner());
+        System.out.println("Is Player one winner " +  test.getWinner());
+        System.out.println("Is Player two winner " + test2.getWinner());
+        System.out.println("Is Player three winner " + test3.getWinner());
+
 
     }
 

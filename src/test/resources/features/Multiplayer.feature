@@ -1,4 +1,3 @@
-
 Feature: Multiplayer Tests
   Everybody wants to know when it's Friday
 
