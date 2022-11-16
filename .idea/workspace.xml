@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added examples to single roll scores with full chest testing and refactored multiplayer features to be more accurate scenarios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Multiplayer">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Row109">
     <configuration name="Feature: Multiplayer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" />
@@ -89,14 +88,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: Singleplayer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Row109" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="COMP4004-F22-A1-101104851" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Singleplayer" />
+      <option name="NAME_FILTER" value="^Row109$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Row109$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Row109" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -108,15 +108,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Roll and Rerolls Twice" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Row110" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="COMP4004-F22-A1-101104851" />
-      <option name="NAME_FILTER" value="^Roll and Rerolls Twice$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Roll and Rerolls Twice$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Roll and Rerolls Twice" />
+      <option name="NAME_FILTER" value="^Row110$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Row110$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Row110" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Row111" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="COMP4004-F22-A1-101104851" />
+      <option name="NAME_FILTER" value="^Row111$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Row111$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Row111" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -168,33 +188,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Treasure Chest Saving and Rolling" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" />
-      <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="COMP4004-F22-A1-101104851" />
-      <option name="NAME_FILTER" value="^Treasure Chest Saving and Rolling$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Treasure Chest Saving and Rolling$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Treasure Chest Saving and Rolling" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Row109" />
+        <item itemvalue="Cucumber Java.Scenario: Row110" />
+        <item itemvalue="Cucumber Java.Scenario: Row111" />
         <item itemvalue="Cucumber Java.Scenario: SingleRoll Scores" />
         <item itemvalue="Cucumber Java.Scenario: Row94" />
-        <item itemvalue="Cucumber Java.Scenario: Treasure Chest Saving and Rolling" />
-        <item itemvalue="Cucumber Java.Feature: Singleplayer" />
-        <item itemvalue="Cucumber Java.Scenario: Roll and Rerolls Twice" />
       </list>
     </recent_temporary>
   </component>
@@ -206,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00123" summary="TEST: A-Test107">
-      <created>1667171283419</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1667171283421</updated>
     </task>
     <task id="LOCAL-00124" summary="TEST: A-Test109">
       <created>1667171767506</created>
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668638573679</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="CODE: Added examples to single roll scores with full chest testing and refactored multiplayer features to be more accurate scenarios">
+      <created>1668640085752</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1668640085758</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

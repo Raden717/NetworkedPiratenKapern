@@ -24,8 +24,8 @@ Feature: SinglePlayer Tests
       | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "COIN" | "COIN" | "CAPTAIN" | 0 | 1800 |
       | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "DIAMOND" | "GOLD" | 0 | 1000 |
       | "MONKEY" | "MONKEY" | "PARROT" | "COIN" | "COIN" | "DIAMOND" | "DIAMOND" | "DIAMOND" | "MONKEY_BUSINESS" | 0 | 1200 |
-
-#  FC: monkey business and roll 2 monkeys, 1 parrot, 2 coins, 3 diamonds   SC 1200
+      | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | 2 | 0                     |
+      | "SKULL" | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | 1 | 0                     |
 
 
   Scenario Outline: Roll and Reroll Once Scores
@@ -78,3 +78,25 @@ Feature: SinglePlayer Tests
     And PlayerOne dies
     Then PlayerOne should have an updated score of 600 and should be dead
 
+
+  Scenario: Row111
+    Given PlayerOne rolls "SKULL","SKULL","SKULL","SWORD","SWORD","SWORD","SWORD","SWORD" dice and Card "SKULL" with face value 2
+    And PlayerOne rolls again "SKULL","SKULL","SKULL","COIN","COIN","COIN","COIN","COIN" dice
+    And PlayerOne decides to end turn
+    And Scores are deducted by 5 due to island of skulls by player "One"
+    Then PlayerOne should have score 0, PlayerTwo should have score 0, PlayerThree should have score 0
+
+  Scenario: Row110
+    Given PlayerOne rolls "SKULL","SKULL","SKULL","SKULL","SKULL","MONKEY","MONKEY","MONKEY" dice and Card "CAPTAIN" with face value 0
+    And PlayerOne rolls again "SKULL","SKULL","SKULL","SKULL","SKULL","SKULL","SKULL","COIN" dice
+    And PlayerOne decides to end turn
+    And Scores are deducted by 14 due to island of skulls by player "One"
+    Then PlayerOne should have score 0, PlayerTwo should have score 0, PlayerThree should have score 0
+
+  Scenario: Row109
+    Given PlayerOne rolls "SKULL","SKULL","PARROT","PARROT","PARROT","MONKEY","MONKEY","MONKEY" dice and Card "SKULL" with face value 2
+    And PlayerOne rolls again "SKULL","SKULL","SKULL","SKULL","SWORD","MONKEY","MONKEY","MONKEY" dice
+    And PlayerOne rolls again "SKULL","SKULL","SKULL","SKULL","SWORD","SKULL","SKULL","SKULL" dice
+    And PlayerOne decides to end turn
+    And Scores are deducted by 9 due to island of skulls by player "One"
+    Then PlayerOne should have score 0, PlayerTwo should have score 0, PlayerThree should have score 0
