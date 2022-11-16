@@ -173,6 +173,7 @@ class ClientHandler implements Runnable
                                     }
                                     if(p.getCard().equals("SEA_BATTLE")){
                                         mc.send.writeUTF("Here is your card: " + p.getCard() +" "+ p.getswordBattleReq());
+                                        mc.send.writeUTF("Keep trying to reroll until you reach " + p.getswordBattleReq() + "swords");
                                     } else if (p.getCard().equals("SKULL")) {
                                         mc.send.writeUTF("Here is your card: " + p.getCard() + " " + p.getSkullFace());
                                     } else if (p.getCard().equals("SORCERESS")){

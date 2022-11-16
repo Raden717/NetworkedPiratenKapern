@@ -30,6 +30,7 @@ public class Player {
 
     private String[] rolled;
 
+    private boolean initTurn;
     private int score;
 
     private int skullCount;
@@ -60,6 +61,7 @@ public class Player {
     private int seaBattleTotal;
 
     public Player(String n){
+        this.initTurn = true;
         this.seaBattleTotal = 0;
         this.swordBattleReq = 0;
         this.islandOfSkulls = false;
@@ -93,6 +95,7 @@ public class Player {
     }
 
     public void roll(){
+        this.initTurn = true;
         this.seaBattleTotal = 0;
         this.islandOfSkulls = false;
         this.saves = new ArrayList<String>();
@@ -106,8 +109,11 @@ public class Player {
             this.rolled[i] = Dice[randomRoll];
         }
 
+
+
     }
     public void reroll(){
+        initTurn = false;
 
         if(islandOfSkulls) {
             for (int i = 0; i < 8; i++) {
@@ -559,7 +565,7 @@ public class Player {
         if(this.skullCount >= 3){
             this.isAlive = false;
         }
-        if(this.skullCount > 3){
+        if(this.skullCount > 3 && initTurn){
             this.islandOfSkulls = true;
         }
 
