@@ -149,6 +149,24 @@ Feature: SinglePlayer Tests
     And PlayerOne decides to end turn
     Then PlayerOne should have score 1300
 
-#  FC 4 swords, roll 3 monkeys, 1 sword, 1 skull, 1 diamond, 2 parrots
-#  then reroll 2 parrots and get 2 swords thus you have 3 monkeys, 3 swords, 1 diamond, 1 skull
-#  then reroll 3 monkeys and get  1 sword and 2 parrots  SC = 200 + 100 + 1000 = 1300
+  Scenario: Row77
+    Given PlayerOne rolls "SWORD","MONKEY","COIN","DIAMOND","DIAMOND","PARROT","PARROT","PARROT" dice and Card "SORCERESS" with face value 0
+    And PlayerOne rolls again "SWORD","MONKEY","COIN","DIAMOND","DIAMOND","SKULL","MONKEY","MONKEY" dice
+    And PlayerOne rolls again "SWORD","MONKEY","COIN","DIAMOND","DIAMOND","MONKEY","MONKEY","MONKEY" dice
+    And PlayerOne decides to end turn
+    Then PlayerOne should have score 500 and sorceress use should be 0
+
+  Scenario: Row78
+    Given PlayerOne rolls "SKULL","SKULL","SKULL","PARROT","PARROT","PARROT","SWORD","SWORD" dice and Card "SORCERESS" with face value 0
+    And PlayerOne rolls again "SKULL","SKULL","PARROT","PARROT","PARROT","PARROT","SWORD","SWORD" dice
+    And PlayerOne rolls again "SKULL","SKULL","PARROT","PARROT","PARROT","PARROT","PARROT","PARROT" dice
+    And PlayerOne decides to end turn
+    Then PlayerOne should have score 1000 and sorceress use should be 0
+
+  Scenario: Row79
+    Given PlayerOne rolls "SKULL","PARROT","PARROT","PARROT","PARROT","MONKEY","MONKEY","MONKEY" dice and Card "SORCERESS" with face value 0
+    And PlayerOne rolls again "SKULL","PARROT","PARROT","PARROT","PARROT","SKULL","PARROT","PARROT" dice
+    And PlayerOne rolls again "SKULL","PARROT","PARROT","PARROT","PARROT","PARROT","PARROT","PARROT" dice
+    And PlayerOne decides to end turn
+    Then PlayerOne should have score 2000 and sorceress use should be 0
+

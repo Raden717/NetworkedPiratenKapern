@@ -198,8 +198,14 @@ public class StepDefinitions {
         assertEquals(score1, test.getScore());
     }
 
+    @Then("PlayerOne should have score {int} and sorceress use should be {int}")
+    public void singleEndScore(int score1, int sorcUse){
+        assertEquals(score1, test.getScore());
+        assertEquals(sorcUse, test.getSorceressUse());
+    }
+
     @Then("PlayerOne should have score {int} and lost {int} from seaBattle")
-    public void singleEndScore(int score1, int scoreLost){
+    public void singleEndScoreSorc(int score1, int scoreLost){
         assertEquals(score1, test.getScore());
         assertEquals(scoreLost, test.getSeaBattleDeduction());
     }
