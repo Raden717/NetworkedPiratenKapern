@@ -127,3 +127,28 @@ Feature: SinglePlayer Tests
     And PlayerOne rolls again "MONKEY","MONKEY","MONKEY","MONKEY","SWORD","SKULL","SWORD","SKULL" dice
     And PlayerOne decides to end turn
     Then PlayerOne should have score 500
+
+  Scenario: Row122
+    Given PlayerOne rolls "MONKEY","MONKEY","MONKEY","MONKEY","SWORD","SWORD","SKULL","SKULL" dice and Card "SEA_BATTLE" with face value 3
+    And PlayerOne rolls again "SKULL","SKULL","SWORD","SWORD","SWORD","SWORD","SKULL","SKULL" dice
+    And PlayerOne dies
+    Then PlayerOne should have score 0 and lost 500 from seaBattle
+
+
+  Scenario: Row115
+    Given PlayerOne rolls "SWORD","SWORD","SKULL","SKULL","PARROT","PARROT","PARROT","PARROT" dice and Card "SEA_BATTLE" with face value 3
+    And PlayerOne rolls again "SWORD","SWORD","SKULL","SKULL","PARROT","PARROT","PARROT","PARROT" dice
+    And PlayerOne dies
+    Then PlayerOne should have score 0 and lost 500 from seaBattle
+
+
+  Scenario: Row126
+    Given PlayerOne rolls "MONKEY","MONKEY","MONKEY","SWORD","SKULL","DIAMOND","PARROT","PARROT" dice and Card "SEA_BATTLE" with face value 4
+    And PlayerOne rolls again "MONKEY","MONKEY","MONKEY","SWORD","SKULL","DIAMOND","SWORD","SWORD" dice
+    And PlayerOne rolls again "SWORD","PARROT","PARROT","SWORD","SKULL","DIAMOND","SWORD","SWORD" dice
+    And PlayerOne decides to end turn
+    Then PlayerOne should have score 1300
+
+#  FC 4 swords, roll 3 monkeys, 1 sword, 1 skull, 1 diamond, 2 parrots
+#  then reroll 2 parrots and get 2 swords thus you have 3 monkeys, 3 swords, 1 diamond, 1 skull
+#  then reroll 3 monkeys and get  1 sword and 2 parrots  SC = 200 + 100 + 1000 = 1300
