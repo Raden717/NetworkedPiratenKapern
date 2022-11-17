@@ -27,6 +27,9 @@ Feature: SinglePlayer Tests
       | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | 2 | 0                     |
       | "SKULL" | "SKULL" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | 1 | 0                     |
       | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "DIAMOND" | "GOLD" | 0 | 1000 |
+      | "SWORD" | "SWORD" | "MONKEY" | "MONKEY" | "MONKEY" | "COIN" | "PARROT" | "PARROT" | "SEA_BATTLE" | 2 | 500 |
+      | "SWORD" | "SWORD" | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SKULL" | "SEA_BATTLE" | 3 | 800 |
+      | "SWORD" | "SWORD" | "MONKEY" | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SKULL" | "SEA_BATTLE" | 4 | 1300 |
 
 
   Scenario Outline: SingleRoll Scores and Lost SB
@@ -36,11 +39,8 @@ Feature: SinglePlayer Tests
     Examples:
       | s1 | s2 | s3 | s4 | s5 | s6 | s7 | s8 | CARD | faceNum | numScore | scoreLost |
       | "SWORD" | "MONKEY" | "MONKEY" | "MONKEY" | "MONKEY" | "SKULL" | "SKULL" | "SKULL" | "SEA_BATTLE" | 2 | 0 | 300 |
-#FC 2 swords, roll 4 monkeys, 3 skulls & 1 sword and die   => die and lose 300 points
-  #FC 4 swords, die on first roll with 2 monkeys, 3 (skulls/swords)  => die and lose 1000 points
-#FC 2 swords, roll 3 monkeys 2 swords, 1 coin, 2 parrots  SC = 100 + 100 + 300 = 500
-  #FC 3 swords, roll 3 monkeys 4 swords 1 skull SC = 100 + 200 + 500 = 800
-  #FC 4 swords, roll 3 monkeys 4 swords 1 skull  SC = 100 +200 + 1000 = 1300
+      | "MONKEY" | "MONKEY" | "SWORD" | "SWORD" | "SWORD" | "SKULL" | "SKULL" | "SKULL" | "SEA_BATTLE" | 4 | 0 | 1000 |
+
 
   Scenario Outline: Roll and Reroll Once Scores
     Given PlayerOne rolls <s1>,<s2>,<s3>,<s4>,<s5>,<s6>,<s7>,<s8> dice and Card <CARD> with face value <faceNum>
@@ -122,7 +122,8 @@ Feature: SinglePlayer Tests
     And PlayerOne decides to end turn
     Then PlayerOne should have score 1200
 
-
-#  FC: 2 sword sea battle, first  roll:  4 monkeys, 1 sword, 2 parrots and a coin
-#  then reroll 2 parrots and get 2nd coin and 2nd sword
-#  score is: 200 (coins) + 200 (monkeys) + 300 (swords of battle) + 500 (full chest) = 1200
+  Scenario: Row119
+    Given PlayerOne rolls "MONKEY","MONKEY","MONKEY","MONKEY","SWORD","SKULL","PARROT","PARROT" dice and Card "SEA_BATTLE" with face value 2
+    And PlayerOne rolls again "MONKEY","MONKEY","MONKEY","MONKEY","SWORD","SKULL","SWORD","SKULL" dice
+    And PlayerOne decides to end turn
+    Then PlayerOne should have score 500

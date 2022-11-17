@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Added final scenario for FC tests and added print statements to see if a sea battle has been won or lost">
+    <list default="true" id="3cb8be95-1838-4e0b-a00e-946e89ec276f" name="Changes" comment="CODE: Refactored numerous things to prepare for new scenario outline with single roll scores and losing points from seabattle">
       <change afterPath="$PROJECT_DIR$/src/test/java/org/example/CucumberTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/StepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +68,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: SingleRoll Scores and Lost SB">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Row119">
     <configuration name="Feature: Multiplayer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Multiplayer.feature" />
@@ -91,15 +88,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Row102" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Row119" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Singleplayer.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="COMP4004-F22-A1-101104851" />
-      <option name="NAME_FILTER" value="^Row102$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Row102$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Row102" />
+      <option name="NAME_FILTER" value="^Row119$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Row119$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Row119" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -182,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Row119" />
+        <item itemvalue="Cucumber Java.Scenario: SingleRoll Scores" />
         <item itemvalue="Cucumber Java.Scenario: SingleRoll Scores and Lost SB" />
         <item itemvalue="JUnit.CucumberTestSuite" />
-        <item itemvalue="Cucumber Java.Scenario: SingleRoll Scores" />
         <item itemvalue="JUnit.features in COMP4004-F22-A1-101104851" />
-        <item itemvalue="Cucumber Java.Scenario: Row102" />
       </list>
     </recent_temporary>
   </component>
@@ -198,13 +195,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667060377323</updated>
-    </task>
-    <task id="LOCAL-00126" summary="TEST: A-Test110">
-      <created>1667172144679</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1667172144682</updated>
     </task>
     <task id="LOCAL-00127" summary="TEST: A-Test110 removed a skull face value that is unneeded">
       <created>1667172271616</created>
@@ -542,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668642664273</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="CODE: Refactored numerous things to prepare for new scenario outline with single roll scores and losing points from seabattle">
+      <created>1668651529648</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1668651529649</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -568,7 +565,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REFACTOR: First commit on new branch" />
     <MESSAGE value="CODE: Step definitions" />
     <MESSAGE value="CODE: Added a winning check within the player" />
     <MESSAGE value="CODE: Step definitions to account for all players" />
@@ -593,6 +589,7 @@
     <MESSAGE value="CODE: Added examples to single roll scores with full chest testing and refactored multiplayer features to be more accurate scenarios" />
     <MESSAGE value="CODE: Added acceptance test scenarios for skull island and skull card testing" />
     <MESSAGE value="CODE: Added final scenario for FC tests and added print statements to see if a sea battle has been won or lost" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE: Added final scenario for FC tests and added print statements to see if a sea battle has been won or lost" />
+    <MESSAGE value="CODE: Refactored numerous things to prepare for new scenario outline with single roll scores and losing points from seabattle" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE: Refactored numerous things to prepare for new scenario outline with single roll scores and losing points from seabattle" />
   </component>
 </project>
