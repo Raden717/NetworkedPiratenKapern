@@ -25,9 +25,9 @@ public class StepDefinitions {
         test.setForceDice(rolls);
         test.setCard(card);
         if(card.equals("SEA_BATTLE")){
-            test2.setSwordsSea(numFace);
+            test.setSwordsSea(numFace);
         } else if (card.equals("SKULL")){
-            test2.setSkullFace(numFace);
+            test.setSkullFace(numFace);
         }
     }
 
@@ -196,6 +196,12 @@ public class StepDefinitions {
     @Then("PlayerOne should have score {int}")
     public void singleEndScore(int score1){
         assertEquals(score1, test.getScore());
+    }
+
+    @Then("PlayerOne should have score {int} and lost {int} from seaBattle")
+    public void singleEndScore(int score1, int scoreLost){
+        assertEquals(score1, test.getScore());
+        assertEquals(scoreLost, test.getSeaBattleDeduction());
     }
 
     @Then("PlayerOne should have an updated score of {int} and should be dead")

@@ -88,6 +88,7 @@ public class Player {
         this.card = cards[randomRoll];
         if(this.card.equals("SEA_BATTLE")){
             this.swordBattleReq = rand.nextInt(3)+2;
+
         } else if (this.card.equals("SKULL")){
             this.skullCard = rand.nextInt(3)+1;
             this.skullCount = this.skullCard;
@@ -230,6 +231,21 @@ public class Player {
             }
         }
 
+        switch (this.swordBattleReq) {
+            case 1:
+                seaBattleTotal += 100;
+                break;
+            case 2:
+                seaBattleTotal += 300;
+                break;
+            case 3:
+                seaBattleTotal += 500;
+                break;
+            case 4:
+                seaBattleTotal += 1000;
+                break;
+        }
+
         if (!this.isAlive || this.skullCount >= 3) {
                 this.islandOfSkulls = false;
                 this.saves = new ArrayList<String>();
@@ -264,6 +280,8 @@ public class Player {
                     seaBattlePoints += 1000;
                     break;
             }
+
+            this.seaBattleTotal = seaBattlePoints;
 
             for (int i = 0; i < 8; i++) {
                 if (this.rolled[i].equals("SWORD")) {
